@@ -650,7 +650,7 @@ h6 {
 
 .arrow-button {
   position: relative;
-  animation: arrowButton 1.5s infinite;
+  animation: arrowButton 1s infinite;
 }
 
 .breadcrumb {
@@ -767,12 +767,12 @@ h6 {
   0% {
     right: 0px;
   }
-  60% {
+  25% {
     opacity: 1;
+    right: -8px;
   }
   100% {
-    right: -8px;
-    opacity: 0;
+    right: 0px;
   }
 }
 @font-face {
