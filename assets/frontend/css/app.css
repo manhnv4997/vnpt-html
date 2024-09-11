@@ -1558,7 +1558,8 @@ header .header__btn-trial {
   font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 150% */
-  width: 83px;
+  max-width: fit-content;
+  width: 100%;
   height: 32px;
   flex-shrink: 0;
   border-radius: 200px;
@@ -1568,6 +1569,7 @@ header .header__btn-trial {
   align-items: center;
   gap: 0 4px;
   justify-content: center;
+  padding: 0 13px;
 }
 header .header__icon-box-mb {
   display: none;
@@ -1614,7 +1616,7 @@ header .header__icon-box-mb img.--show {
 .menu-mb-box {
   height: calc(100vh - 64px);
   width: 100%;
-  padding: 38px 16px 26px;
+  padding: 0 16px 26px;
   position: fixed;
   left: calc(-120vw - 700px);
   transition: 0.3s left linear;
@@ -1632,6 +1634,7 @@ header .header__icon-box-mb img.--show {
 }
 .menu-mb-box__top .search-box {
   position: relative;
+  margin: 32px 0 26px;
 }
 .menu-mb-box__top .search-box__icon {
   width: 24px;
@@ -1653,7 +1656,6 @@ header .header__icon-box-mb img.--show {
   outline: unset;
 }
 .menu-mb-box__top .button-box {
-  margin-top: 49px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1661,7 +1663,7 @@ header .header__icon-box-mb img.--show {
 }
 .menu-mb-box__top .button-box__btn {
   width: 166.809px;
-  height: 24px;
+  height: 34px;
   flex-shrink: 0;
   border-radius: 6px;
   display: flex;
@@ -1672,10 +1674,11 @@ header .header__icon-box-mb img.--show {
   background-color: #3aa4f6;
   color: #fff;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 171.429% */
+  text-transform: uppercase;
 }
 .menu-mb-box__top .button-box__btn-login:hover {
   background-color: #0c5adb;
@@ -1684,17 +1687,18 @@ header .header__icon-box-mb img.--show {
   background-color: #f2f2f2;
   color: #7a7a7a;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 171.429% */
+  text-transform: uppercase;
 }
 .menu-mb-box__top .button-box__btn-register:hover {
   background-color: #0c5adb;
   color: #fff;
 }
 .menu-mb-box__top .menu-mb {
-  margin-top: 31px;
+  margin-top: 8px;
   display: flex;
   flex-flow: column;
   height: calc(100vh - 100px - 48px - 24px - 49px - 41px - 196px);
@@ -1705,7 +1709,7 @@ header .header__icon-box-mb img.--show {
   font-size: 22px;
   font-style: normal;
   font-weight: 500;
-  line-height: 56px; /* 254.545% */
+  line-height: 48px; /* 254.545% */
 }
 .menu-mb-box__top .menu-mb__item .arrow-down {
   margin-left: 8px;
