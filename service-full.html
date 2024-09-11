@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/library/bootstrap-5.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/library/plugins/toastr/toastr.css">
+    <link rel="stylesheet" href="assets/frontend/css/app.css?v=1">
+    <link rel="stylesheet" href="assets/library/slick/slick.css">
+    <link rel="stylesheet" href="assets/library/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+        integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/library/cssanimation/cssanimation.css">
+
+
+    <title>VNPT Page</title>
+
+    <!-- Jquery -->
+    <script  src="assets/library/jquery/jquery-3.7.1.slim.min.js"></script>
+    <script  src="assets/library/jquery/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap 5 -->
+    <script  src="assets/library/bootstrap-5.1/bootstrap.min.js"></script>
+    <script  src="assets/library/bootstrap-5.1/bootstrap.bundle.min.js"></script>
+    <script  src="assets/library/popper/popper.min.js"></script>
+    <!-- Toastr JS -->
+    <script  src="assets/library/plugins/toastr/toastr.min.js"></script>
+    <!-- Library -->
+    <script  src="assets/library/slick/slick.min.js"></script>
+    <script defer src="assets/library/cssanimation/scrolly.js"></script>
+
+    <!-- Common JS -->
+    <script defer src="assets/frontend/js/app.js"></script>
+
+
+    <link rel="stylesheet" href="assets/frontend/css/pages/service-full.css">
+    <script defer src="assets/frontend/js/pages/service-full.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container-xl header">
+    
+            <div class="header__icon-box-mb">
+                <img src="assets/svg/layout/header/menu-mb-icon.svg" alt="image"
+                    class="header__icon-box-mb--menu --show">
+                <img src="assets/svg/layout/header/close-menu-mb-icon.svg" alt="image"
+                    class="header__icon-box-mb--close-menu">
+            </div>
+    
+            <a href="./index.html" class="header__logo-box">
+                <img src="assets/images/layout/header/logo.png" alt="Logo"
+                    class="header__logo-box--logo">
+            </a>
+    
+            <div class="header__menu-box">
+                <ul class="header__menu">
+                    <li class="header__menu--item">
+                        <a href="./index.html">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a href="./service.html" class="header-item-services-products">
+                            Sản phẩm dịch vụ
+                            <img src="assets/svg/icon/arrow-down.svg" alt="image" class="arrow-down">
+                        </a>
+                        <ul class="child-menu">
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-1.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Hoá đơn điện tử
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-pos.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-2.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Hóa đơn khởi tạo
+                                        từ máy tính tiền
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-document.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-3.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Chứng từ điện tử
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-inbot.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-4.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Hoá đơn đầu vào
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-ereceip.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-5.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Biên lai điện tử
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-eticket.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-6.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Vé điện tử
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__menu--item">
+                        <a href="javascript:void(0)">
+                            Tra cứu
+                        </a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a href="./news.html">
+                            Tin tức
+                        </a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a href="./helper.html">
+                            Hỗ trợ
+                        </a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a href="javascript:void(0)">
+                            Đăng nhập
+                        </a>
+                    </li>
+                </ul>
+    
+                <button class="header__button">Bắt đầu dùng thử miễn phí</button>
+            </div>
+    
+            <button class="header__btn-trial d-flex d-lg-none">
+                <img src="assets/svg/icon/plane.svg" alt="">
+                Tư vấn
+            </button>
+        </div>
+    </header>
+    
+    <div class="sub-menu-news-detail">
+        <img src="assets/svg/icon/sub-menu-save.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-print.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-copy.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-comment.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-copy-link.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-share.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-font-size.svg" alt="image">
+    </div>
+    
+    <div class="menu-mb-box">
+        <div class="content">
+            <div class="menu-mb-box__top">
+                <div class="search-box">
+                    <img src="assets/svg/icon/search-icon.svg" alt="" class="search-box__icon">
+                    <input type="text" class="search-box__input" placeholder="Tìm kiếm">
+                </div>
+    
+                <div class="button-box">
+                    <button class="button-box__btn button-box__btn-login">Đăng nhập</button>
+                    <button class="button-box__btn button-box__btn-register">Đăng ký</button>
+                </div>
+    
+                <ul class="menu-mb">
+                    <li class="menu-mb__item --has-child">
+                        <a href="./service.html">
+                            Sản phẩm dịch vụ
+                        </a>
+                        <img src="assets/svg/layout/header/icon-arrow-menu-mobile.png" alt="image"
+                            class="arrow-down">
+                        <ul class="child-menu">
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice.html">
+                                    Hoá đơn điện tử
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-pos.html">
+                                    Hoá đơn khởi tạo từ máy tính tiền
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-document.html">
+                                    Chứng từ điện tử
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-inbot.html">
+                                    Hoá đơn đầu vào
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-ereceip.html">
+                                    Biên lai điện tử
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-eticket.html">
+                                    Vé điện tử
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-mb__item">
+                        <a href="javascript:void(0)">
+                            Tra cứu
+                        </a>
+                    </li>
+                    <li class="menu-mb__item">
+                        <a href="./news.html">
+                            Tin tức
+                        </a>
+                    </li>
+                    <li class="menu-mb__item">
+                        <a href="./helper.html">
+                            Hỗ trợ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+    
+            <div class="menu-mb-box__bottom">
+                <span class="break-line"></span>
+                <img src="assets/svg/layout/header/logo-mb.svg" alt="image"
+                    class="menu-mb-box__bottom--logo-mb">
+                <div class="menu-mb-box__bottom--item">
+                    <img src="assets/svg/icon/location.svg" alt="image" class="icon">
+                    <p class="text">
+                        Tòa nhà VNPT, số 57 Huỳnh Thúc Kháng, Phường Láng Hạ, Đống Đa, Hà Nội, Việt Nam
+                    </p>
+                </div>
+                <div class="menu-mb-box__bottom--item">
+                    <img src="assets/svg/icon/phone.svg" alt="image" class="icon">
+                    <p class="text">
+                        1800 1260
+                    </p>
+                </div>
+                <div class="menu-mb-box__bottom--item">
+                    <img src="assets/svg/icon/email.svg" alt="image" class="icon">
+                    <p class="text">
+                        cskh.invoice@vnpt.com.vn
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="page-content service-full-page">
+        <div class="block">
+            <div class="container-xl block__content">
+                <h1 class="block__content--title d-none d-lg-block" data-scrolly-down="blurInTop">
+                    Hoá đơn điện tử VNPT
+                </h1>
+    
+                <div class="title-box d-block d-lg-none">
+                    <h1 class="title-box__title">
+                        Các gói cước
+                        <span class="title-box__title--line"></span>
+                    </h1>
+                </div>
+    
+                <div class="list-package">
+                    <span class="break-line d-none d-lg-block" data-scrolly-down="blurInTop"></span>
+                    <div class="list-package__content" data-scrolly-down="blurInTop">
+                        <div id="tab-1" class="list-package__content--main-content --active">
+                            <div class="title-invoice-box d-block d-lg-none">
+                                <h4 class="title-invoice-box__title">
+                                    Hoá đơn điện tử
+                                    <span class="title-invoice-box__title--line"></span>
+                                </h4>
+                                <span class="break-line"></span>
+                            </div>
+    
+                            <div class="list-invoice">
+                                <div class="list-invoice__item">
+                                    <img src="assets/svg/service-detail/block-1-bg-image.svg" alt="image"
+                                        class="img-bg-slides">
+                                    <p class="name-services">
+                                        <span class="special">Gói E-300 </span> <br>
+                                        Gói 300 hoá đơn
+                                    </p>
+                                    <p class="text-1">
+                                        Giá gói + Phí khởi tạo
+                                    </p>
+                                    <p class="price">
+                                        390,000đ
+                                    </p>
+                                    <select class="payment-cycle">
+                                        <option value="">
+                                            Chọn chu kỳ thanh toán
+                                        </option>
+                                        <option value="">1 tháng</option>
+                                        <option value="">3 tháng</option>
+                                        <option value="">6 tháng</option>
+                                        <option value="">12 tháng</option>
+                                    </select>
+                                    <button class="btn-register-now">
+                                        ĐĂNG KÝ Ngay <span class="arrow-button">→</span>
+                                    </button>
+    
+                                    <ul class="info">
+                                        <li class="info__item">
+                                            Nổi bật
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg" alt="image">
+                                                    <span>Hoá đơn 300</span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg" alt="image">
+                                                    <span>Đơn giá/ Hóa đơn: 840</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="info__item">
+                                            Ưu đãi
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg" alt="image">
+                                                    <span>
+                                                        Hỗ trợ tư vấn miễn phí
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg" alt="image">
+                                                    <span>
+                                                        Bảo hành trọn đời
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg" alt="image">
+                                                    <span>
+                                                        Không giới hạn người dùng
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg" alt="image">
+                                                    <span>
+                                                        Không giới hạn thời gian sử dụng
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+    
+                                    <div class="buttons-box">
+                                        <a href="#" class="buttons-box__btn btn-get-advice">Nhận tư vấn</a>
+                                        <a href="./service-detail.html" class="buttons-box__btn btn-detail">Chi tiết</a>
+                                    </div>
+                                </div>
+                                <div class="list-invoice__item">
+                                    <img src="assets/svg/service-detail/block-1-bg-image.svg" alt="image"
+                                        class="img-bg-slides">
+                                    <p class="name-services">
+                                        <span class="special">Gói E-300 </span> <br>
+                                        Gói 300 hoá đơn
+                                    </p>
+                                    <p class="text-1">
+                                        Giá gói + Phí khởi tạo
+                                    </p>
+                                    <p class="price">
+                                        390,000đ
+                                    </p>
+                                    <select class="payment-cycle">
+                                        <option value="">
+                                            Chọn chu kỳ thanh toán
+                                        </option>
+                                        <option value="">1 tháng</option>
+                                        <option value="">3 tháng</option>
+                                        <option value="">6 tháng</option>
+                                        <option value="">12 tháng</option>
+                                    </select>
+                                    <button class="btn-register-now">
+                                        ĐĂNG KÝ Ngay <span class="arrow-button">→</span>
+                                    </button>
+    
+                                    <ul class="info">
+                                        <li class="info__item">
+                                            Nổi bật
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg" alt="image">
+                                                    <span>Hoá đơn 300</span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg" alt="image">
+                                                    <span>Đơn giá/ Hóa đơn: 840</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="info__item">
+                                            Ưu đãi
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg" alt="image">
+                                                    <span>
+                                                        Hỗ trợ tư vấn miễn phí
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg" alt="image">
+                                                    <span>
+                                                        Bảo hành trọn đời
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg" alt="image">
+                                                    <span>
+                                                        Không giới hạn người dùng
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Không giới hạn thời gian sử dụng
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+    
+                                    <div class="buttons-box">
+                                        <a href="#" class="buttons-box__btn btn-get-advice">Nhận tư vấn</a>
+                                        <a href="./service-detail.html" class="buttons-box__btn btn-detail">Chi tiết</a>
+                                    </div>
+                                </div>
+                                <div class="list-invoice__item">
+                                    <img src="assets/svg/service-detail/block-1-bg-image.svg" alt="image"
+                                        class="img-bg-slides">
+                                    <p class="name-services">
+                                        <span class="special">Gói E-300 </span> <br>
+                                        Gói 300 hoá đơn
+                                    </p>
+                                    <p class="text-1">
+                                        Giá gói + Phí khởi tạo
+                                    </p>
+                                    <p class="price">
+                                        390,000đ
+                                    </p>
+                                    <select class="payment-cycle">
+                                        <option value="">
+                                            Chọn chu kỳ thanh toán
+                                        </option>
+                                        <option value="">1 tháng</option>
+                                        <option value="">3 tháng</option>
+                                        <option value="">6 tháng</option>
+                                        <option value="">12 tháng</option>
+                                    </select>
+                                    <button class="btn-register-now">
+                                        ĐĂNG KÝ Ngay <span class="arrow-button">→</span>
+                                    </button>
+    
+                                    <ul class="info">
+                                        <li class="info__item">
+                                            Nổi bật
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>Hoá đơn 300</span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>Đơn giá/ Hóa đơn: 840</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="info__item">
+                                            Ưu đãi
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Hỗ trợ tư vấn miễn phí
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Bảo hành trọn đời
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Không giới hạn người dùng
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Không giới hạn thời gian sử dụng
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+    
+                                    <div class="buttons-box">
+                                        <a href="#" class="buttons-box__btn btn-get-advice">Nhận tư vấn</a>
+                                        <a href="./service-detail.html" class="buttons-box__btn btn-detail">Chi tiết</a>
+                                    </div>
+                                </div>
+                                <div class="list-invoice__item">
+                                    <img src="assets/svg/service-detail/block-1-bg-image.svg" alt="image"
+                                        class="img-bg-slides">
+                                    <p class="name-services">
+                                        <span class="special">Gói E-300 </span> <br>
+                                        Gói 300 hoá đơn
+                                    </p>
+                                    <p class="text-1">
+                                        Giá gói + Phí khởi tạo
+                                    </p>
+                                    <p class="price">
+                                        390,000đ
+                                    </p>
+                                    <select class="payment-cycle">
+                                        <option value="">
+                                            Chọn chu kỳ thanh toán
+                                        </option>
+                                        <option value="">1 tháng</option>
+                                        <option value="">3 tháng</option>
+                                        <option value="">6 tháng</option>
+                                        <option value="">12 tháng</option>
+                                    </select>
+                                    <button class="btn-register-now">
+                                        ĐĂNG KÝ Ngay <span class="arrow-button">→</span>
+                                    </button>
+    
+                                    <ul class="info">
+                                        <li class="info__item">
+                                            Nổi bật
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>Hoá đơn 300</span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>Đơn giá/ Hóa đơn: 840</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="info__item">
+                                            Ưu đãi
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Hỗ trợ tư vấn miễn phí
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Bảo hành trọn đời
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Không giới hạn người dùng
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Không giới hạn thời gian sử dụng
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+    
+                                    <div class="buttons-box">
+                                        <a href="#" class="buttons-box__btn btn-get-advice">Nhận tư vấn</a>
+                                        <a href="./service-detail.html" class="buttons-box__btn btn-detail">Chi tiết</a>
+                                    </div>
+                                </div>
+                                <div class="list-invoice__item">
+                                    <img src="assets/svg/service-detail/block-1-bg-image.svg" alt="image"
+                                        class="img-bg-slides">
+                                    <p class="name-services">
+                                        <span class="special">Gói E-300 </span> <br>
+                                        Gói 300 hoá đơn
+                                    </p>
+                                    <p class="text-1">
+                                        Giá gói + Phí khởi tạo
+                                    </p>
+                                    <p class="price">
+                                        390,000đ
+                                    </p>
+                                    <select class="payment-cycle">
+                                        <option value="">
+                                            Chọn chu kỳ thanh toán
+                                        </option>
+                                        <option value="">1 tháng</option>
+                                        <option value="">3 tháng</option>
+                                        <option value="">6 tháng</option>
+                                        <option value="">12 tháng</option>
+                                    </select>
+                                    <button class="btn-register-now">
+                                        ĐĂNG KÝ Ngay <span class="arrow-button">→</span>
+                                    </button>
+    
+                                    <ul class="info">
+                                        <li class="info__item">
+                                            Nổi bật
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>Hoá đơn 300</span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>Đơn giá/ Hóa đơn: 840</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="info__item">
+                                            Ưu đãi
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Hỗ trợ tư vấn miễn phí
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Bảo hành trọn đời
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Không giới hạn người dùng
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Không giới hạn thời gian sử dụng
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+    
+                                    <div class="buttons-box">
+                                        <a href="#" class="buttons-box__btn btn-get-advice">Nhận tư vấn</a>
+                                        <a href="./service-detail.html" class="buttons-box__btn btn-detail">Chi tiết</a>
+                                    </div>
+                                </div>
+                                <div class="list-invoice__item">
+                                    <img src="assets/svg/service-detail/block-1-bg-image.svg" alt="image"
+                                        class="img-bg-slides">
+                                    <p class="name-services">
+                                        <span class="special">Gói E-300 </span> <br>
+                                        Gói 300 hoá đơn
+                                    </p>
+                                    <p class="text-1">
+                                        Giá gói + Phí khởi tạo
+                                    </p>
+                                    <p class="price">
+                                        390,000đ
+                                    </p>
+                                    <select class="payment-cycle">
+                                        <option value="">
+                                            Chọn chu kỳ thanh toán
+                                        </option>
+                                        <option value="">1 tháng</option>
+                                        <option value="">3 tháng</option>
+                                        <option value="">6 tháng</option>
+                                        <option value="">12 tháng</option>
+                                    </select>
+                                    <button class="btn-register-now">
+                                        ĐĂNG KÝ Ngay <span class="arrow-button">→</span>
+                                    </button>
+    
+                                    <ul class="info">
+                                        <li class="info__item">
+                                            Nổi bật
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>Hoá đơn 300</span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>Đơn giá/ Hóa đơn: 840</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="info__item">
+                                            Ưu đãi
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Hỗ trợ tư vấn miễn phí
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Bảo hành trọn đời
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Không giới hạn người dùng
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Không giới hạn thời gian sử dụng
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+    
+                                    <div class="buttons-box">
+                                        <a href="#" class="buttons-box__btn btn-get-advice">Nhận tư vấn</a>
+                                        <a href="./service-detail.html" class="buttons-box__btn btn-detail">Chi tiết</a>
+                                    </div>
+                                </div>
+                                <div class="list-invoice__item">
+                                    <img src="assets/svg/service-detail/block-1-bg-image.svg" alt="image"
+                                        class="img-bg-slides">
+                                    <p class="name-services">
+                                        <span class="special">Gói E-300 </span> <br>
+                                        Gói 300 hoá đơn
+                                    </p>
+                                    <p class="text-1">
+                                        Giá gói + Phí khởi tạo
+                                    </p>
+                                    <p class="price">
+                                        390,000đ
+                                    </p>
+                                    <select class="payment-cycle">
+                                        <option value="">
+                                            Chọn chu kỳ thanh toán
+                                        </option>
+                                        <option value="">1 tháng</option>
+                                        <option value="">3 tháng</option>
+                                        <option value="">6 tháng</option>
+                                        <option value="">12 tháng</option>
+                                    </select>
+                                    <button class="btn-register-now">
+                                        ĐĂNG KÝ Ngay <span class="arrow-button">→</span>
+                                    </button>
+    
+                                    <ul class="info">
+                                        <li class="info__item">
+                                            Nổi bật
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>Hoá đơn 300</span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>Đơn giá/ Hóa đơn: 840</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="info__item">
+                                            Ưu đãi
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Hỗ trợ tư vấn miễn phí
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Bảo hành trọn đời
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Không giới hạn người dùng
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Không giới hạn thời gian sử dụng
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+    
+                                    <div class="buttons-box">
+                                        <a href="#" class="buttons-box__btn btn-get-advice">Nhận tư vấn</a>
+                                        <a href="./service-detail.html" class="buttons-box__btn btn-detail">Chi tiết</a>
+                                    </div>
+                                </div>
+                                <div class="list-invoice__item">
+                                    <img src="assets/svg/service-detail/block-1-bg-image.svg" alt="image"
+                                        class="img-bg-slides">
+                                    <p class="name-services">
+                                        <span class="special">Gói E-300 </span> <br>
+                                        Gói 300 hoá đơn
+                                    </p>
+                                    <p class="text-1">
+                                        Giá gói + Phí khởi tạo
+                                    </p>
+                                    <p class="price">
+                                        390,000đ
+                                    </p>
+                                    <select class="payment-cycle">
+                                        <option value="">
+                                            Chọn chu kỳ thanh toán
+                                        </option>
+                                        <option value="">1 tháng</option>
+                                        <option value="">3 tháng</option>
+                                        <option value="">6 tháng</option>
+                                        <option value="">12 tháng</option>
+                                    </select>
+                                    <button class="btn-register-now">
+                                        ĐĂNG KÝ Ngay <span class="arrow-button">→</span>
+                                    </button>
+    
+                                    <ul class="info">
+                                        <li class="info__item">
+                                            Nổi bật
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>Hoá đơn 300</span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>Đơn giá/ Hóa đơn: 840</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="info__item">
+                                            Ưu đãi
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Hỗ trợ tư vấn miễn phí
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Bảo hành trọn đời
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Không giới hạn người dùng
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Không giới hạn thời gian sử dụng
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+    
+                                    <div class="buttons-box">
+                                        <a href="#" class="buttons-box__btn btn-get-advice">Nhận tư vấn</a>
+                                        <a href="./service-detail.html" class="buttons-box__btn btn-detail">Chi tiết</a>
+                                    </div>
+                                </div>
+                                <div class="list-invoice__item">
+                                    <img src="assets/svg/service-detail/block-1-bg-image.svg" alt="image"
+                                        class="img-bg-slides">
+                                    <p class="name-services">
+                                        <span class="special">Gói E-300 </span> <br>
+                                        Gói 300 hoá đơn
+                                    </p>
+                                    <p class="text-1">
+                                        Giá gói + Phí khởi tạo
+                                    </p>
+                                    <p class="price">
+                                        390,000đ
+                                    </p>
+                                    <select class="payment-cycle">
+                                        <option value="">
+                                            Chọn chu kỳ thanh toán
+                                        </option>
+                                        <option value="">1 tháng</option>
+                                        <option value="">3 tháng</option>
+                                        <option value="">6 tháng</option>
+                                        <option value="">12 tháng</option>
+                                    </select>
+                                    <button class="btn-register-now">
+                                        ĐĂNG KÝ Ngay <span class="arrow-button">→</span>
+                                    </button>
+    
+                                    <ul class="info">
+                                        <li class="info__item">
+                                            Nổi bật
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>Hoá đơn 300</span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>Đơn giá/ Hóa đơn: 840</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="info__item">
+                                            Ưu đãi
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Hỗ trợ tư vấn miễn phí
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Bảo hành trọn đời
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Không giới hạn người dùng
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Không giới hạn thời gian sử dụng
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+    
+                                    <div class="buttons-box">
+                                        <a href="#" class="buttons-box__btn btn-get-advice">Nhận tư vấn</a>
+                                        <a href="./service-detail.html" class="buttons-box__btn btn-detail">Chi tiết</a>
+                                    </div>
+                                </div>
+                                <div class="list-invoice__item">
+                                    <img src="assets/svg/service-detail/block-1-bg-image.svg" alt="image"
+                                        class="img-bg-slides">
+                                    <p class="name-services">
+                                        <span class="special">Gói E-300 </span> <br>
+                                        Gói 300 hoá đơn
+                                    </p>
+                                    <p class="text-1">
+                                        Giá gói + Phí khởi tạo
+                                    </p>
+                                    <p class="price">
+                                        390,000đ
+                                    </p>
+                                    <select class="payment-cycle">
+                                        <option value="">
+                                            Chọn chu kỳ thanh toán
+                                        </option>
+                                        <option value="">1 tháng</option>
+                                        <option value="">3 tháng</option>
+                                        <option value="">6 tháng</option>
+                                        <option value="">12 tháng</option>
+                                    </select>
+                                    <button class="btn-register-now">
+                                        ĐĂNG KÝ Ngay <span class="arrow-button">→</span>
+                                    </button>
+    
+                                    <ul class="info">
+                                        <li class="info__item">
+                                            Nổi bật
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>Hoá đơn 300</span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>Đơn giá/ Hóa đơn: 840</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="info__item">
+                                            Ưu đãi
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Hỗ trợ tư vấn miễn phí
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Bảo hành trọn đời
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Không giới hạn người dùng
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Không giới hạn thời gian sử dụng
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+    
+                                    <div class="buttons-box">
+                                        <a href="#" class="buttons-box__btn btn-get-advice">Nhận tư vấn</a>
+                                        <a href="./service-detail.html" class="buttons-box__btn btn-detail">Chi tiết</a>
+                                    </div>
+                                </div>
+                                <div class="list-invoice__item">
+                                    <img src="assets/svg/service-detail/block-1-bg-image.svg" alt="image"
+                                        class="img-bg-slides">
+                                    <p class="name-services">
+                                        <span class="special">Gói E-300 </span> <br>
+                                        Gói 300 hoá đơn
+                                    </p>
+                                    <p class="text-1">
+                                        Giá gói + Phí khởi tạo
+                                    </p>
+                                    <p class="price">
+                                        390,000đ
+                                    </p>
+                                    <select class="payment-cycle">
+                                        <option value="">
+                                            Chọn chu kỳ thanh toán
+                                        </option>
+                                        <option value="">1 tháng</option>
+                                        <option value="">3 tháng</option>
+                                        <option value="">6 tháng</option>
+                                        <option value="">12 tháng</option>
+                                    </select>
+                                    <button class="btn-register-now">
+                                        ĐĂNG KÝ Ngay <span class="arrow-button">→</span>
+                                    </button>
+    
+                                    <ul class="info">
+                                        <li class="info__item">
+                                            Nổi bật
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>Hoá đơn 300</span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>Đơn giá/ Hóa đơn: 840</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="info__item">
+                                            Ưu đãi
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Hỗ trợ tư vấn miễn phí
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Bảo hành trọn đời
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Không giới hạn người dùng
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Không giới hạn thời gian sử dụng
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+    
+                                    <div class="buttons-box">
+                                        <a href="#" class="buttons-box__btn btn-get-advice">Nhận tư vấn</a>
+                                        <a href="./service-detail.html" class="buttons-box__btn btn-detail">Chi tiết</a>
+                                    </div>
+                                </div>
+                                <div class="list-invoice__item">
+                                    <img src="assets/svg/service-detail/block-1-bg-image.svg" alt="image"
+                                        class="img-bg-slides">
+                                    <p class="name-services">
+                                        <span class="special">Gói E-300 </span> <br>
+                                        Gói 300 hoá đơn
+                                    </p>
+                                    <p class="text-1">
+                                        Giá gói + Phí khởi tạo
+                                    </p>
+                                    <p class="price">
+                                        390,000đ
+                                    </p>
+                                    <select class="payment-cycle">
+                                        <option value="">
+                                            Chọn chu kỳ thanh toán
+                                        </option>
+                                        <option value="">1 tháng</option>
+                                        <option value="">3 tháng</option>
+                                        <option value="">6 tháng</option>
+                                        <option value="">12 tháng</option>
+                                    </select>
+                                    <button class="btn-register-now">
+                                        ĐĂNG KÝ Ngay <span class="arrow-button">→</span>
+                                    </button>
+    
+                                    <ul class="info">
+                                        <li class="info__item">
+                                            Nổi bật
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>Hoá đơn 300</span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>Đơn giá/ Hóa đơn: 840</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="info__item">
+                                            Ưu đãi
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Hỗ trợ tư vấn miễn phí
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Bảo hành trọn đời
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Không giới hạn người dùng
+                                                    </span>
+                                                </li>
+                                                <li class="list__item">
+                                                    <img src="assets/svg/icon/checked-icon.svg"
+                                                        alt="image">
+                                                    <span>
+                                                        Không giới hạn thời gian sử dụng
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+    
+                                    <div class="buttons-box">
+                                        <a href="#" class="buttons-box__btn btn-get-advice">Nhận tư vấn</a>
+                                        <a href="./service-detail.html" class="buttons-box__btn btn-detail">Chi tiết</a>
+                                    </div>
+                                </div>
+    
+                            </div>
+    
+                            <div class="paginate d-none d-lg-flex">
+                                <button class="paginate__btn paginate__btn-prev">
+                                    <img src="assets/svg/icon/prev-icon-1.svg" alt="image">
+                                </button>
+                                <ul class="paginate__list">
+                                    <li class="paginate__list--item --active">
+                                        1
+                                    </li>
+                                    <li class="paginate__list--item">
+                                        2
+                                    </li>
+                                    <li class="paginate__list--item">
+                                        3
+                                    </li>
+                                    <li class="paginate__list--item">
+                                        4
+                                    </li>
+                                    <li class="paginate__list--item">
+                                        5
+                                    </li>
+                                    <li class="paginate__list--item">
+                                        6
+                                    </li>
+                                    <li class="paginate__list--item">
+                                        7
+                                    </li>
+                                    <li class="paginate__list--item">
+                                        8
+                                    </li>
+                                </ul>
+                                <button class="paginate__btn paginate__btn-next --show">
+                                    <img src="assets/svg/icon/next-icon-1.svg" alt="image">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="block">
+            <div class="container-xl block__content">
+                <div class="block__left" data-scrolly-down="blurInRight">
+                    <p class="block__left--title d-none d-md-block">
+                        Câu hỏi thường gặp <br>
+                        khi sử dụng VNPT Invoice
+                    </p>
+                    <p class="block__left--title d-block d-md-none">
+                        Câu hỏi thường gặp
+                    </p>
+    
+                    <a href="#" class="block__left--link d-none d-md-block">
+                        Hướng dẫn sử dụng <span class="arrow-button">→</span>
+                    </a>
+                </div>
+                <div class="block__right" data-scrolly-down="blurInRight">
+                    <ul class="list">
+                        <li class="list__item">
+                            <a href="#">
+                                Tại sao doanh nghiệp cần sử dụng dịch vụ hoá đơn điện tử?
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#">
+                                Có những bước nào để sử dụng nhanh chóng dịch vụ của VNPT Invoice
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#">
+                                Tạo hoá đơn điện tử từ VNPT có an toàn và hiệu quả không?
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#">
+                                Làm thế nào để doanh nghiệp xuất hoá đơn điện tử trực tuyến?
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#">
+                                Tôi có thể nâng cao lên gói chuyên nghiệp không?
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#">
+                                Doanh nghiệp sử dụng VNPT Invoice có những lợi ích gì?
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <div class="tu-van-box">
+        <div class="tu-van-box__content">
+            <div class="tu-van-box__title-box">
+                <div class="title">
+                    <img src="./assets/images/layout/tu-van-icon.png" alt="">
+                    <span>Tư vấn</span>
+                </div>
+
+                <img src="./assets/images/layout/tu-van-close-icon.png" alt="image" class="icon-close">
+            </div>
+
+            <p class="tu-van-box__describe">
+                Qúy khách vui lòng cung cấp thông tin để VNPT có thể tư vấn thêm thông tin về dịch vụ VNPT Invoice
+            </p>
+
+            <div class="tu-van-box__form">
+                <input type="text" placeholder="Tỉnh/ Thành phố">
+                <input type="text" placeholder="Họ và tên">
+                <input type="text" placeholder="Số điện thoại">
+                <button type="submit">Nhận tư vấn <span class="arrow-button">→</span></button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer">
+            <div class="footer__top" data-scrolly-down="blurInTop">
+                <div class="footer__top--content container-xl">
+                    <ul class="menu-footer">
+                        <li class="menu-footer__item">
+                            <a href="./index.html">
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="./service.html">
+                                Sản phẩm dịch vụ
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="">
+                                Tra cứu
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="./news.html">
+                                Tin tức
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="./helper.html">
+                                Hỗ trợ
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="">
+                                Đăng ký
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="">
+                                Đăng nhập
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="footer__top--content-mb container-xl">
+                    <img src="assets/svg/layout/footer/logo-mb.svg" alt="image" class="logo-mb">
+                    <p class="slogan">
+                        TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM
+                    </p>
+                </div>
+            </div>
+            <div class="footer__body container-xl" data-scrolly-down="blurInTop">
+                <div class="footer__body--top">
+                    <a href="./index.html" class="logo-box">
+                        <img src="assets/svg/layout/footer/logo.svg" alt="image" class="logo-box__image">
+                    </a>
+                    <div class="services-box">
+                        <ul class="services-box__list">
+                            <li class="services-box__list--item">
+                                <a href="#">Hóa đơn điện tử</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Hóa đơn điện tử khởi tạo từ MTT</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Quản lý hóa đơn điện tử đầu vào</a>
+                            </li>
+                        </ul>
+                        <ul class="services-box__list">
+                            <li class="services-box__list--item">
+                                <a href="#">Chứng từ điện tử</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Biên lai điện tử</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Vé điện tử</a>
+                            </li>
+                        </ul>
+                        <ul class="services-box__list">
+                            <li class="services-box__list--item">
+                                <a href="#">Hỗ trợ ngay</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Chính sách & Điều khoản</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Chính sách thanh toán</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Câu hỏi thường gặp</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__body--bottom">
+                    <div class="box">
+                        <div class="box__image">
+                            <img src="assets/svg/icon/location.svg" alt="" class="box__image--image">
+                        </div>
+                        <div class="box__content">
+                            <p class="box__content--title">
+                                Địa chỉ:
+                            </p>
+                            <p class="box__content--description">
+                                Tòa nhà VNPT, số 57 Huỳnh Thúc Kháng, Phường Láng Hạ, Đống Đa, Hà Nội, Việt Nam
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box__image">
+                            <img src="assets/svg/icon/phone.svg" alt="" class="box__image--image">
+                        </div>
+                        <div class="box__content">
+                            <p class="box__content--title">
+                                Điện thoại:
+                            </p>
+                            <p class="box__content--description">
+                                1800 1260
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box__image">
+                            <img src="assets/svg/icon/email.svg" alt="" class="box__image--image">
+                        </div>
+                        <div class="box__content">
+                            <p class="box__content--title">
+                                Email:
+                            </p>
+                            <p class="box__content--description">
+                                cskh.invoice@vnpt.com.vn
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="assets/svg/layout/footer/dang-ky-bo-cong-thuong.svg" alt=""
+                            class="box__image-btt">
+                    </div>
+                </div>
+    
+                <div class="footer__body--bottom-mb">
+                    <div class="top">
+                        <div class="top__item">
+                            <p class="top__item--title">
+                                <img src="assets/svg/icon/location.svg" alt="image">
+                                địa chỉ
+                            </p>
+                            <p>
+                                Tòa nhà VNPT, số 57 Huỳnh Thúc Kháng, Phường Láng Hạ, Đống Đa, Hà Nội, Việt Nam
+                            </p>
+                        </div>
+                        <div class="top__item">
+                            <p class="top__item--title">
+                                <img src="assets/svg/icon/phone.svg" alt="image">
+                                điện thoại
+                            </p>
+                            <p>
+                                1800 1260
+                            </p>
+                        </div>
+                        <div class="top__item">
+                            <p class="top__item--title">
+                                <img src="assets/svg/icon/email.svg" alt="image">
+                                email
+                            </p>
+                            <p>
+                                cskh.invoice@vnpt.com.vn
+                            </p>
+                        </div>
+                    </div>
+                    <span class="break-line"></span>
+                    <div class="bottom">
+                        <ul class="list">
+                            <a href="#">Hóa đơn điện tử</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Hóa đơn điện tử khởi tạo từ MTT</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Quản lý hóa đơn điện tử đầu vào</a>
+                            </li>
+                        </ul>
+                        <ul class="list">
+                            <li class="list__item">
+                                <a href="#">Chứng từ điện tử</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Biên lai điện tử</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Vé điện tử</a>
+                            </li>
+                        </ul>
+                        <ul class="list">
+                            <li class="list__item">
+                                <a href="#">
+                                    Hỗ trợ ngay
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">
+                                    Chính sách & Điều khoản
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">
+                                    Chính sách thanh toán
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">
+                                    Câu hỏi thường gặp
+                                </a>
+                            </li>
+                        </ul>
+    
+                        <img src="assets/svg/layout/footer/dang-ky-bo-cong-thuong.svg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom" data-scrolly-down="blurInTop">
+                <div class="footer__bottom--content container-xl">
+                    <p class="copy-right">2024 © Bản quyền thuộc Tập đoàn Bưu chính Viễn thông Việt Nam
+                    </p>
+                    <div class="tpc">
+                        <a href="#" class="terms-of-use">
+                            Điều khoản sử dụng
+                        </a>
+    
+                        <a href="#" class="privacy-policy">
+                            Chính sách bảo mật
+                        </a>
+    
+                        <a href="#" class="contact-us">
+                            Liên hệ với chúng tôi
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

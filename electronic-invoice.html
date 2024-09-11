@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/library/bootstrap-5.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/library/plugins/toastr/toastr.css">
+    <link rel="stylesheet" href="assets/frontend/css/app.css?v=1">
+    <link rel="stylesheet" href="assets/library/slick/slick.css">
+    <link rel="stylesheet" href="assets/library/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+        integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/library/cssanimation/cssanimation.css">
+
+
+    <title>VNPT Page</title>
+
+    <!-- Jquery -->
+    <script  src="assets/library/jquery/jquery-3.7.1.slim.min.js"></script>
+    <script  src="assets/library/jquery/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap 5 -->
+    <script  src="assets/library/bootstrap-5.1/bootstrap.min.js"></script>
+    <script  src="assets/library/bootstrap-5.1/bootstrap.bundle.min.js"></script>
+    <script  src="assets/library/popper/popper.min.js"></script>
+    <!-- Toastr JS -->
+    <script  src="assets/library/plugins/toastr/toastr.min.js"></script>
+    <!-- Library -->
+    <script  src="assets/library/slick/slick.min.js"></script>
+    <script defer src="assets/library/cssanimation/scrolly.js"></script>
+
+    <!-- Common JS -->
+    <script defer src="assets/frontend/js/app.js"></script>
+
+
+    <link rel="stylesheet" href="assets/frontend/css/pages/electronic-invoice.css">
+    <script defer src="assets/frontend/js/pages/electronic-invoice.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container-xl header">
+    
+            <div class="header__icon-box-mb">
+                <img src="assets/svg/layout/header/menu-mb-icon.svg" alt="image"
+                    class="header__icon-box-mb--menu --show">
+                <img src="assets/svg/layout/header/close-menu-mb-icon.svg" alt="image"
+                    class="header__icon-box-mb--close-menu">
+            </div>
+    
+            <a href="./index.html" class="header__logo-box">
+                <img src="assets/images/layout/header/logo.png" alt="Logo"
+                    class="header__logo-box--logo">
+            </a>
+    
+            <div class="header__menu-box">
+                <ul class="header__menu">
+                    <li class="header__menu--item">
+                        <a href="./index.html">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a href="./service.html" class="header-item-services-products">
+                            Sản phẩm dịch vụ
+                            <img src="assets/svg/icon/arrow-down.svg" alt="image" class="arrow-down">
+                        </a>
+                        <ul class="child-menu">
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-1.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Hoá đơn điện tử
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-pos.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-2.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Hóa đơn khởi tạo
+                                        từ máy tính tiền
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-document.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-3.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Chứng từ điện tử
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-inbot.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-4.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Hoá đơn đầu vào
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-ereceip.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-5.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Biên lai điện tử
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-eticket.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-6.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Vé điện tử
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__menu--item">
+                        <a href="javascript:void(0)">
+                            Tra cứu
+                        </a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a href="./news.html">
+                            Tin tức
+                        </a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a href="./helper.html">
+                            Hỗ trợ
+                        </a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a href="javascript:void(0)">
+                            Đăng nhập
+                        </a>
+                    </li>
+                </ul>
+    
+                <button class="header__button">Bắt đầu dùng thử miễn phí</button>
+            </div>
+    
+            <button class="header__btn-trial d-flex d-lg-none">
+                <img src="assets/svg/icon/plane.svg" alt="">
+                Tư vấn
+            </button>
+        </div>
+    </header>
+    
+    <div class="sub-menu-news-detail">
+        <img src="assets/svg/icon/sub-menu-save.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-print.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-copy.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-comment.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-copy-link.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-share.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-font-size.svg" alt="image">
+    </div>
+    
+    <div class="menu-mb-box">
+        <div class="content">
+            <div class="menu-mb-box__top">
+                <div class="search-box">
+                    <img src="assets/svg/icon/search-icon.svg" alt="" class="search-box__icon">
+                    <input type="text" class="search-box__input" placeholder="Tìm kiếm">
+                </div>
+    
+                <div class="button-box">
+                    <button class="button-box__btn button-box__btn-login">Đăng nhập</button>
+                    <button class="button-box__btn button-box__btn-register">Đăng ký</button>
+                </div>
+    
+                <ul class="menu-mb">
+                    <li class="menu-mb__item --has-child">
+                        <a href="./service.html">
+                            Sản phẩm dịch vụ
+                        </a>
+                        <img src="assets/svg/layout/header/icon-arrow-menu-mobile.png" alt="image"
+                            class="arrow-down">
+                        <ul class="child-menu">
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice.html">
+                                    Hoá đơn điện tử
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-pos.html">
+                                    Hoá đơn khởi tạo từ máy tính tiền
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-document.html">
+                                    Chứng từ điện tử
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-inbot.html">
+                                    Hoá đơn đầu vào
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-ereceip.html">
+                                    Biên lai điện tử
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-eticket.html">
+                                    Vé điện tử
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-mb__item">
+                        <a href="javascript:void(0)">
+                            Tra cứu
+                        </a>
+                    </li>
+                    <li class="menu-mb__item">
+                        <a href="./news.html">
+                            Tin tức
+                        </a>
+                    </li>
+                    <li class="menu-mb__item">
+                        <a href="./helper.html">
+                            Hỗ trợ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+    
+            <div class="menu-mb-box__bottom">
+                <span class="break-line"></span>
+                <img src="assets/svg/layout/header/logo-mb.svg" alt="image"
+                    class="menu-mb-box__bottom--logo-mb">
+                <div class="menu-mb-box__bottom--item">
+                    <img src="assets/svg/icon/location.svg" alt="image" class="icon">
+                    <p class="text">
+                        Tòa nhà VNPT, số 57 Huỳnh Thúc Kháng, Phường Láng Hạ, Đống Đa, Hà Nội, Việt Nam
+                    </p>
+                </div>
+                <div class="menu-mb-box__bottom--item">
+                    <img src="assets/svg/icon/phone.svg" alt="image" class="icon">
+                    <p class="text">
+                        1800 1260
+                    </p>
+                </div>
+                <div class="menu-mb-box__bottom--item">
+                    <img src="assets/svg/icon/email.svg" alt="image" class="icon">
+                    <p class="text">
+                        cskh.invoice@vnpt.com.vn
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="page-content electronic-invoice-page">
+        <div class="block">
+            <div class="container-xl" data-scrolly-down="blurInRight">
+                <ul class=" breadcrumb">
+                    <li class="breadcrumb__item">
+                        <a href="./index.html">
+                            <img class="d-block d-sm-none" src="assets/svg/icon/home.svg" alt="">
+                            <span class="d-none d-sm-block">
+                                Trang chủ
+                            </span>
+                        </a>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <img src="assets/svg/icon/next-arrow-gray.svg" alt="image">
+                    </li>
+                    <li class="breadcrumb__item">
+                        <a href="./service.html">
+                            Sản phẩm dịch vụ
+                        </a>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <img src="assets/svg/icon/next-arrow-blue.svg" alt="image">
+                    </li>
+                    <li class="breadcrumb__item">
+                        <a href="#">
+                            Hoá đơn điện tử
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="container-xl block__content">
+    
+                <h1 class="block__content--title" data-scrolly-down="blurInTop">
+                    Hoá đơn điện tử VNPT INVOICE
+                </h1>
+    
+                <div class="description-box" data-scrolly-down="blurInTop">
+                    <div class="description-box__left">
+                        <span>VNPT<br>INVOICE</span>
+                    </div>
+                    <div class="description-box__right">
+                        <p><b>VNPT Invoice</b> là giải pháp hóa đơn điện tử giúp các doanh nghiệp, hộ kinh doanh
+                            phát
+                            hành, quản lý hóa đơn điện tử khi bán hàng hóa, cung cấp dịch vụ, kết nối truyền dữ
+                            liệu hóa đơn đến Cơ quan Thuế một cách an toàn, nhanh chóng.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="block" data-scrolly-down="blurInTop">
+            <div class="container-xl block__content">
+                <h5 class="block__content--title">
+                    các gói cước
+                </h5>
+    
+                <div class="block__content--main-content service-slides">
+                    <div class="service-slides__item">
+                        <div class="content-box">
+                            <div class="service-slides__item--title">
+                                Gói E-300
+                                <span class="special">
+                                    Gói 300 hoá đơn
+                                </span>
+                            </div>
+    
+                            <div class="service-slides__item--price">
+                                Giá gói + Phí khởi tạo
+                                <span class="special">
+                                    390,000đ
+                                </span>
+                            </div>
+    
+                            <div class="service-slides__item--btn-box">
+                                <button class="btn">
+                                    Nhận tư vấn
+                                </button>
+                                <a href="./service-detail.html" class="btn">
+                                    Chi tiết
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-slides__item">
+                        <div class="content-box">
+                            <div class="service-slides__item--title">
+                                Gói E-300
+                                <span class="special">
+                                    Gói 300 hoá đơn
+                                </span>
+                            </div>
+    
+                            <div class="service-slides__item--price">
+                                Giá gói + Phí khởi tạo
+                                <span class="special">
+                                    390,000đ
+                                </span>
+                            </div>
+    
+                            <div class="service-slides__item--btn-box">
+                                <button class="btn">
+                                    Nhận tư vấn
+                                </button>
+                                <a href="./service-detail.html" class="btn">
+                                    Chi tiết
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-slides__item">
+                        <div class="content-box">
+                            <div class="service-slides__item--title">
+                                Gói E-300
+                                <span class="special">
+                                    Gói 300 hoá đơn
+                                </span>
+                            </div>
+    
+                            <div class="service-slides__item--price">
+                                Giá gói + Phí khởi tạo
+                                <span class="special">
+                                    390,000đ
+                                </span>
+                            </div>
+    
+                            <div class="service-slides__item--btn-box">
+                                <button class="btn">
+                                    Nhận tư vấn
+                                </button>
+                                <a href="./service-detail.html" class="btn">
+                                    Chi tiết
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-slides__item">
+                        <div class="content-box">
+                            <div class="service-slides__item--title">
+                                Gói E-300
+                                <span class="special">
+                                    Gói 300 hoá đơn
+                                </span>
+                            </div>
+    
+                            <div class="service-slides__item--price">
+                                Giá gói + Phí khởi tạo
+                                <span class="special">
+                                    390,000đ
+                                </span>
+                            </div>
+    
+                            <div class="service-slides__item--btn-box">
+                                <button class="btn">
+                                    Nhận tư vấn
+                                </button>
+                                <a href="./service-detail.html" class="btn">
+                                    Chi tiết
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-slides__item">
+                        <div class="content-box">
+                            <div class="service-slides__item--title">
+                                Gói E-300
+                                <span class="special">
+                                    Gói 300 hoá đơn
+                                </span>
+                            </div>
+    
+                            <div class="service-slides__item--price">
+                                Giá gói + Phí khởi tạo
+                                <span class="special">
+                                    390,000đ
+                                </span>
+                            </div>
+    
+                            <div class="service-slides__item--btn-box">
+                                <button class="btn">
+                                    Nhận tư vấn
+                                </button>
+                                <a href="./service-detail.html" class="btn">
+                                    Chi tiết
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="block">
+            <div class="container-xl block__content">
+                <h4 class="title">Tinh năng nổi bật</h4>
+    
+                <div class="block__content--main-content">
+                    <div class="group-box">
+                        <div class="box" data-scrolly-down="blurInRight">
+                            <div class="box__title">
+                                <p class="box__title--text">Quản lý hoá đơn</p>
+                                <a href="#" class="box__title--link d-none d-lg-block">
+                                    <img src="assets/svg/icon/button-link.svg" alt="image">
+                                </a>
+                            </div>
+    
+                            <div class="description-image">
+                                <p class="box__description">
+                                    Khởi tạo và quản lý hóa đơn điện tử một cách dễ dàng
+                                    và linh hoạt
+                                </p>
+    
+                                <img src="assets/images/electronic-invoice/image-1.png" alt="image"
+                                    class="box__image">
+                            </div>
+                        </div>
+    
+                        <div class="box" data-scrolly-down="blurInRight">
+                            <div class="box__title">
+                                <p class="box__title--text">
+                                    Truyền nhận dữ liệu
+                                </p>
+                                <a href="#" class="box__title--link d-none d-lg-block">
+                                    <img src="assets/svg/icon/button-link.svg" alt="image">
+                                </a>
+                            </div>
+    
+                            <div class="description-image">
+                                <img src="assets/images/electronic-invoice/image-2.png" alt="image"
+                                    class="box__image">
+    
+                                <p class="box__description">
+                                    Truyền nhận dữ liệu hóa đơn điện tử trực tiếp - nhanh
+                                    chóng đến Tổng cục Thuế
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="group-box">
+                        <div class="box" data-scrolly-down="blurInRight">
+                            <div class="box__title">
+                                <p class="box__title--text">
+                                    Đầy đủ nghiệp vụ
+                                </p>
+                                <a href="#" class="box__title--link d-none d-lg-block">
+                                    <img src="assets/svg/icon/button-link.svg" alt="image">
+                                </a>
+                            </div>
+    
+                            <div class="description-image">
+                                <p class="box__description">
+                                    Đáp ứng đầy đủ các nghiệp vụ chuyển dữ liệu hóa đơn điện tử với tất cả đối
+                                    tượng
+                                    sử dụng hóa đơn điện tử có mã/không mã và gửi bảng tổng hợp
+                                </p>
+    
+                                <img src="assets/images/electronic-invoice/image-3.png" alt="image"
+                                    class="box__image">
+                            </div>
+                        </div>
+    
+                        <div class="box" data-scrolly-down="blurInRight">
+                            <div class="box__title">
+                                <p class="box__title--text">
+                                    Tích hợp với
+                                    mọi phần mềm
+                                </p>
+                                <a href="#" class="box__title--link d-none d-lg-block">
+                                    <img src="assets/svg/icon/button-link.svg" alt="image">
+                                </a>
+                            </div>
+    
+                            <div class="description-image">
+                                <img src="assets/images/electronic-invoice/image-4.png" alt="image"
+                                    class="box__image">
+    
+                                <p class="box__description">
+                                    Tích hợp với đa dạng các phần mềm kế toán, phần mềm bán hàng,...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="group-box">
+                        <div class="box" data-scrolly-down="blurInRight">
+                            <div class="box__title">
+                                <p class="box__title--text">
+                                    Thời gian
+                                    lưu trữ
+                                </p>
+                                <a href="#" class="box__title--link d-none d-lg-block">
+                                    <img src="assets/svg/icon/button-link.svg" alt="image">
+                                </a>
+                            </div>
+    
+                            <div class="description-image">
+                                <p class="box__description">
+                                    Thời gian lưu trữ dữ liệu hóa đơn tối thiểu 10 năm
+                                </p>
+    
+                                <img src="assets/images/electronic-invoice/image-5.png" alt="image"
+                                    class="box__image">
+                            </div>
+                        </div>
+    
+                        <div class="box" data-scrolly-down="blurInRight">
+                            <div class="box__title">
+                                <p class="box__title--text">
+                                    Báo cáo thống kê
+                                    đầy đủ
+                                </p>
+                                <a href="#" class="box__title--link d-none d-lg-block">
+                                    <img src="assets/svg/icon/button-link.svg" alt="image">
+                                </a>
+                            </div>
+    
+                            <div class="description-image">
+                                <p class="box__description">
+                                    Cung cấp các báo cáo thống kê giúp doanh nghiệp hiểu rõ hơn về tình hình sử
+                                    dụng
+                                    hóa đơn
+                                </p>
+    
+                                <img src="assets/images/electronic-invoice/image-6.png" alt="image"
+                                    class="box__image">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="group-box" data-scrolly-down="blurInRight">
+                        <div class="box">
+                            <div class="box__title">
+                                <p class="box__title--text">
+                                    <img class="d-flex d-lg-none" src="assets/svg/icon/user-icon.svg"
+                                        alt="image">
+    
+                                    Đối tượng sử dụng
+                                </p>
+                                <a href="#" class="box__title--link d-none d-lg-block">
+                                    <img src="assets/svg/icon/button-link.svg" alt="image">
+                                </a>
+                            </div>
+    
+                            <div class="box__description">
+                                <p>
+                                    <img class="d-none d-lg-block" src="assets/svg/icon/user-icon.svg"
+                                        alt="image">
+                                    Các doanh nghiệp, tổ chức kinh tế, hộ, cá nhân kinh doanh với quy mô từ nhỏ đến
+                                    lớn và thuộc nhiều ngành nghề khác nhau cần phát hành và quản lý hóa đơn.
+                                </p>
+                            </div>
+    
+                            <div class="box__title">
+                                <p class="box__title--text">
+                                    <img class="d-flex d-lg-none" src="assets/svg/icon/selected-icon.svg"
+                                        alt="image">
+    
+                                    Lợi ích mang lại
+                                </p>
+                            </div>
+    
+                            <div class="box__description">
+                                <p class="dot-text">
+                                    <img class="d-none d-lg-block" src="assets/svg/icon/selected-icon.svg"
+                                        alt="image">
+                                    Tiết kiệm chi phí, đem lại hiệu quả quản lý doanh nghiệp
+                                </p>
+                            </div>
+    
+                            <div class="box__description">
+                                <p class="dot-text">
+                                    <img class="d-none d-lg-block" src="assets/svg/icon/selected-icon.svg"
+                                        alt="image">
+                                    Bảo mật thông tin, tăng độ tin cậy cho doanh nghiệp
+                                </p>
+                            </div>
+                            <div class="box__description">
+                                <p class="dot-text">
+                                    <img class="d-none d-lg-block" src="assets/svg/icon/selected-icon.svg"
+                                        alt="image">
+                                    Phát hành, tra cứu và quản lý hoá đơn dễ dàng
+                                </p>
+                            </div>
+                            <div class="box__description">
+                                <p class="dot-text">
+                                    <img class="d-none d-lg-block" src="assets/svg/icon/selected-icon.svg"
+                                        alt="image">
+                                    Đáp ứng đầy đủ các yêu cầu pháp luật về hóa đơn
+                                </p>
+                            </div>
+                            <div class="box__description">
+                                <p class="dot-text">
+                                    <img class="d-none d-lg-block" src="assets/svg/icon/selected-icon.svg"
+                                        alt="image">
+                                    Hỗ trợ lưu trữ miễn phí dữ liệu hoá đơn tối thiểu 10 năm
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="block__content--button-box" data-scrolly-down="blurInRight">
+                    <a href="./service-full" class="btn">
+                        Xem đầy đủ các gói cước <span class="arrow-button">→</span>
+                    </a>
+    
+                    <button class="btn">
+                        ĐĂNG KÝ Ngay <span class="arrow-button">→</span>
+                    </button>
+                </div>
+    
+            </div>
+        </div>
+    
+        <div class="block d-none d-lg-block" data-scrolly-down="blurInTop">
+            <div class="container-xl block__content">
+                <div class="block__content--main-content">
+                    <h5 class="title">
+                        Chúng tôi luôn sẵn sàng bên bạn!
+                    </h5>
+                    <p class="describe">
+                        Luôn cập nhật những gì chúng tôi đang làm, các bản phát hành theo kế hoạch và các tính năng mới nhất của
+                        chúng tôi.
+                    </p>
+    
+                    <button class="btn-register-trial">
+                        ĐĂNG KÝ DÙNG THỬ MIỄN PHÍ <span class="arrow-button">→</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+    
+        <img src="assets/images/layout/tu-van.png" alt="image" class="tu-van d-none d-lg-block">
+    
+        <div class="messenger">
+            <img src="assets/svg/layout/robot_mes.svg" alt="image" class="robot_mes">
+            <button class="messenger_icon">
+                <img src="assets/svg/layout/sms.svg" alt="image">
+            </button>
+        </div>
+    </main>
+
+
+    <div class="tu-van-box">
+        <div class="tu-van-box__content">
+            <div class="tu-van-box__title-box">
+                <div class="title">
+                    <img src="assets/images/layout/tu-van-icon.png" alt="">
+                    <span>Tư vấn</span>
+                </div>
+
+                <img src="assets/images/layout/tu-van-close-icon.png" alt="image" class="icon-close">
+            </div>
+
+            <p class="tu-van-box__describe">
+                Qúy khách vui lòng cung cấp thông tin để VNPT có thể tư vấn thêm thông tin về dịch vụ VNPT Invoice
+            </p>
+
+            <div class="tu-van-box__form">
+                <input type="text" placeholder="Tỉnh/ Thành phố">
+                <input type="text" placeholder="Họ và tên">
+                <input type="text" placeholder="Số điện thoại">
+                <button type="submit">Nhận tư vấn <span class="arrow-button">→</span></button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer">
+            <div class="footer__top" data-scrolly-down="blurInTop">
+                <div class="footer__top--content container-xl">
+                    <ul class="menu-footer">
+                        <li class="menu-footer__item">
+                            <a href="./index.html">
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="./service.html">
+                                Sản phẩm dịch vụ
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="">
+                                Tra cứu
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="./news.html">
+                                Tin tức
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="./helper.html">
+                                Hỗ trợ
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="">
+                                Đăng ký
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="">
+                                Đăng nhập
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="footer__top--content-mb container-xl">
+                    <img src="assets/svg/layout/footer/logo-mb.svg" alt="image" class="logo-mb">
+                    <p class="slogan">
+                        TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM
+                    </p>
+                </div>
+            </div>
+            <div class="footer__body container-xl" data-scrolly-down="blurInTop">
+                <div class="footer__body--top">
+                    <a href="./index.html" class="logo-box">
+                        <img src="assets/svg/layout/footer/logo.svg" alt="image" class="logo-box__image">
+                    </a>
+                    <div class="services-box">
+                        <ul class="services-box__list">
+                            <li class="services-box__list--item">
+                                <a href="#">Hóa đơn điện tử</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Hóa đơn điện tử khởi tạo từ MTT</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Quản lý hóa đơn điện tử đầu vào</a>
+                            </li>
+                        </ul>
+                        <ul class="services-box__list">
+                            <li class="services-box__list--item">
+                                <a href="#">Chứng từ điện tử</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Biên lai điện tử</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Vé điện tử</a>
+                            </li>
+                        </ul>
+                        <ul class="services-box__list">
+                            <li class="services-box__list--item">
+                                <a href="#">Hỗ trợ ngay</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Chính sách & Điều khoản</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Chính sách thanh toán</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Câu hỏi thường gặp</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__body--bottom">
+                    <div class="box">
+                        <div class="box__image">
+                            <img src="assets/svg/icon/location.svg" alt="" class="box__image--image">
+                        </div>
+                        <div class="box__content">
+                            <p class="box__content--title">
+                                Địa chỉ:
+                            </p>
+                            <p class="box__content--description">
+                                Tòa nhà VNPT, số 57 Huỳnh Thúc Kháng, Phường Láng Hạ, Đống Đa, Hà Nội, Việt Nam
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box__image">
+                            <img src="assets/svg/icon/phone.svg" alt="" class="box__image--image">
+                        </div>
+                        <div class="box__content">
+                            <p class="box__content--title">
+                                Điện thoại:
+                            </p>
+                            <p class="box__content--description">
+                                1800 1260
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box__image">
+                            <img src="assets/svg/icon/email.svg" alt="" class="box__image--image">
+                        </div>
+                        <div class="box__content">
+                            <p class="box__content--title">
+                                Email:
+                            </p>
+                            <p class="box__content--description">
+                                cskh.invoice@vnpt.com.vn
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="assets/svg/layout/footer/dang-ky-bo-cong-thuong.svg" alt=""
+                            class="box__image-btt">
+                    </div>
+                </div>
+    
+                <div class="footer__body--bottom-mb">
+                    <div class="top">
+                        <div class="top__item">
+                            <p class="top__item--title">
+                                <img src="assets/svg/icon/location.svg" alt="image">
+                                địa chỉ
+                            </p>
+                            <p>
+                                Tòa nhà VNPT, số 57 Huỳnh Thúc Kháng, Phường Láng Hạ, Đống Đa, Hà Nội, Việt Nam
+                            </p>
+                        </div>
+                        <div class="top__item">
+                            <p class="top__item--title">
+                                <img src="assets/svg/icon/phone.svg" alt="image">
+                                điện thoại
+                            </p>
+                            <p>
+                                1800 1260
+                            </p>
+                        </div>
+                        <div class="top__item">
+                            <p class="top__item--title">
+                                <img src="assets/svg/icon/email.svg" alt="image">
+                                email
+                            </p>
+                            <p>
+                                cskh.invoice@vnpt.com.vn
+                            </p>
+                        </div>
+                    </div>
+                    <span class="break-line"></span>
+                    <div class="bottom">
+                        <ul class="list">
+                            <a href="#">Hóa đơn điện tử</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Hóa đơn điện tử khởi tạo từ MTT</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Quản lý hóa đơn điện tử đầu vào</a>
+                            </li>
+                        </ul>
+                        <ul class="list">
+                            <li class="list__item">
+                                <a href="#">Chứng từ điện tử</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Biên lai điện tử</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Vé điện tử</a>
+                            </li>
+                        </ul>
+                        <ul class="list">
+                            <li class="list__item">
+                                <a href="#">
+                                    Hỗ trợ ngay
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">
+                                    Chính sách & Điều khoản
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">
+                                    Chính sách thanh toán
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">
+                                    Câu hỏi thường gặp
+                                </a>
+                            </li>
+                        </ul>
+    
+                        <img src="assets/svg/layout/footer/dang-ky-bo-cong-thuong.svg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom" data-scrolly-down="blurInTop">
+                <div class="footer__bottom--content container-xl">
+                    <p class="copy-right">2024 © Bản quyền thuộc Tập đoàn Bưu chính Viễn thông Việt Nam
+                    </p>
+                    <div class="tpc">
+                        <a href="#" class="terms-of-use">
+                            Điều khoản sử dụng
+                        </a>
+    
+                        <a href="#" class="privacy-policy">
+                            Chính sách bảo mật
+                        </a>
+    
+                        <a href="#" class="contact-us">
+                            Liên hệ với chúng tôi
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

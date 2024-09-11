@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/library/bootstrap-5.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/library/plugins/toastr/toastr.css">
+    <link rel="stylesheet" href="assets/frontend/css/app.css?v=1">
+    <link rel="stylesheet" href="assets/library/slick/slick.css">
+    <link rel="stylesheet" href="assets/library/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+        integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/library/cssanimation/cssanimation.css">
+
+
+    <title>VNPT Page</title>
+
+    <!-- Jquery -->
+    <script  src="assets/library/jquery/jquery-3.7.1.slim.min.js"></script>
+    <script  src="assets/library/jquery/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap 5 -->
+    <script  src="assets/library/bootstrap-5.1/bootstrap.min.js"></script>
+    <script  src="assets/library/bootstrap-5.1/bootstrap.bundle.min.js"></script>
+    <script  src="assets/library/popper/popper.min.js"></script>
+    <!-- Toastr JS -->
+    <script  src="assets/library/plugins/toastr/toastr.min.js"></script>
+    <!-- Library -->
+    <script  src="assets/library/slick/slick.min.js"></script>
+    <script defer src="assets/library/cssanimation/scrolly.js"></script>
+
+    <!-- Common JS -->
+    <script defer src="assets/frontend/js/app.js"></script>
+
+
+    <link rel="stylesheet" href="assets/frontend/css/pages/service.css?v=3">
+    <script  src="assets/frontend/js/pages/service.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container-xl header">
+    
+            <div class="header__icon-box-mb">
+                <img src="assets/svg/layout/header/menu-mb-icon.svg" alt="image"
+                    class="header__icon-box-mb--menu --show">
+                <img src="assets/svg/layout/header/close-menu-mb-icon.svg" alt="image"
+                    class="header__icon-box-mb--close-menu">
+            </div>
+    
+            <a href="./index.html" class="header__logo-box">
+                <img src="assets/images/layout/header/logo.png" alt="Logo"
+                    class="header__logo-box--logo">
+            </a>
+    
+            <div class="header__menu-box">
+                <ul class="header__menu">
+                    <li class="header__menu--item">
+                        <a href="./index.html">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a href="./service.html" class="header-item-services-products">
+                            Sản phẩm dịch vụ
+                            <img src="assets/svg/icon/arrow-down.svg" alt="image" class="arrow-down">
+                        </a>
+                        <ul class="child-menu">
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-1.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Hoá đơn điện tử
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-pos.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-2.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Hóa đơn khởi tạo
+                                        từ máy tính tiền
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-document.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-3.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Chứng từ điện tử
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-inbot.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-4.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Hoá đơn đầu vào
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-ereceip.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-5.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Biên lai điện tử
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-eticket.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-6.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Vé điện tử
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__menu--item">
+                        <a href="javascript:void(0)">
+                            Tra cứu
+                        </a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a href="./news.html">
+                            Tin tức
+                        </a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a href="./helper.html">
+                            Hỗ trợ
+                        </a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a href="javascript:void(0)">
+                            Đăng nhập
+                        </a>
+                    </li>
+                </ul>
+    
+                <button class="header__button">Bắt đầu dùng thử miễn phí</button>
+            </div>
+    
+            <button class="header__btn-trial d-flex d-lg-none">
+                <img src="assets/svg/icon/plane.svg" alt="">
+                Tư vấn
+            </button>
+        </div>
+    </header>
+    
+    <div class="sub-menu-news-detail">
+        <img src="assets/svg/icon/sub-menu-save.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-print.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-copy.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-comment.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-copy-link.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-share.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-font-size.svg" alt="image">
+    </div>
+    
+    <div class="menu-mb-box">
+        <div class="content">
+            <div class="menu-mb-box__top">
+                <div class="search-box">
+                    <img src="assets/svg/icon/search-icon.svg" alt="" class="search-box__icon">
+                    <input type="text" class="search-box__input" placeholder="Tìm kiếm">
+                </div>
+    
+                <div class="button-box">
+                    <button class="button-box__btn button-box__btn-login">Đăng nhập</button>
+                    <button class="button-box__btn button-box__btn-register">Đăng ký</button>
+                </div>
+    
+                <ul class="menu-mb">
+                    <li class="menu-mb__item --has-child">
+                        <a href="./service.html">
+                            Sản phẩm dịch vụ
+                        </a>
+                        <img src="assets/svg/layout/header/icon-arrow-menu-mobile.png" alt="image"
+                            class="arrow-down">
+                        <ul class="child-menu">
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice.html">
+                                    Hoá đơn điện tử
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-pos.html">
+                                    Hoá đơn khởi tạo từ máy tính tiền
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-document.html">
+                                    Chứng từ điện tử
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-inbot.html">
+                                    Hoá đơn đầu vào
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-ereceip.html">
+                                    Biên lai điện tử
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-eticket.html">
+                                    Vé điện tử
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-mb__item">
+                        <a href="javascript:void(0)">
+                            Tra cứu
+                        </a>
+                    </li>
+                    <li class="menu-mb__item">
+                        <a href="./news.html">
+                            Tin tức
+                        </a>
+                    </li>
+                    <li class="menu-mb__item">
+                        <a href="./helper.html">
+                            Hỗ trợ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+    
+            <div class="menu-mb-box__bottom">
+                <span class="break-line"></span>
+                <img src="assets/svg/layout/header/logo-mb.svg" alt="image"
+                    class="menu-mb-box__bottom--logo-mb">
+                <div class="menu-mb-box__bottom--item">
+                    <img src="assets/svg/icon/location.svg" alt="image" class="icon">
+                    <p class="text">
+                        Tòa nhà VNPT, số 57 Huỳnh Thúc Kháng, Phường Láng Hạ, Đống Đa, Hà Nội, Việt Nam
+                    </p>
+                </div>
+                <div class="menu-mb-box__bottom--item">
+                    <img src="assets/svg/icon/phone.svg" alt="image" class="icon">
+                    <p class="text">
+                        1800 1260
+                    </p>
+                </div>
+                <div class="menu-mb-box__bottom--item">
+                    <img src="assets/svg/icon/email.svg" alt="image" class="icon">
+                    <p class="text">
+                        cskh.invoice@vnpt.com.vn
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="page-content service-page">
+        <div class="block">
+            <div class="container-xl block__content">
+                <h1 class="block__content--title">
+                    Nền tảng
+                </h1>
+    
+                <p class="block__content--sub-title">
+                    toàn diện cho Doanh nghiệp
+                </p>
+    
+                <p class="block__content--description">
+                    Nền tảng Hoá đơn điện tử VNPT cung cấp các tính năng giúp khách
+                    hàng thuận tiện trong tra cứu, quản lý hóa đơn, cấu hình hệ thống
+                </p>
+    
+                <div class="image-box">
+                    <img src="assets/images/service/block-1-image.png" alt="">
+                </div>
+    
+                <div class="mouse">
+                    <div class="mouse__layer">
+                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+                            fill="none">
+                            <path
+                                d="M8.36301 4.50743V12.4143L4.90863 8.9599C4.63256 8.68383 4.17953 8.68383 3.90346 8.9599C3.62739 9.23597 3.62739 9.68192 3.90346 9.95799L8.56829 14.6228C8.84436 14.8989 9.29032 14.8989 9.56638 14.6228L14.2312 9.95799C14.5073 9.68192 14.5073 9.23597 14.2312 8.9599C14.099 8.82735 13.9194 8.75286 13.7322 8.75286C13.5449 8.75286 13.3654 8.82735 13.2331 8.9599L9.77874 12.4143V4.50743C9.77874 4.1181 9.4602 3.79956 9.07088 3.79956C8.68155 3.79956 8.36301 4.1181 8.36301 4.50743Z"
+                                fill="#496ED8" />
+                        </svg>
+                        <svg class="dot" xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4"
+                            fill="none">
+                            <path
+                                d="M2.06783 0.640625C1.28918 0.640625 0.6521 1.2777 0.6521 2.05636C0.6521 2.83501 1.28918 3.47209 2.06783 3.47209C2.84648 3.47209 3.48356 2.83501 3.48356 2.05636C3.48356 1.2777 2.84648 0.640625 2.06783 0.640625Z"
+                                fill="#496ED8" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="container-xl block__content">
+                <div class="block__content--main-content">
+                    <div class="item" data-scrolly-down="blurInRight">
+                        <a href="./electronic-invoice.html">
+                            <img src="assets/images/service/block-2-image-1.jpg" alt="image" class="image">
+                            <div class="content-box">
+                                <div class="title-box">
+                                    <img src="assets/svg/service/block-2-icon-1.svg" alt="image">
+                                    <p>
+                                        Hoá đơn điện tử VNPT
+                                    </p>
+                                </div>
+                                <p class="description">
+                                    VNPT Invoice là giải pháp hóa đơn điện tử giúp các doanh nghiệp, hộ kinh doanh
+                                    phát
+                                    hành, quản lý hóa đơn điện tử khi bán hàng hóa, cung cấp dịch vụ, kết nối
+                                    truyền
+                                    dữ
+                                    liệu hóa đơn đến Cơ quan Thuế một cách an toàn, nhanh chóng.
+                                </p>
+    
+                                <a href="#" class="explore-link">Tìm hiểu ngay <span class="arrow-button">→</span></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item" data-scrolly-down="blurInRight">
+                        <a href="./electronic-invoice-pos.html">
+                            <img src="assets/images/service/block-2-image-2.jpg" alt="image" class="image">
+                            <div class="content-box">
+                                <div class="title-box">
+                                    <img src="assets/svg/service/block-2-icon-2.svg" alt="image">
+                                    <p>
+                                        hóa đơn khởi tạo
+                                        từ máy tính tiền
+                                    </p>
+                                </div>
+                                <p class="description">
+                                    VNPT Invoice-POS là giải pháp hóa đơn điện tử khởi tạo từ máy tính tiền giúp
+                                    các
+                                    doanh nghiệp, hộ kinh doanh quản lý việc phát hành hóa đơn có mã khởi tạo từ
+                                    máy
+                                    tính tiền, kết nối chuyển dữ liệu điện tử với Cơ quan Thuế ngay tại thời điểm
+                                    cung
+                                    cấp hàng hóa, dịch vụ đến tay người tiêu dùng.
+                                </p>
+    
+                                <a href="#" class="explore-link">Tìm hiểu ngay <span class="arrow-button">→</span></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item" data-scrolly-down="blurInRight">
+                        <a href="./electronic-invoice-document.html">
+                            <img src="assets/images/service/block-2-image-3.jpg" alt="image" class="image">
+                            <div class="content-box">
+                                <div class="title-box">
+                                    <img src="assets/svg/service/block-2-icon-3.svg" alt="image">
+                                    <p>
+                                        CHỨNG TỪ ĐIỆN TỬ
+                                    </p>
+                                </div>
+                                <p class="description">
+                                    Chứng từ điện tử là giải pháp giúp các tổ chức, doanh nghiệp, cá nhân phát
+                                    hành
+                                    và
+                                    quản lý chứng từ điện tử bao gồm chứng từ khấu trừ thuế thu nhập cá nhân để
+                                    ghi
+                                    nhận khoản thuế thu nhập cá nhân đã bị khấu trừ và các loại chứng từ khác.
+                                </p>
+    
+                                <a href="#" class="explore-link">Tìm hiểu ngay <span class="arrow-button">→</span></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item" data-scrolly-down="blurInRight">
+                        <a href="./electronic-invoice-ereceip.html">
+                            <img src="assets/images/service/block-2-image-4.jpg" alt="image" class="image">
+                            <div class="content-box">
+                                <div class="title-box">
+                                    <img src="assets/svg/service/block-2-icon-4.svg" alt="image">
+                                    <p>
+                                        Biên lai điện tử
+                                    </p>
+                                </div>
+                                <p class="description">
+                                    VNPT eReceipt là giải pháp Biên lai điện tử giúp các Tổ chức phát hành biên lai
+                                    thu
+                                    thuế, phí, lệ phí khi thu các khoản tiền thuế, phí, lệ phí thuộc ngân sách
+                                    nhà
+                                    nước
+                                    theo quy định của pháp luật.
+                                </p>
+    
+                                <a href="#" class="explore-link">Tìm hiểu ngay <span class="arrow-button">→</span></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item" data-scrolly-down="blurInRight">
+                        <a href="./electronic-invoice-inbot.html">
+                            <img src="assets/images/service/block-2-image-5.jpg" alt="image" class="image">
+                            <div class="content-box">
+                                <div class="title-box">
+                                    <img src="assets/svg/service/block-2-icon-5.svg" alt="image">
+                                    <p>
+                                        HÓA ĐƠN ĐẦU VÀO
+                                    </p>
+                                </div>
+                                <p class="description">
+                                    VNPT InBot tự động tra cứu và tải hóa đơn từ email , tự động đọc hóa đơn từ file có sẵn.
+                                    Hệ thống tự động phân tích, kiểm tra thông tin hóa đơn, trạng thái hoạt động của người bán –
+                                    đảm
+                                    bảo
+                                    tính hợp pháp, hợp lệ của hóa đơn
+                                </p>
+    
+                                <a href="#" class="explore-link">Tìm hiểu ngay <span class="arrow-button">→</span></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item" data-scrolly-down="blurInRight">
+                        <a href="./electronic-invoice-eticket.html">
+                            <img src="assets/images/service/block-2-image-6.jpg" alt="image"
+                                class="image">
+                            <div class="content-box">
+                                <div class="title-box">
+                                    <img src="assets/svg/service/block-2-icon-6.svg" alt="image">
+                                    <p>
+                                        VÉ ĐIỆN TỬ
+                                        VNPT ETICKET
+                                    </p>
+                                </div>
+                                <p class="description">
+                                    VNPT eTicket là giải pháp vé điện tử giúp cho các tổ chức, doanh nghiệp có thể
+                                    tạo
+                                    lập, phát hành, phân phối, xử lý các nghiệp vụ và lưu trữ vé điện tử thay
+                                    thế
+                                    cho
+                                    việc phát hành và sử dụng vé giấy.
+                                </p>
+    
+                                <a href="#" class="explore-link">Tìm hiểu ngay <span class="arrow-button">→</span></a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+    
+                <button class="btn-see-more" data-scrolly-down="blurInRight">
+                    Xem các gói cước Hoá đơn điện tử
+                    <img src="assets/svg/icon/arrow-right-blue.svg" alt="image">
+                </button>
+    
+            </div>
+        </div>
+        <div class="block">
+            <div class="container-xl block__content" data-scrolly-down="blurInTop">
+                <div class="block__content--main-content">
+    
+                    <p class="block__content--sub-title">
+                        sự lựa chọn tốt nhất
+                    </p>
+    
+                    <p class="block__content--title">
+                        Tại sao nên chọn VNPT Invoice
+                    </p>
+    
+                    <p class="block__content--describe">
+                        Hóa đơn điện tử VNPT Invoice đã được Tổng cục Thuế thẩm định và khuyến nghị doanh nghiệp sử dụng. Sản
+                        phẩm
+                        có nhiều tính năng vượt trội phù hợp cho mọi loại hình kinh doanh
+                    </p>
+    
+                    <div class="block__content--box-item">
+                        <div class="item">
+                            <img src="assets/svg/home/block-4-icon-1.svg" alt="image" class="item__image">
+                            <p class="item__title">Hệ sinh thái đa dạng</p>
+                            <p class="item__describe">
+                                Hệ sinh thái các sản phẩm dịch vụ đa dạng đáp ứng mọi nhu cầu của doanh nghiệp.
+                            </p>
+                        </div>
+                        <div class="item">
+                            <img src="assets/svg/home/block-4-icon-2.svg" alt="image" class="item__image">
+                            <p class="item__title">Hệ sinh thái đa dạng</p>
+                            <p class="item__describe">
+                                Hệ sinh thái các sản phẩm dịch vụ đa dạng đáp ứng mọi nhu cầu của doanh nghiệp.
+                            </p>
+                        </div>
+                        <div class="item">
+                            <img src="assets/svg/home/block-4-icon-3.svg" alt="image" class="item__image">
+                            <p class="item__title">Hệ sinh thái đa dạng</p>
+                            <p class="item__describe">
+                                Hệ sinh thái các sản phẩm dịch vụ đa dạng đáp ứng mọi nhu cầu của doanh nghiệp.
+                            </p>
+                        </div>
+                        <div class="item">
+                            <img src="assets/svg/home/block-4-icon-4.svg" alt="image" class="item__image">
+                            <p class="item__title">Hệ sinh thái đa dạng</p>
+                            <p class="item__describe">
+                                Hệ sinh thái các sản phẩm dịch vụ đa dạng đáp ứng mọi nhu cầu của doanh nghiệp.
+                            </p>
+                        </div>
+                        <div class="item">
+                            <img src="assets/svg/home/block-4-icon-5.svg" alt="image" class="item__image">
+                            <p class="item__title">Hệ sinh thái đa dạng</p>
+                            <p class="item__describe">
+                                Hệ sinh thái các sản phẩm dịch vụ đa dạng đáp ứng mọi nhu cầu của doanh nghiệp.
+                            </p>
+                        </div>
+                        <div class="item">
+                            <img src="assets/svg/home/block-4-icon-6.svg" alt="image" class="item__image">
+                            <p class="item__title">Hệ sinh thái đa dạng</p>
+                            <p class="item__describe">
+                                Hệ sinh thái các sản phẩm dịch vụ đa dạng đáp ứng mọi nhu cầu của doanh nghiệp.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="container-xl block__content">
+                <div class="block__left" data-scrolly-down="blurInRight">
+                    <p class="block__left--title">
+                        Câu hỏi thường gặp <br>
+                        khi sử dụng VNPT Invoice
+                    </p>
+                    <a href="#" class="block__left--link">
+                        Hướng dẫn sử dụng <span class="arrow-button">→</span>
+                    </a>
+                </div>
+                <div class="block__right" data-scrolly-down="blurInRight">
+                    <ul class="list">
+                        <li class="list__item">
+                            <a href="#">
+                                Tại sao doanh nghiệp cần sử dụng dịch vụ hoá đơn điện tử?
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#">
+                                Có những bước nào để sử dụng nhanh chóng dịch vụ của VNPT Invoice
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#">
+                                Tạo hoá đơn điện tử từ VNPT có an toàn và hiệu quả không?
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#">
+                                Làm thế nào để doanh nghiệp xuất hoá đơn điện tử trực tuyến?
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#">
+                                Tôi có thể nâng cao lên gói chuyên nghiệp không?
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#">
+                                Doanh nghiệp sử dụng VNPT Invoice có những lợi ích gì?
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <div class="tu-van-box">
+        <div class="tu-van-box__content">
+            <div class="tu-van-box__title-box">
+                <div class="title">
+                    <img src="assets/images/layout/tu-van-icon.png" alt="">
+                    <span>Tư vấn</span>
+                </div>
+
+                <img src="assets/images/layout/tu-van-close-icon.png" alt="image" class="icon-close">
+            </div>
+
+            <p class="tu-van-box__describe">
+                Qúy khách vui lòng cung cấp thông tin để VNPT có thể tư vấn thêm thông tin về dịch vụ VNPT Invoice
+            </p>
+
+            <div class="tu-van-box__form">
+                <input type="text" placeholder="Tỉnh/ Thành phố">
+                <input type="text" placeholder="Họ và tên">
+                <input type="text" placeholder="Số điện thoại">
+                <button type="submit">Nhận tư vấn <span class="arrow-button">→</span></button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer">
+            <div class="footer__top" data-scrolly-down="blurInTop">
+                <div class="footer__top--content container-xl">
+                    <ul class="menu-footer">
+                        <li class="menu-footer__item">
+                            <a href="./index.html">
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="./service.html">
+                                Sản phẩm dịch vụ
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="">
+                                Tra cứu
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="./news.html">
+                                Tin tức
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="./helper.html">
+                                Hỗ trợ
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="">
+                                Đăng ký
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="">
+                                Đăng nhập
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="footer__top--content-mb container-xl">
+                    <img src="assets/svg/layout/footer/logo-mb.svg" alt="image" class="logo-mb">
+                    <p class="slogan">
+                        TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM
+                    </p>
+                </div>
+            </div>
+            <div class="footer__body container-xl" data-scrolly-down="blurInTop">
+                <div class="footer__body--top">
+                    <a href="./index.html" class="logo-box">
+                        <img src="assets/svg/layout/footer/logo.svg" alt="image" class="logo-box__image">
+                    </a>
+                    <div class="services-box">
+                        <ul class="services-box__list">
+                            <li class="services-box__list--item">
+                                <a href="#">Hóa đơn điện tử</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Hóa đơn điện tử khởi tạo từ MTT</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Quản lý hóa đơn điện tử đầu vào</a>
+                            </li>
+                        </ul>
+                        <ul class="services-box__list">
+                            <li class="services-box__list--item">
+                                <a href="#">Chứng từ điện tử</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Biên lai điện tử</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Vé điện tử</a>
+                            </li>
+                        </ul>
+                        <ul class="services-box__list">
+                            <li class="services-box__list--item">
+                                <a href="#">Hỗ trợ ngay</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Chính sách & Điều khoản</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Chính sách thanh toán</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Câu hỏi thường gặp</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__body--bottom">
+                    <div class="box">
+                        <div class="box__image">
+                            <img src="assets/svg/icon/location.svg" alt="" class="box__image--image">
+                        </div>
+                        <div class="box__content">
+                            <p class="box__content--title">
+                                Địa chỉ:
+                            </p>
+                            <p class="box__content--description">
+                                Tòa nhà VNPT, số 57 Huỳnh Thúc Kháng, Phường Láng Hạ, Đống Đa, Hà Nội, Việt Nam
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box__image">
+                            <img src="assets/svg/icon/phone.svg" alt="" class="box__image--image">
+                        </div>
+                        <div class="box__content">
+                            <p class="box__content--title">
+                                Điện thoại:
+                            </p>
+                            <p class="box__content--description">
+                                1800 1260
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box__image">
+                            <img src="assets/svg/icon/email.svg" alt="" class="box__image--image">
+                        </div>
+                        <div class="box__content">
+                            <p class="box__content--title">
+                                Email:
+                            </p>
+                            <p class="box__content--description">
+                                cskh.invoice@vnpt.com.vn
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="assets/svg/layout/footer/dang-ky-bo-cong-thuong.svg" alt=""
+                            class="box__image-btt">
+                    </div>
+                </div>
+    
+                <div class="footer__body--bottom-mb">
+                    <div class="top">
+                        <div class="top__item">
+                            <p class="top__item--title">
+                                <img src="assets/svg/icon/location.svg" alt="image">
+                                địa chỉ
+                            </p>
+                            <p>
+                                Tòa nhà VNPT, số 57 Huỳnh Thúc Kháng, Phường Láng Hạ, Đống Đa, Hà Nội, Việt Nam
+                            </p>
+                        </div>
+                        <div class="top__item">
+                            <p class="top__item--title">
+                                <img src="assets/svg/icon/phone.svg" alt="image">
+                                điện thoại
+                            </p>
+                            <p>
+                                1800 1260
+                            </p>
+                        </div>
+                        <div class="top__item">
+                            <p class="top__item--title">
+                                <img src="assets/svg/icon/email.svg" alt="image">
+                                email
+                            </p>
+                            <p>
+                                cskh.invoice@vnpt.com.vn
+                            </p>
+                        </div>
+                    </div>
+                    <span class="break-line"></span>
+                    <div class="bottom">
+                        <ul class="list">
+                            <a href="#">Hóa đơn điện tử</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Hóa đơn điện tử khởi tạo từ MTT</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Quản lý hóa đơn điện tử đầu vào</a>
+                            </li>
+                        </ul>
+                        <ul class="list">
+                            <li class="list__item">
+                                <a href="#">Chứng từ điện tử</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Biên lai điện tử</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Vé điện tử</a>
+                            </li>
+                        </ul>
+                        <ul class="list">
+                            <li class="list__item">
+                                <a href="#">
+                                    Hỗ trợ ngay
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">
+                                    Chính sách & Điều khoản
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">
+                                    Chính sách thanh toán
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">
+                                    Câu hỏi thường gặp
+                                </a>
+                            </li>
+                        </ul>
+    
+                        <img src="assets/svg/layout/footer/dang-ky-bo-cong-thuong.svg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom" data-scrolly-down="blurInTop">
+                <div class="footer__bottom--content container-xl">
+                    <p class="copy-right">2024 © Bản quyền thuộc Tập đoàn Bưu chính Viễn thông Việt Nam
+                    </p>
+                    <div class="tpc">
+                        <a href="#" class="terms-of-use">
+                            Điều khoản sử dụng
+                        </a>
+    
+                        <a href="#" class="privacy-policy">
+                            Chính sách bảo mật
+                        </a>
+    
+                        <a href="#" class="contact-us">
+                            Liên hệ với chúng tôi
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+</html>

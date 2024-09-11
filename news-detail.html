@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/library/bootstrap-5.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/library/plugins/toastr/toastr.css">
+    <link rel="stylesheet" href="assets/frontend/css/app.css?v=1">
+    <link rel="stylesheet" href="assets/library/slick/slick.css">
+    <link rel="stylesheet" href="assets/library/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+        integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/library/cssanimation/cssanimation.css">
+
+
+    <title>VNPT Page</title>
+
+    <!-- Jquery -->
+    <script  src="assets/library/jquery/jquery-3.7.1.slim.min.js"></script>
+    <script  src="assets/library/jquery/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap 5 -->
+    <script  src="assets/library/bootstrap-5.1/bootstrap.min.js"></script>
+    <script  src="assets/library/bootstrap-5.1/bootstrap.bundle.min.js"></script>
+    <script  src="assets/library/popper/popper.min.js"></script>
+    <!-- Toastr JS -->
+    <script  src="assets/library/plugins/toastr/toastr.min.js"></script>
+    <!-- Library -->
+    <script  src="assets/library/slick/slick.min.js"></script>
+    <script defer src="assets/library/cssanimation/scrolly.js"></script>
+
+    <!-- Common JS -->
+    <script defer src="assets/frontend/js/app.js"></script>
+
+
+    <link rel="stylesheet" href="assets/frontend/css/pages/news-detail.css">
+    <script defer src="assets/frontend/js/pages/news-detail.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container-xl header">
+    
+            <div class="header__icon-box-mb">
+                <img src="assets/svg/layout/header/menu-mb-icon.svg" alt="image"
+                    class="header__icon-box-mb--menu --show">
+                <img src="assets/svg/layout/header/close-menu-mb-icon.svg" alt="image"
+                    class="header__icon-box-mb--close-menu">
+            </div>
+    
+            <a href="./index.html" class="header__logo-box">
+                <img src="assets/images/layout/header/logo.png" alt="Logo"
+                    class="header__logo-box--logo">
+            </a>
+    
+            <div class="header__menu-box">
+                <ul class="header__menu">
+                    <li class="header__menu--item">
+                        <a href="./index.html">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a href="./service.html" class="header-item-services-products">
+                            Sản phẩm dịch vụ
+                            <img src="assets/svg/icon/arrow-down.svg" alt="image" class="arrow-down">
+                        </a>
+                        <ul class="child-menu">
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-1.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Hoá đơn điện tử
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-pos.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-2.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Hóa đơn khởi tạo
+                                        từ máy tính tiền
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-document.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-3.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Chứng từ điện tử
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-inbot.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-4.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Hoá đơn đầu vào
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-ereceip.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-5.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Biên lai điện tử
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-eticket.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-6.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Vé điện tử
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__menu--item">
+                        <a href="javascript:void(0)">
+                            Tra cứu
+                        </a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a href="./news.html">
+                            Tin tức
+                        </a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a href="./helper.html">
+                            Hỗ trợ
+                        </a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a href="javascript:void(0)">
+                            Đăng nhập
+                        </a>
+                    </li>
+                </ul>
+    
+                <button class="header__button">Bắt đầu dùng thử miễn phí</button>
+            </div>
+    
+            <button class="header__btn-trial d-flex d-lg-none">
+                <img src="assets/svg/icon/plane.svg" alt="">
+                Tư vấn
+            </button>
+        </div>
+    </header>
+    
+    <div class="sub-menu-news-detail">
+        <img src="assets/svg/icon/sub-menu-save.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-print.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-copy.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-comment.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-copy-link.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-share.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-font-size.svg" alt="image">
+    </div>
+    
+    <div class="menu-mb-box">
+        <div class="content">
+            <div class="menu-mb-box__top">
+                <div class="search-box">
+                    <img src="assets/svg/icon/search-icon.svg" alt="" class="search-box__icon">
+                    <input type="text" class="search-box__input" placeholder="Tìm kiếm">
+                </div>
+    
+                <div class="button-box">
+                    <button class="button-box__btn button-box__btn-login">Đăng nhập</button>
+                    <button class="button-box__btn button-box__btn-register">Đăng ký</button>
+                </div>
+    
+                <ul class="menu-mb">
+                    <li class="menu-mb__item --has-child">
+                        <a href="./service.html">
+                            Sản phẩm dịch vụ
+                        </a>
+                        <img src="assets/svg/layout/header/icon-arrow-menu-mobile.png" alt="image"
+                            class="arrow-down">
+                        <ul class="child-menu">
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice.html">
+                                    Hoá đơn điện tử
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-pos.html">
+                                    Hoá đơn khởi tạo từ máy tính tiền
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-document.html">
+                                    Chứng từ điện tử
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-inbot.html">
+                                    Hoá đơn đầu vào
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-ereceip.html">
+                                    Biên lai điện tử
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-eticket.html">
+                                    Vé điện tử
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-mb__item">
+                        <a href="javascript:void(0)">
+                            Tra cứu
+                        </a>
+                    </li>
+                    <li class="menu-mb__item">
+                        <a href="./news.html">
+                            Tin tức
+                        </a>
+                    </li>
+                    <li class="menu-mb__item">
+                        <a href="./helper.html">
+                            Hỗ trợ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+    
+            <div class="menu-mb-box__bottom">
+                <span class="break-line"></span>
+                <img src="assets/svg/layout/header/logo-mb.svg" alt="image"
+                    class="menu-mb-box__bottom--logo-mb">
+                <div class="menu-mb-box__bottom--item">
+                    <img src="assets/svg/icon/location.svg" alt="image" class="icon">
+                    <p class="text">
+                        Tòa nhà VNPT, số 57 Huỳnh Thúc Kháng, Phường Láng Hạ, Đống Đa, Hà Nội, Việt Nam
+                    </p>
+                </div>
+                <div class="menu-mb-box__bottom--item">
+                    <img src="assets/svg/icon/phone.svg" alt="image" class="icon">
+                    <p class="text">
+                        1800 1260
+                    </p>
+                </div>
+                <div class="menu-mb-box__bottom--item">
+                    <img src="assets/svg/icon/email.svg" alt="image" class="icon">
+                    <p class="text">
+                        cskh.invoice@vnpt.com.vn
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="page-content news-detail-page">
+        <div class="block">
+            <div class="container-xl block__content">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb__item">
+                        <a href="./index.html">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <img src="assets/svg/icon/next-arrow-blue.svg" alt="image">
+                    </li>
+                    <li class="breadcrumb__item">
+                        <a href="./news">
+                            Tin tức sự kiện
+                        </a>
+                    </li>
+                </ul>
+    
+                <div class="block__content--main-content">
+                    <div class="category-box-mb d-block d-lg-none">
+                        <a href="./news" class="category">
+                            Tin khuyến mãi
+                            <span class="line"></span>
+                        </a>
+                    </div>
+    
+                    <div class="avatar-box">
+                        <img src="assets/images/news-detail/news-detail-avatar.png" alt="image"
+                            class="avatar-box__image">
+                    </div>
+    
+                    <div class="content">
+                        <h1 class="title">
+                            Chữ ký số góp phần đảm bảo xác thực an toàn các giao dịch tài chính, ngân hàng
+                        </h1>
+    
+                        <div class="info">
+                            <a href="./news" class="info__category">
+                                tin khuyến mại
+                            </a>
+                            <img src="assets/svg/news-detail/logo.svg" alt="image" class="info__logo">
+    
+                            <div class="info__time">
+                                <div class="info__time--hour">
+                                    <img src="assets/svg/icon/oclock.svg" alt="image">
+                                    5 phút trước
+                                </div>
+    
+                                <p class="info__time--date dot-text">
+                                    Ngày 9/8/2024
+                                </p>
+                            </div>
+                        </div>
+    
+                        <img src="assets/images/news-detail/news-detail-avatar.png" alt="image"
+                            class="avatar">
+    
+                        <div class="main">
+                            <p>
+                                Nhằm đảm bảo an toàn, bảo mật trong giao dịch trực tuyến, từ ngày 1/7/2024, chuyển tiền qua tài
+                                khoản trực tuyến hoặc nạp tiền vào ví điện tử trên 10 triệu đồng phải được xác thực bằng các
+                                biện pháp xác thực an toàn, trong đó chữ ký số là một trong những biện pháp xác thực có thể sử
+                                dụng để xác thực trong cả 4 loại giao dịch (A, B, C D). Hiện, VNPT-CA đã sẵn sàng hạ tầng kỹ
+                                thuật và giải pháp để cung cấp chữ ký số đến người dùng một cách an toàn và thuận tiện nhất.
+                            </p>
+    
+                            <p>
+                                Trong thời gian qua, không ít người dân đã bị các đối tượng lừa đảo chiếm đoạt tiền thông qua
+                                các giao dịch ngân hàng. Có thể thấy, thủ đoạn của các đối tượng này rất tinh vi như tự xưng cơ
+                                quan chức năng như: Công an, thanh tra giao thông… và đưa ra các tình huống khiến người dân mất
+                                cảnh giác, truy cập vào phần mềm, đường link có mã độc. Nhằm bảo đảm an toàn cho hoạt động giao
+                                dịch thanh toán trực tuyến, phòng chống tội phạm lợi dụng tài khoản ngân hàng, ví điện tử không
+                                chính chủ để nhận, chuyển tiền lừa đảo, cuối năm 2023, Ngân hàng Nhà nước Việt Nam đã ban hành
+                                Quyết định 2345/QĐ-NHΝΝ để đảm bảo an toàn trong giao dịch trực tuyến.
+                            </p>
+    
+                            <p>
+                                Trong đó chữ ký số là một trong các biện pháp xác thực giao dịch trực tuyến an toàn cho người
+                                dân thực hiện các giao dịch trong lĩnh vực tài chính, ngân hàng theo hiệu lực của Quyết định
+                                2345/QĐ-NHΝΝ. Việc áp dụng chữ ký số rộng rãi sẽ thúc đẩy các dịch vụ tài chính, ngân hàng trực
+                                tuyến và góp phần phát triển nền kinh tế số tại Việt Nam.
+                            </p>
+    
+                            <p style="text-align: center">
+                                <img src="assets/images/news-detail/content-image-1.png" alt="">
+                            </p>
+    
+                            <p><b>Đáp ứng số lượng lớn giao dịch</b></p>
+    
+                            <p>Với tốc độ xử lý giao dịch ký số bằng phương thức ký số từ xa trung bình 3.000 – 5.000 giao dịch
+                                ký
+                                số trong 1 giây của 01 nhà cung cấp, chữ ký số công cộng hoàn toàn đáp ứng về mặt hiệu năng xử
+                                lý
+                                giao dịch trong lĩnh vực ngân hàng, tài chính. Hơn nữa, chữ ký số có khả năng mở rộng không giới
+                                hạn
+                                bằng việc bổ sung hạ tầng, thiết bị HSM (Hardware Secure Module) khi số lượng giao dịch phát
+                                sinh
+                                tăng. Trong khi đó, hiện Việt Nam đang có tới 10 nhà cung cấp được cấp phép nên hoàn toàn đủ
+                                năng
+                                lực cung cấp dịch vụ cho toàn bộ công dân và giao dịch trong mọi lĩnh vực xã hội chứ không riêng
+                                gì
+                                ngành tài chính, ngân hàng.</p>
+    
+                            <p>Điều này cũng phù hợp với chủ trương của Chính phủ tại Đề án 06 với mục tiêu đến năm 2025 là 50%
+                                dân
+                                số trưởng thành có chữ ký số công cộng để thực hiện các giao dịch trên môi trường số. Hiện các
+                                nhà
+                                cung cấp chữ ký số đã sẵn sàng về hạ tầng, công nghệ để cung cấp chữ ký số cho hơn 50 triệu công
+                                dân
+                                trên cả nước.
+                                Bên cạnh đó các nhà cung cấp dịch vụ chữ ký số như VNPT còn là đơn vị dẫn đầu về hạ tầng viễn
+                                thông,
+                                công nghệ thông tin tại Việt Nam với hàng trăm triệu khách hàng đang sử dụng các dịch vụ viễn
+                                thông,
+                                công nghệ thông tin trên toàn quốc trong đó có cả các ngân hàng và khách hàng của các ngân hàng.
+                                Nên
+                                việc sử dụng chữ ký số để xác thực giao dịch điện tử sẽ thuận tiện hơn cho người dân khi chỉ cần
+                                một
+                                chữ ký số đại diện để xác thực giao dịch trong tất cả các lĩnh vực đời sống kinh tế, xã hội.</p>
+    
+                            <p><b>Đảm bảo an toàn các giao dịch</b></p>
+    
+                            <p> Với các giao dịch ngân hàng, điều quan trọng nhất mà người dân và các tổ chức tài chính, ngân
+                                hàng
+                                đặc biệt quan tâm chính là độ an toàn của các giao dịch. Về yếu tố này, chữ ký số hoàn toàn đáp
+                                ứng
+                                các yêu cầu đó. Bởi chữ ký số được công nhận có giá trị pháp lý tương đương với chữ ký tay trong
+                                các
+                                giao dịch điện tử, đảm bảo tính xác thực và bảo mật cao. Ví dụ như Chữ ký số VNPT-CA của VNPT sử
+                                dụng công nghệ mã hóa tiên tiến, đảm bảo bí mật của các dữ liệu khi thực hiện giao dịch trực
+                                tuyến
+                                và ngăn chặn các hành vi giả mạo, gian lận. Đồng thời, VNPT còn cung cấp thêm giải pháp ký số từ
+                                xa
+                                VNPT SmartCA cũng đáp ứng tiêu chuẩn an toàn cao nhất, mới nhất theo tiêu chuẩn eIDAS Châu Âu và
+                                các
+                                quy định của Bộ TT&TT mức độ SCAL2 – mức độ cao nhất của eIDAS đối với hình thức ký số từ xa.
+                                Hai
+                                hình thức ký số này đều có thể hỗ trợ người dùng trong quá trình thực hiện các giao dịch tài
+                                chính
+                                một cách an toàn và hiệu quả.</p>
+    
+                            <p><b>Mang lại nhiều lợi ích</b></p>
+    
+                            <p>Không chỉ đáp ứng về hiệu năng xử lý, bảo mật cao, chữ ký số còn mang lại nhiều lợi ích cho người
+                                dân và doanh nghiệp, khi phương thức xác thực này đang ngày càng được ứng dụng rộng rãi trong
+                                nhiều
+                                lĩnh vực. Hiện chữ ký số công cộng đã được các nhà cung cấp tích hợp với đa dạng hệ thống như
+                                Cổng
+                                dịch vụ Công, giao dịch tài chính, chứng khoán, bảo hiểm, thuế, hải quan và hàng trăm ứng dụng
+                                lĩnh
+                                vực giáo dục, y tế,…
+                                Bên cạnh đó, thực hiện chủ trương của Chính phủ về phổ cập chữ ký số công dân, hiện chữ ký số từ
+                                xa
+                                VNP SmartCA đang được VNPT cung cấp miễn phí cho người dân để thực hiện các giao dịch hành chính
+                                công. Chỉ cần sở hữu một chữ ký số, người dân có thể thực hiện ký số tất cả các giao dịch trên
+                                môi
+                                trường điện tử một cách an toàn.</p>
+    
+                            <p>Với dịch vụ chữ ký số, người dân và doanh nghiệp có thể thực hiện giao dịch trực trực tuyến một
+                                cách
+                                nhanh chóng và thuận tiện mọi lúc mọi nơi nên giảm thiểu chi phí và thời gian di chuyển.</p>
+                        </div>
+    
+                        <div class="author">
+                            <img src="assets/svg/icon/pencil.svg" alt="image" class="pencial">
+                            Hải Đăng (nguồn VNPT)
+                        </div>
+    
+                        <label for="" class="source">Nguồn:
+                            <p>
+                                https://onesme.vn/blog/giai-phap/chu-ky-so-an-toan-giao-dich.html
+                            </p>
+                        </label>
+    
+                        <span class="break-line"></span>
+    
+                        <div class="widget">
+                            <a class="widget__item">
+                                <img src="assets/svg/icon/save.svg" alt="image" class="widget__item--image">
+                                lưu
+                            </a>
+                            <a class="widget__item">
+                                <img src="assets/svg/icon/share.svg" alt="image" class="widget__item--image">
+                                chia sẻ
+                            </a>
+                            <a class="widget__item">
+                                <img src="assets/svg/icon/print.svg" alt="image" class="widget__item--image">
+                            </a>
+                            <a class="widget__item">
+                                <img src="assets/svg/icon/copy.svg" alt="image" class="widget__item--image">
+                            </a>
+                        </div>
+    
+                        <span class="break-line"></span>
+    
+                        <div class="tag">
+                            <p class="tag__title">
+                                Tags:
+                            </p>
+    
+                            <div class="tag__list">
+                                <a href="#" class="tag__list--item">Chứ ký số</a>
+                                <a href="#" class="tag__list--item">VNPT</a>
+                                <a href="#" class="tag__list--item">VNPT-invoice</a>
+                                <a href="#" class="tag__list--item">An toàn mạng</a>
+                                <a href="#" class="tag__list--item">Dịch vụ số</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="related" data-scrolly-down="blurInTop">
+                        <p class="related__title">
+                            <span class="title">
+                                Cùng chuyên mục
+                            </span>
+                            <span class="break-line"></span>
+                        </p>
+    
+    
+                        <div class="related__list">
+                            <div class="related__list--item">
+                                <a href="./news-detail" class="image-box">
+                                    <img src="http://vnpt-invoice.test/assets/svg/news/mask-image.svg" alt="image"
+                                        class="mask-image">
+                                    <img src="assets/images/news/image-1.png" alt="image" class="image">
+                                </a>
+                                <div class="related-content">
+                                    <div class="related-content__top">
+                                        <a href="./news" class="related-content__top--category d-none d-sm-block">
+                                            tin khuyến mãi
+                                        </a>
+    
+                                        <a href="./news-detail" class="related-content__top--title">
+                                            Hệ sinh thái các sản phẩm dịch vụ đa dạng đáp ứng mọi nhu cầu của doanh nghiệp
+                                        </a>
+                                    </div>
+                                    <div class="related-content__bottom info__time">
+                                        <div class="info__time--hour">
+                                            <img src="assets/svg/icon/oclock.svg" alt="image">
+                                            5 phút trước
+                                        </div>
+    
+                                        <p class="info__time--date dot-text">
+                                            Ngày 9/8/2024
+                                        </p>
+                                    </div>
+    
+                                    <a href="./news" class="category d-block d-sm-none">
+                                        tin khuyến mãi
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="related__list--item">
+                                <a href="./news-detail" class="image-box">
+                                    <img src="http://vnpt-invoice.test/assets/svg/news/mask-image.svg" alt="image"
+                                        class="mask-image">
+                                    <img src="assets/images/news/image-2.png" alt="image" class="image">
+                                </a>
+                                <div class="related-content">
+                                    <div class="related-content__top">
+                                        <a href="./news" class="related-content__top--category d-none d-sm-block">
+                                            tin khuyến mãi
+                                        </a>
+    
+                                        <a href="./news-detail" class="related-content__top--title">
+                                            Hệ sinh thái các sản phẩm dịch vụ đa dạng đáp ứng mọi nhu cầu của doanh nghiệp
+                                        </a>
+                                    </div>
+                                    <div class="related-content__bottom info__time">
+                                        <div class="info__time--hour">
+                                            <img src="assets/svg/icon/oclock.svg" alt="image">
+                                            5 phút trước
+                                        </div>
+    
+                                        <p class="info__time--date dot-text">
+                                            Ngày 9/8/2024
+                                        </p>
+                                    </div>
+                                    <a href="./news" class="category d-block d-sm-none">
+                                        tin khuyến mãi
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="related__list--item">
+                                <a href="./news-detail" class="image-box">
+                                    <img src="http://vnpt-invoice.test/assets/svg/news/mask-image.svg" alt="image"
+                                        class="mask-image">
+                                    <img src="assets/images/news/image-3.png" alt="image" class="image">
+                                </a>
+                                <div class="related-content">
+                                    <div class="related-content__top">
+                                        <a href="./news" class="related-content__top--category d-none d-sm-block">
+                                            tin khuyến mãi
+                                        </a>
+    
+                                        <a href="./news-detail" class="related-content__top--title">
+                                            Hệ sinh thái các sản phẩm dịch vụ đa dạng đáp ứng mọi nhu cầu của doanh nghiệp
+                                        </a>
+                                    </div>
+                                    <div class="related-content__bottom info__time">
+                                        <div class="info__time--hour">
+                                            <img src="assets/svg/icon/oclock.svg" alt="image">
+                                            5 phút trước
+                                        </div>
+    
+                                        <p class="info__time--date dot-text">
+                                            Ngày 9/8/2024
+                                        </p>
+                                    </div>
+                                    <a href="./news" class="category d-block d-sm-none">
+                                        tin khuyến mãi
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="related__list--item">
+                                <a href="./news-detail" class="image-box">
+                                    <img src="assets/images/news/image-4.png" alt="image" class="image">
+                                    <img src="http://vnpt-invoice.test/assets/svg/news/mask-image.svg" alt="image"
+                                        class="mask-image">
+                                </a>
+                                <div class="related-content">
+                                    <div class="related-content__top">
+                                        <a href="./news" class="related-content__top--category d-none d-sm-block">
+                                            tin khuyến mãi
+                                        </a>
+    
+                                        <a href="./news-detail" class="related-content__top--title">
+                                            Hệ sinh thái các sản phẩm dịch vụ đa dạng đáp ứng mọi nhu cầu của doanh nghiệp
+                                        </a>
+                                    </div>
+                                    <div class="related-content__bottom info__time">
+                                        <div class="info__time--hour">
+                                            <img src="assets/svg/icon/oclock.svg" alt="image">
+                                            5 phút trước
+                                        </div>
+    
+                                        <p class="info__time--date dot-text">
+                                            Ngày 9/8/2024
+                                        </p>
+                                    </div>
+                                    <a href="./news" class="category d-block d-sm-none">
+                                        tin khuyến mãi
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="related__list--item">
+                                <a href="./news-detail" class="image-box">
+                                    <img src="http://vnpt-invoice.test/assets/svg/news/mask-image.svg" alt="image"
+                                        class="mask-image">
+                                    <img src="assets/images/news/image-5.png" alt="image" class="image">
+                                </a>
+                                <div class="related-content">
+                                    <div class="related-content__top">
+                                        <a href="./news" class="related-content__top--category d-none d-sm-block">
+                                            tin khuyến mãi
+                                        </a>
+    
+                                        <a href="./news-detail" class="related-content__top--title">
+                                            Hệ sinh thái các sản phẩm dịch vụ đa dạng đáp ứng mọi nhu cầu của doanh nghiệp
+                                        </a>
+                                    </div>
+                                    <div class="related-content__bottom info__time">
+                                        <div class="info__time--hour">
+                                            <img src="assets/svg/icon/oclock.svg" alt="image">
+                                            5 phút trước
+                                        </div>
+    
+                                        <p class="info__time--date dot-text">
+                                            Ngày 9/8/2024
+                                        </p>
+                                    </div>
+                                    <a href="./news" class="category d-block d-sm-none">
+                                        tin khuyến mãi
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="related__list--item">
+                                <a href="./news-detail" class="image-box">
+                                    <img src="http://vnpt-invoice.test/assets/svg/news/mask-image.svg" alt="image"
+                                        class="mask-image">
+                                    <img src="assets/images/news/image-6.png" alt="image" class="image">
+                                </a>
+                                <div class="related-content">
+                                    <div class="related-content__top">
+                                        <a href="./news" class="related-content__top--category d-none d-sm-block">
+                                            tin khuyến mãi
+                                        </a>
+    
+                                        <a href="./news-detail" class="related-content__top--title">
+                                            Hệ sinh thái các sản phẩm dịch vụ đa dạng đáp ứng mọi nhu cầu của doanh nghiệp
+                                        </a>
+                                    </div>
+                                    <div class="related-content__bottom info__time">
+                                        <div class="info__time--hour">
+                                            <img src="assets/svg/icon/oclock.svg" alt="image">
+                                            5 phút trước
+                                        </div>
+    
+                                        <p class="info__time--date dot-text">
+                                            Ngày 9/8/2024
+                                        </p>
+                                    </div>
+                                    <a href="./news" class="category d-block d-sm-none">
+                                        tin khuyến mãi
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="widget-box">
+            <div class="text-size-box">
+                <button class="text-size-box__btn text-size-box__btn-bigger">+</button>
+                <span class="text-size-box__text">a <span class="bigger">a</span></span>
+                <button class="text-size-box__btn text-size-box__btn-smaller">-</button>
+            </div>
+    
+            <a href="#" class="widget-box__item">
+                <img src="assets/svg/icon/link-icon.svg" alt="">
+            </a>
+    
+            <a href="#" class="widget-box__item">
+                <img src="assets/svg/icon/fb-icon.svg" alt="">
+            </a>
+    
+            <span class="break-line"></span>
+    
+            <a href="#" class="widget-box__item">
+                <img src="assets/svg/icon/save-widget-box.svg" alt="">
+            </a>
+    
+            <a href="#" class="widget-box__item">
+                <img src="assets/svg/icon/print-widget-box.svg" alt="">
+            </a>
+    
+        </div>
+    </main>
+
+    <div class="tu-van-box">
+        <div class="tu-van-box__content">
+            <div class="tu-van-box__title-box">
+                <div class="title">
+                    <img src="assets/images/layout/tu-van-icon.png" alt="">
+                    <span>Tư vấn</span>
+                </div>
+
+                <img src="assets/images/layout/tu-van-close-icon.png" alt="image" class="icon-close">
+            </div>
+
+            <p class="tu-van-box__describe">
+                Qúy khách vui lòng cung cấp thông tin để VNPT có thể tư vấn thêm thông tin về dịch vụ VNPT Invoice
+            </p>
+
+            <div class="tu-van-box__form">
+                <input type="text" placeholder="Tỉnh/ Thành phố">
+                <input type="text" placeholder="Họ và tên">
+                <input type="text" placeholder="Số điện thoại">
+                <button type="submit">Nhận tư vấn <span class="arrow-button">→</span></button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer">
+            <div class="footer__top" data-scrolly-down="blurInTop">
+                <div class="footer__top--content container-xl">
+                    <ul class="menu-footer">
+                        <li class="menu-footer__item">
+                            <a href="./index.html">
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="./service.html">
+                                Sản phẩm dịch vụ
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="">
+                                Tra cứu
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="./news.html">
+                                Tin tức
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="./helper.html">
+                                Hỗ trợ
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="">
+                                Đăng ký
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="">
+                                Đăng nhập
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="footer__top--content-mb container-xl">
+                    <img src="assets/svg/layout/footer/logo-mb.svg" alt="image" class="logo-mb">
+                    <p class="slogan">
+                        TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM
+                    </p>
+                </div>
+            </div>
+            <div class="footer__body container-xl" data-scrolly-down="blurInTop">
+                <div class="footer__body--top">
+                    <a href="./index.html" class="logo-box">
+                        <img src="assets/svg/layout/footer/logo.svg" alt="image" class="logo-box__image">
+                    </a>
+                    <div class="services-box">
+                        <ul class="services-box__list">
+                            <li class="services-box__list--item">
+                                <a href="#">Hóa đơn điện tử</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Hóa đơn điện tử khởi tạo từ MTT</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Quản lý hóa đơn điện tử đầu vào</a>
+                            </li>
+                        </ul>
+                        <ul class="services-box__list">
+                            <li class="services-box__list--item">
+                                <a href="#">Chứng từ điện tử</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Biên lai điện tử</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Vé điện tử</a>
+                            </li>
+                        </ul>
+                        <ul class="services-box__list">
+                            <li class="services-box__list--item">
+                                <a href="#">Hỗ trợ ngay</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Chính sách & Điều khoản</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Chính sách thanh toán</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Câu hỏi thường gặp</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__body--bottom">
+                    <div class="box">
+                        <div class="box__image">
+                            <img src="assets/svg/icon/location.svg" alt="" class="box__image--image">
+                        </div>
+                        <div class="box__content">
+                            <p class="box__content--title">
+                                Địa chỉ:
+                            </p>
+                            <p class="box__content--description">
+                                Tòa nhà VNPT, số 57 Huỳnh Thúc Kháng, Phường Láng Hạ, Đống Đa, Hà Nội, Việt Nam
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box__image">
+                            <img src="assets/svg/icon/phone.svg" alt="" class="box__image--image">
+                        </div>
+                        <div class="box__content">
+                            <p class="box__content--title">
+                                Điện thoại:
+                            </p>
+                            <p class="box__content--description">
+                                1800 1260
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box__image">
+                            <img src="assets/svg/icon/email.svg" alt="" class="box__image--image">
+                        </div>
+                        <div class="box__content">
+                            <p class="box__content--title">
+                                Email:
+                            </p>
+                            <p class="box__content--description">
+                                cskh.invoice@vnpt.com.vn
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="assets/svg/layout/footer/dang-ky-bo-cong-thuong.svg" alt=""
+                            class="box__image-btt">
+                    </div>
+                </div>
+    
+                <div class="footer__body--bottom-mb">
+                    <div class="top">
+                        <div class="top__item">
+                            <p class="top__item--title">
+                                <img src="assets/svg/icon/location.svg" alt="image">
+                                địa chỉ
+                            </p>
+                            <p>
+                                Tòa nhà VNPT, số 57 Huỳnh Thúc Kháng, Phường Láng Hạ, Đống Đa, Hà Nội, Việt Nam
+                            </p>
+                        </div>
+                        <div class="top__item">
+                            <p class="top__item--title">
+                                <img src="assets/svg/icon/phone.svg" alt="image">
+                                điện thoại
+                            </p>
+                            <p>
+                                1800 1260
+                            </p>
+                        </div>
+                        <div class="top__item">
+                            <p class="top__item--title">
+                                <img src="assets/svg/icon/email.svg" alt="image">
+                                email
+                            </p>
+                            <p>
+                                cskh.invoice@vnpt.com.vn
+                            </p>
+                        </div>
+                    </div>
+                    <span class="break-line"></span>
+                    <div class="bottom">
+                        <ul class="list">
+                            <a href="#">Hóa đơn điện tử</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Hóa đơn điện tử khởi tạo từ MTT</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Quản lý hóa đơn điện tử đầu vào</a>
+                            </li>
+                        </ul>
+                        <ul class="list">
+                            <li class="list__item">
+                                <a href="#">Chứng từ điện tử</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Biên lai điện tử</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Vé điện tử</a>
+                            </li>
+                        </ul>
+                        <ul class="list">
+                            <li class="list__item">
+                                <a href="#">
+                                    Hỗ trợ ngay
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">
+                                    Chính sách & Điều khoản
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">
+                                    Chính sách thanh toán
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">
+                                    Câu hỏi thường gặp
+                                </a>
+                            </li>
+                        </ul>
+    
+                        <img src="assets/svg/layout/footer/dang-ky-bo-cong-thuong.svg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom" data-scrolly-down="blurInTop">
+                <div class="footer__bottom--content container-xl">
+                    <p class="copy-right">2024 © Bản quyền thuộc Tập đoàn Bưu chính Viễn thông Việt Nam
+                    </p>
+                    <div class="tpc">
+                        <a href="#" class="terms-of-use">
+                            Điều khoản sử dụng
+                        </a>
+    
+                        <a href="#" class="privacy-policy">
+                            Chính sách bảo mật
+                        </a>
+    
+                        <a href="#" class="contact-us">
+                            Liên hệ với chúng tôi
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/library/bootstrap-5.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/library/plugins/toastr/toastr.css">
+    <link rel="stylesheet" href="assets/frontend/css/app.css?v=1">
+    <link rel="stylesheet" href="assets/library/slick/slick.css">
+    <link rel="stylesheet" href="assets/library/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+        integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/library/cssanimation/cssanimation.css">
+
+
+    <title>VNPT Page</title>
+
+    <!-- Jquery -->
+    <script  src="assets/library/jquery/jquery-3.7.1.slim.min.js"></script>
+    <script  src="assets/library/jquery/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap 5 -->
+    <script  src="assets/library/bootstrap-5.1/bootstrap.min.js"></script>
+    <script  src="assets/library/bootstrap-5.1/bootstrap.bundle.min.js"></script>
+    <script  src="assets/library/popper/popper.min.js"></script>
+    <!-- Toastr JS -->
+    <script  src="assets/library/plugins/toastr/toastr.min.js"></script>
+    <!-- Library -->
+    <script  src="assets/library/slick/slick.min.js"></script>
+    <script defer src="assets/library/cssanimation/scrolly.js"></script>
+
+    <!-- Common JS -->
+    <script defer src="assets/frontend/js/app.js"></script>
+
+
+    <link rel="stylesheet" href="assets/frontend/css/pages/home.css?v=2">
+    <script defer src="assets/frontend/js/pages/home.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container-xl header">
+    
+            <div class="header__icon-box-mb">
+                <img src="assets/svg/layout/header/menu-mb-icon.svg" alt="image"
+                    class="header__icon-box-mb--menu --show">
+                <img src="assets/svg/layout/header/close-menu-mb-icon.svg" alt="image"
+                    class="header__icon-box-mb--close-menu">
+            </div>
+    
+            <a href="./index.html" class="header__logo-box">
+                <img src="assets/images/layout/header/logo.png" alt="Logo"
+                    class="header__logo-box--logo">
+            </a>
+    
+            <div class="header__menu-box">
+                <ul class="header__menu">
+                    <li class="header__menu--item">
+                        <a href="./index.html">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a href="./service.html" class="header-item-services-products">
+                            Sản phẩm dịch vụ
+                            <img src="assets/svg/icon/arrow-down.svg" alt="image" class="arrow-down">
+                        </a>
+                        <ul class="child-menu">
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-1.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Hoá đơn điện tử
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-pos.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-2.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Hóa đơn khởi tạo
+                                        từ máy tính tiền
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-document.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-3.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Chứng từ điện tử
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-inbot.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-4.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Hoá đơn đầu vào
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-ereceip.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-5.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Biên lai điện tử
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-eticket.html">
+                                    <img src="assets/svg/layout/header/child-menu-icon-6.svg" alt="image"
+                                        class="icon-menu">
+                                    <span class="text">
+                                        Vé điện tử
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__menu--item">
+                        <a href="javascript:void(0)">
+                            Tra cứu
+                        </a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a href="./news.html">
+                            Tin tức
+                        </a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a href="./helper.html">
+                            Hỗ trợ
+                        </a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a href="javascript:void(0)">
+                            Đăng nhập
+                        </a>
+                    </li>
+                </ul>
+    
+                <button class="header__button">Bắt đầu dùng thử miễn phí</button>
+            </div>
+    
+            <button class="header__btn-trial d-flex d-lg-none">
+                <img src="assets/svg/icon/plane.svg" alt="">
+                Tư vấn
+            </button>
+        </div>
+    </header>
+    
+    <div class="sub-menu-news-detail">
+        <img src="assets/svg/icon/sub-menu-save.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-print.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-copy.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-comment.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-copy-link.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-share.svg" alt="image">
+        <img src="assets/svg/icon/sub-menu-font-size.svg" alt="image">
+    </div>
+    
+    <div class="menu-mb-box">
+        <div class="content">
+            <div class="menu-mb-box__top">
+                <div class="search-box">
+                    <img src="assets/svg/icon/search-icon.svg" alt="" class="search-box__icon">
+                    <input type="text" class="search-box__input" placeholder="Tìm kiếm">
+                </div>
+    
+                <div class="button-box">
+                    <button class="button-box__btn button-box__btn-login">Đăng nhập</button>
+                    <button class="button-box__btn button-box__btn-register">Đăng ký</button>
+                </div>
+    
+                <ul class="menu-mb">
+                    <li class="menu-mb__item --has-child">
+                        <a href="./service.html">
+                            Sản phẩm dịch vụ
+                        </a>
+                        <img src="assets/svg/layout/header/icon-arrow-menu-mobile.png" alt="image"
+                            class="arrow-down">
+                        <ul class="child-menu">
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice.html">
+                                    Hoá đơn điện tử
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-pos.html">
+                                    Hoá đơn khởi tạo từ máy tính tiền
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-document.html">
+                                    Chứng từ điện tử
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-inbot.html">
+                                    Hoá đơn đầu vào
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-ereceip.html">
+                                    Biên lai điện tử
+                                </a>
+                            </li>
+                            <li class="child-menu__item">
+                                <a href="./electronic-invoice-eticket.html">
+                                    Vé điện tử
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-mb__item">
+                        <a href="javascript:void(0)">
+                            Tra cứu
+                        </a>
+                    </li>
+                    <li class="menu-mb__item">
+                        <a href="./news.html">
+                            Tin tức
+                        </a>
+                    </li>
+                    <li class="menu-mb__item">
+                        <a href="./helper.html">
+                            Hỗ trợ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+    
+            <div class="menu-mb-box__bottom">
+                <span class="break-line"></span>
+                <img src="assets/svg/layout/header/logo-mb.svg" alt="image"
+                    class="menu-mb-box__bottom--logo-mb">
+                <div class="menu-mb-box__bottom--item">
+                    <img src="assets/svg/icon/location.svg" alt="image" class="icon">
+                    <p class="text">
+                        Tòa nhà VNPT, số 57 Huỳnh Thúc Kháng, Phường Láng Hạ, Đống Đa, Hà Nội, Việt Nam
+                    </p>
+                </div>
+                <div class="menu-mb-box__bottom--item">
+                    <img src="assets/svg/icon/phone.svg" alt="image" class="icon">
+                    <p class="text">
+                        1800 1260
+                    </p>
+                </div>
+                <div class="menu-mb-box__bottom--item">
+                    <img src="assets/svg/icon/email.svg" alt="image" class="icon">
+                    <p class="text">
+                        cskh.invoice@vnpt.com.vn
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="page-content home-page">
+        <div class="block">
+            <div class="block__slides banner-slides">
+                <div class="banner-slides__item">
+                    <img src="assets/images/home/banner-slides-1.jpg" alt="image">
+                    <img src="assets/images/home/banner-slides-1-mb.jpg" alt="image">
+                    <button class="button">
+                        ĐĂNG KÝ DÙNG THỬ MIỄN PHÍ <span class="arrow-button">→</span>
+                    </button>
+                </div>
+                <div class="banner-slides__item">
+                    <img src="assets/images/home/banner-slides-2.jpg" alt="image">
+                    <img src="assets/images/home/banner-slides-2-mb.jpg" alt="image">
+                    <button class="button">
+                        ĐĂNG KÝ DÙNG THỬ MIỄN PHÍ <span class="arrow-button">→</span>
+                    </button>
+                </div>
+                <div class="banner-slides__item">
+                    <img src="assets/images/home/banner-slides-3.jpg" alt="image">
+                    <img src="assets/images/home/banner-slides-3-mb.jpg" alt="image">
+                    <button class="button">
+                        ĐĂNG KÝ DÙNG THỬ MIỄN PHÍ <span class="arrow-button">→</span>
+                    </button>
+                </div>
+                <div class="banner-slides__item">
+                    <img src="assets/images/home/banner-slides-1.jpg" alt="image">
+                    <img src="assets/images/home/banner-slides-1-mb.jpg" alt="image">
+                    <button class="button">
+                        ĐĂNG KÝ DÙNG THỬ MIỄN PHÍ <span class="arrow-button">→</span>
+                    </button>
+                </div>
+                <div class="banner-slides__item">
+                    <img src="assets/images/home/banner-slides-2.jpg" alt="image">
+                    <img src="assets/images/home/banner-slides-2-mb.jpg" alt="image">
+                    <button class="button">
+                        ĐĂNG KÝ DÙNG THỬ MIỄN PHÍ <span class="arrow-button">→</span>
+                    </button>
+                </div>
+            </div>
+            <div class="block__invoice-list container-xl">
+                <div class="block__invoice-list--item" data-scrolly-down="blurInTop">
+                    <a href="#">
+                        <div class="left">
+                            <span>
+                                ĐT
+                            </span>
+                        </div>
+                        <p class="right">
+                            Hoá đơn điện tử
+                        </p>
+                    </a>
+                </div>
+                <div class="block__invoice-list--item" data-scrolly-down="blurInTop, delay:0.1s">
+                    <a href="#">
+                        <div class="left">
+                            <span>
+                                MT
+                            </span>
+                        </div>
+                        <p class="right">Hóa đơn điện tử <br class="break">khởi tạo từ máy tính tiền
+                        </p>
+                    </a>
+                </div>
+                <div class="block__invoice-list--item" data-scrolly-down="blurInTop, delay:0.2s">
+                    <a href="#">
+                        <div class="left">
+                            <span>
+                                CT
+                            </span>
+                        </div>
+                        <p class="right">
+                            Quản lý chứng từ thuế TNCN
+                        </p>
+                    </a>
+                </div>
+                <div class="block__invoice-list--item" data-scrolly-down="blurInTop, delay:0.3s">
+                    <a href="#">
+                        <div class="left">
+                            <span>
+                                DV
+                            </span>
+                        </div>
+                        <p class="right">
+                            Hóa đơn đầu vào
+                        </p>
+                    </a>
+                </div>
+                <div class="block__invoice-list--item" data-scrolly-down="blurInTop, delay:0.4s">
+                    <a href="">
+                        Xem thêm +
+                    </a>
+                </div>
+            </div>
+    
+    
+        </div>
+        <div class="block">
+            <div class="container-xl">
+                <div class="block__content">
+                    <h1 class="block__content--title" data-scrolly-down="blurInTop" data-scrolly-offset-bottom="-50px">
+                        Nền tảng
+                    </h1>
+                    <p class="block__content--sub-title" data-scrolly-down="blurInTop" data-scrolly-offset-bottom="-50px">
+                        toàn diện cho Doanh nghiệp
+                    </p>
+                    <p class="block__content--description" data-scrolly-down="blurInTop" data-scrolly-offset-bottom="-50px">
+                        Hỗ trợ các Doanh nghiệp, Tổ chức, Cá nhân kinh doanh quản lý
+                        tổng thể các nghiệp vụ hoá đơn/vé/biên lai điện tử, chứng từ điện tử,
+                        kiểm soát hóa đơn đầu vào... trên nền tảng điện toán đám mây
+                        hiện đại, tiện lợi, nhanh chóng, an toàn và bảo mật.
+                    </p>
+                </div>
+            </div>
+            <div class="platform-slides-box container-xl" data-scrolly-down="blurInTop">
+                <div class="platform-slides">
+                    <div class="platform-slides__item">
+                        <div class="platform-slides__item--top">
+                            <img src="assets/images/home/block-2-icon-1.png" alt="image" class="image">
+                        </div>
+                        <div class="platform-slides__item--body">
+                            <p class="title">
+                                HÓA ĐƠN ĐIỆN TỬ
+                            </p>
+                            <p class="description">
+                                Giải pháp quản lý, tạo lập, phát hành, ký số hóa đơn trên nền điện tử cho doanh nghiệp, tổ
+                                chức, cá nhân.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="platform-slides__item">
+                        <div class="platform-slides__item--top">
+                            <img src="assets/images/home/block-2-icon-2.png" alt="image" class="image">
+                        </div>
+                        <div class="platform-slides__item--body">
+                            <p class="title">
+                                hóa đơn khởi tạo
+                                từ máy tính tiền
+                            </p>
+                            <p class="description">
+                                <b>Hóa đơn điện tử máy tính tiền (VNPT Invoice-POS)</b> là giải pháp kết nối với phần mềm bán
+                                hàng giúp người dùng tạo lập, phát hành hóa đơn từng lần ngay tại thời điểm bán hàng và cung cấp
+                                dịch vụ, tự động gửi hóa đơn cho người mua đồng thời gửi hóa đơn điện tử lên Cơ quan thuế
+                            </p>
+                        </div>
+                    </div>
+                    <div class="platform-slides__item">
+                        <div class="platform-slides__item--top">
+                            <img src="assets/images/home/block-2-icon-3.png" alt="image" class="image">
+                        </div>
+                        <div class="platform-slides__item--body">
+                            <p class="title">
+                                CHỨNG TỪ ĐIỆN TỬ
+                            </p>
+                            <p class="description">
+                                <b>Chứng từ điện tử</b> là giải pháp giúp người dùng tạo lập, phát hành và quản lý chứng từ khấu
+                                trừ thuế thu nhập cá nhân (TNCN), tự động gửi chứng từ khấu trừ thuế TNCN cho người lao động
+                            </p>
+                        </div>
+                    </div>
+                    <div class="platform-slides__item">
+                        <div class="platform-slides__item--top">
+                            <img src="assets/images/home/block-2-icon-4.png" alt="image" class="image">
+                        </div>
+                        <div class="platform-slides__item--body">
+                            <p class="title">
+                                HÓA ĐƠN ĐẦU VÀO
+                            </p>
+                            <p class="description">
+                                VNPT InBot tự động tra cứu và tải hóa đơn từ email , tự động đọc hóa đơn từ file có sẵn.
+                                Hệ thống tự động phân tích, kiểm tra thông tin hóa đơn, trạng thái hoạt động của người bán – đảm
+                                bảo tính hợp pháp, hợp lệ của hóa đơn
+                            </p>
+                        </div>
+                    </div>
+                    <div class="platform-slides__item">
+                        <div class="platform-slides__item--top">
+                            <img src="assets/images/home/block-2-icon-5.png" alt="image" class="image">
+                        </div>
+                        <div class="platform-slides__item--body">
+                            <p class="title">
+                                hÓA ĐƠN ĐẦU VÀO
+                            </p>
+                            <p class="description">
+                                <b>Quản lý Hóa đơn điện tử đầu vào (VNPT Invoice-Inbot)</b> là giải pháp giúp người dùng thu
+                                thập các hóa đơn đầu vào bằng nhiều hình thức khác nhau, hỗ trợ xử lý, kiểm tra, đối chiếu thông
+                                tin hóa đơn điện tử với kho dữ liệu của Cơ quan Thuế
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="line-box container-xl" data-scrolly-down="blurInTop" data-scrolly-offset-bottom="-50px">
+                <p class="line-box__text">
+                    Bổ sung các tính năng chuyên nghiệp cho nhu cầu của doanh nghiệp
+                </p>
+                <span class="line-box__line"></span>
+            </div>
+        </div>
+        <div class="block" data-scrolly-down="blurInTop" data-scrolly-offset-bottom="-50px">
+            <div class="container-xl">
+                <p class="block__title">
+                    Các tính năng vượi trội
+                </p>
+    
+                <div class="block__content">
+                    <div class="block__content--item item" data-scrolly-down="blurInTop">
+                        <div class="item__image-box">
+                            <img src="assets/images/home/block-3-image-1-icon.png" alt="image"
+                                class="item__image-box--image">
+                        </div>
+                        <div class="item__content">
+                            <p class="item__content--title">
+                                Nhanh Chóng
+                            </p>
+                            <p class="item__content--describe">
+                                Người bán xuất hóa đơn nhanh chóng ngay khi bán hàng, cung cấp dịch vụ
+                                Người mua nhanh chóng nhận được hóa đơn, chứng từ qua email hoặc qua cổng tra cứu
+                            </p>
+                            <a href="#" class="item__content--explore">
+                                Tìm hiểu ngay <span class="arrow-button">→</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="block__content--item item" data-scrolly-down="blurInTop, delay:0.1s">
+                        <div class="item__image-box">
+                            <img src="assets/images/home/block-3-image-2-icon.png" alt="image"
+                                class="item__image-box--image">
+                        </div>
+                        <div class="item__content">
+                            <p class="item__content--title">
+                                Linh hoạt
+                            </p>
+                            <p class="item__content--describe">
+                                Tính năng cấu hình và quản trị linh hoạt giúp người dùng làm chủ hệ thống.
+                                Chủ động thay đổi mẫu hóa đơn, vé, biên lai bằng các thao tác đơn giản, dễ dàng thực hiện
+    
+                            </p>
+                            <a href="#" class="item__content--explore">
+                                Tìm hiểu ngay <span class="arrow-button">→</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="block__content--item item" data-scrolly-down="blurInTop, delay:0.2s">
+                        <div class="item__image-box">
+                            <img src="assets/images/home/block-3-image-3-icon.png" alt="image"
+                                class="item__image-box--image">
+                        </div>
+                        <div class="item__content">
+                            <p class="item__content--title">
+                                An toàn
+                            </p>
+                            <p class="item__content--describe">
+                                Dữ liệu điện tử đảm bảo không mất, hư hòng. Lưu trữ an toàn trong vòng 10 năm trên nền tảng điện
+                                toán đám mây hiện đại. Truy xuất dữ liệu mọi lúc, mọi nơi.
+                            </p>
+                            <a href="#" class="item__content--explore">
+                                Tìm hiểu ngay <span class="arrow-button">→</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="block__content--item item" data-scrolly-down="blurInTop, delay:0.3s">
+                        <div class="item__image-box">
+                            <img src="assets/images/home/block-3-image-4-icon.png" alt="image"
+                                class="item__image-box--image">
+    
+                        </div>
+                        <div class="item__content">
+                            <p class="item__content--title">
+                                Tiết kiệm
+                            </p>
+                            <p class="item__content--describe">
+                                Tiết kiệm chi phí in ấn so với việc sử dụng các loại hóa đơn, chứng từ bằng giấy
+                                Tiết kiệm chi phí vận chuyển, gửi dữ liệu cho người mua hoặc cho cơ quan quản lý nhà nước.
+    
+                            </p>
+                            <a href="#" class="item__content--explore">
+                                Tìm hiểu ngay <span class="arrow-button">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="block__register-box"data-scrolly-down="blurInTop, delay:0.6s" data-scrolly-offset-bottom="-50px">
+                    <a href="#" class="block__register-box--link">
+                        ĐĂNG KÝ DÙNG THỬ MIỄN PHÍ <span class="arrow-button">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="container-xl block__content" data-scrolly-down="blurInTop" data-scrolly-offset-bottom="-50px">
+                <p class="block__content--sub-title">
+                    sự lựa chọn tốt nhất
+                </p>
+    
+                <p class="block__content--title">
+                    Tại sao nên chọn VNPT Invoice
+                </p>
+    
+                <p class="block__content--describe">
+                    Hóa đơn điện tử VNPT Invoice đã được Tổng cục Thuế thẩm định và khuyến nghị doanh nghiệp sử dụng. Sản phẩm
+                    có nhiều tính năng vượt trội phù hợp cho mọi loại hình kinh doanh
+                </p>
+    
+                <div class="block__content--box-item">
+                    <div class="item">
+                        <img src="assets/svg/home/block-4-icon-1.svg" alt="image" class="item__image">
+                        <p class="item__title">Hệ sinh thái đa dạng</p>
+                        <p class="item__describe">
+                            Hệ sinh thái các sản phẩm dịch vụ đa dạng đáp ứng mọi nhu cầu của doanh nghiệp.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="assets/svg/home/block-4-icon-2.svg" alt="image" class="item__image">
+                        <p class="item__title">Chất lượng dịch vụ</p>
+                        <p class="item__describe">
+                            Chất lượng dịch vụ uy tín, sự lựa chọn hàng đầu của các doanh nghiệp, tổ chức, doanh nghiệp trong
+                            nước và quốc tế.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="assets/svg/home/block-4-icon-3.svg" alt="image" class="item__image">
+                        <p class="item__title">Giá thành cạnh tranh</p>
+                        <p class="item__describe">
+                            Giá thành hợp lý, nhiều sự lựa chọn phù hợp với nhu cầu của doanh nghiệp.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="assets/svg/home/block-4-icon-4.svg" alt="image" class="item__image">
+                        <p class="item__title">Dịch vụ sau bán hàng</p>
+                        <p class="item__describe">
+                            Tổng đài hỗ trợ miễn phí 24/7: 18001260 và VNPT tại 63 Tỉnh/TP
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="assets/svg/home/block-4-icon-5.svg" alt="image" class="item__image">
+                        <p class="item__title">An toàn, bảo mật dữ liệu</p>
+                        <p class="item__describe">
+                            Lưu trữ và bảo mật an toàn dữ liệu theo tiêu chuẩn ISO 27001 trên hạ tầng máy chủ hàng đầu Việt Nam.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="assets/svg/home/block-4-icon-6.svg" alt="image" class="item__image">
+                        <p class="item__title">Thuận tiện sử dụng</p>
+                        <p class="item__describe">
+                            Sử dụng trên đa nền tảng, thiết bị như máy tính, smartphone, máy pos...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="container-xl block__content">
+                <div class="block__content--left" data-scrolly-down="blurInRight" data-scrolly-offset-bottom="-50px">
+                    <img src="assets/images/home/block-5-earth.png" alt="image" class="image">
+                </div>
+                <div class="block__content--right" data-scrolly-down="blurInRight" data-scrolly-offset-bottom="-50px">
+                    <div class="title">
+                        Khám phá lý do tại sao các đơn vị,
+                        tổ chức, doanh nghiệp lựa chọn nền tảng <span>hóa đơn điện tử VNPT Invoice</span>
+                    </div>
+                    <div class="box-item">
+                        <div class="item">
+                            <p class="item__text">Hơn</p>
+                            <p class="item__number" id="number-1">200.000</p>
+                            <p class="item__text">Khách hàng sử dụng dịch vụ</p>
+                        </div>
+                        <div class="item">
+                            <p class="item__text">Có tại</p>
+                            <p class="item__number" id="number-2">63</p>
+                            <p class="item__text">Tỉnh thành trên toàn quốc</p>
+                        </div>
+                        <div class="item">
+                            <p class="item__text">Hơn</p>
+                            <p class="item__number" id="number-3">12</p>
+                            <p class="item__text">Năm kinh nghiệm</p>
+                        </div>
+                        <div class="item">
+                            <p class="item__text">Nhận</p>
+                            <p class="item__number" id="number-4">16</p>
+                            <p class="item__text">Giải thưởng trong nước và quốc tế</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="block__slides" data-scrolly-down="blurInTop" data-scrolly-offset-bottom="-50px">
+                <div class="block__slides--content">
+                    <div class="item">
+                        <a href="#" class="text">bắt đầu trải nghiệm </a>
+
+                        <p class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M5.20876 13H16.3788L11.4988 17.88C11.1088 18.27 11.1088 18.91 11.4988 19.3C11.8888 19.69 12.5188 19.69 12.9088 19.3L19.4988 12.71C19.8888 12.32 19.8888 11.69 19.4988 11.3L12.9188 4.69996C12.7319 4.5127 12.4783 4.40747 12.2138 4.40747C11.9492 4.40747 11.6956 4.5127 11.5088 4.69996C11.1188 5.08996 11.1188 5.71996 11.5088 6.10996L16.3788 11H5.20876C4.65876 11 4.20876 11.45 4.20876 12C4.20876 12.55 4.65876 13 5.20876 13Z"
+                                    fill="#232323" />
+                            </svg>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="text">bắt đầu trải nghiệm </a>
+
+                        <p class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M5.20876 13H16.3788L11.4988 17.88C11.1088 18.27 11.1088 18.91 11.4988 19.3C11.8888 19.69 12.5188 19.69 12.9088 19.3L19.4988 12.71C19.8888 12.32 19.8888 11.69 19.4988 11.3L12.9188 4.69996C12.7319 4.5127 12.4783 4.40747 12.2138 4.40747C11.9492 4.40747 11.6956 4.5127 11.5088 4.69996C11.1188 5.08996 11.1188 5.71996 11.5088 6.10996L16.3788 11H5.20876C4.65876 11 4.20876 11.45 4.20876 12C4.20876 12.55 4.65876 13 5.20876 13Z"
+                                    fill="#232323" />
+                            </svg>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="text">bắt đầu trải nghiệm </a>
+
+                        <p class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M5.20876 13H16.3788L11.4988 17.88C11.1088 18.27 11.1088 18.91 11.4988 19.3C11.8888 19.69 12.5188 19.69 12.9088 19.3L19.4988 12.71C19.8888 12.32 19.8888 11.69 19.4988 11.3L12.9188 4.69996C12.7319 4.5127 12.4783 4.40747 12.2138 4.40747C11.9492 4.40747 11.6956 4.5127 11.5088 4.69996C11.1188 5.08996 11.1188 5.71996 11.5088 6.10996L16.3788 11H5.20876C4.65876 11 4.20876 11.45 4.20876 12C4.20876 12.55 4.65876 13 5.20876 13Z"
+                                    fill="#232323" />
+                            </svg>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="text">bắt đầu trải nghiệm </a>
+
+                        <p class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M5.20876 13H16.3788L11.4988 17.88C11.1088 18.27 11.1088 18.91 11.4988 19.3C11.8888 19.69 12.5188 19.69 12.9088 19.3L19.4988 12.71C19.8888 12.32 19.8888 11.69 19.4988 11.3L12.9188 4.69996C12.7319 4.5127 12.4783 4.40747 12.2138 4.40747C11.9492 4.40747 11.6956 4.5127 11.5088 4.69996C11.1188 5.08996 11.1188 5.71996 11.5088 6.10996L16.3788 11H5.20876C4.65876 11 4.20876 11.45 4.20876 12C4.20876 12.55 4.65876 13 5.20876 13Z"
+                                    fill="#232323" />
+                            </svg>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="text">bắt đầu trải nghiệm </a>
+
+                        <p class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M5.20876 13H16.3788L11.4988 17.88C11.1088 18.27 11.1088 18.91 11.4988 19.3C11.8888 19.69 12.5188 19.69 12.9088 19.3L19.4988 12.71C19.8888 12.32 19.8888 11.69 19.4988 11.3L12.9188 4.69996C12.7319 4.5127 12.4783 4.40747 12.2138 4.40747C11.9492 4.40747 11.6956 4.5127 11.5088 4.69996C11.1188 5.08996 11.1188 5.71996 11.5088 6.10996L16.3788 11H5.20876C4.65876 11 4.20876 11.45 4.20876 12C4.20876 12.55 4.65876 13 5.20876 13Z"
+                                    fill="#232323" />
+                            </svg>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="text">bắt đầu trải nghiệm </a>
+
+                        <p class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M5.20876 13H16.3788L11.4988 17.88C11.1088 18.27 11.1088 18.91 11.4988 19.3C11.8888 19.69 12.5188 19.69 12.9088 19.3L19.4988 12.71C19.8888 12.32 19.8888 11.69 19.4988 11.3L12.9188 4.69996C12.7319 4.5127 12.4783 4.40747 12.2138 4.40747C11.9492 4.40747 11.6956 4.5127 11.5088 4.69996C11.1188 5.08996 11.1188 5.71996 11.5088 6.10996L16.3788 11H5.20876C4.65876 11 4.20876 11.45 4.20876 12C4.20876 12.55 4.65876 13 5.20876 13Z"
+                                    fill="#232323" />
+                            </svg>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="text">bắt đầu trải nghiệm </a>
+
+                        <p class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M5.20876 13H16.3788L11.4988 17.88C11.1088 18.27 11.1088 18.91 11.4988 19.3C11.8888 19.69 12.5188 19.69 12.9088 19.3L19.4988 12.71C19.8888 12.32 19.8888 11.69 19.4988 11.3L12.9188 4.69996C12.7319 4.5127 12.4783 4.40747 12.2138 4.40747C11.9492 4.40747 11.6956 4.5127 11.5088 4.69996C11.1188 5.08996 11.1188 5.71996 11.5088 6.10996L16.3788 11H5.20876C4.65876 11 4.20876 11.45 4.20876 12C4.20876 12.55 4.65876 13 5.20876 13Z"
+                                    fill="#232323" />
+                            </svg>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="text">bắt đầu trải nghiệm </a>
+
+                        <p class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M5.20876 13H16.3788L11.4988 17.88C11.1088 18.27 11.1088 18.91 11.4988 19.3C11.8888 19.69 12.5188 19.69 12.9088 19.3L19.4988 12.71C19.8888 12.32 19.8888 11.69 19.4988 11.3L12.9188 4.69996C12.7319 4.5127 12.4783 4.40747 12.2138 4.40747C11.9492 4.40747 11.6956 4.5127 11.5088 4.69996C11.1188 5.08996 11.1188 5.71996 11.5088 6.10996L16.3788 11H5.20876C4.65876 11 4.20876 11.45 4.20876 12C4.20876 12.55 4.65876 13 5.20876 13Z"
+                                    fill="#232323" />
+                            </svg>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="text">bắt đầu trải nghiệm </a>
+
+                        <p class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M5.20876 13H16.3788L11.4988 17.88C11.1088 18.27 11.1088 18.91 11.4988 19.3C11.8888 19.69 12.5188 19.69 12.9088 19.3L19.4988 12.71C19.8888 12.32 19.8888 11.69 19.4988 11.3L12.9188 4.69996C12.7319 4.5127 12.4783 4.40747 12.2138 4.40747C11.9492 4.40747 11.6956 4.5127 11.5088 4.69996C11.1188 5.08996 11.1188 5.71996 11.5088 6.10996L16.3788 11H5.20876C4.65876 11 4.20876 11.45 4.20876 12C4.20876 12.55 4.65876 13 5.20876 13Z"
+                                    fill="#232323" />
+                            </svg>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="text">bắt đầu trải nghiệm </a>
+
+                        <p class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M5.20876 13H16.3788L11.4988 17.88C11.1088 18.27 11.1088 18.91 11.4988 19.3C11.8888 19.69 12.5188 19.69 12.9088 19.3L19.4988 12.71C19.8888 12.32 19.8888 11.69 19.4988 11.3L12.9188 4.69996C12.7319 4.5127 12.4783 4.40747 12.2138 4.40747C11.9492 4.40747 11.6956 4.5127 11.5088 4.69996C11.1188 5.08996 11.1188 5.71996 11.5088 6.10996L16.3788 11H5.20876C4.65876 11 4.20876 11.45 4.20876 12C4.20876 12.55 4.65876 13 5.20876 13Z"
+                                    fill="#232323" />
+                            </svg>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="text">bắt đầu trải nghiệm </a>
+
+                        <p class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M5.20876 13H16.3788L11.4988 17.88C11.1088 18.27 11.1088 18.91 11.4988 19.3C11.8888 19.69 12.5188 19.69 12.9088 19.3L19.4988 12.71C19.8888 12.32 19.8888 11.69 19.4988 11.3L12.9188 4.69996C12.7319 4.5127 12.4783 4.40747 12.2138 4.40747C11.9492 4.40747 11.6956 4.5127 11.5088 4.69996C11.1188 5.08996 11.1188 5.71996 11.5088 6.10996L16.3788 11H5.20876C4.65876 11 4.20876 11.45 4.20876 12C4.20876 12.55 4.65876 13 5.20876 13Z"
+                                    fill="#232323" />
+                            </svg>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="text">bắt đầu trải nghiệm </a>
+
+                        <p class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M5.20876 13H16.3788L11.4988 17.88C11.1088 18.27 11.1088 18.91 11.4988 19.3C11.8888 19.69 12.5188 19.69 12.9088 19.3L19.4988 12.71C19.8888 12.32 19.8888 11.69 19.4988 11.3L12.9188 4.69996C12.7319 4.5127 12.4783 4.40747 12.2138 4.40747C11.9492 4.40747 11.6956 4.5127 11.5088 4.69996C11.1188 5.08996 11.1188 5.71996 11.5088 6.10996L16.3788 11H5.20876C4.65876 11 4.20876 11.45 4.20876 12C4.20876 12.55 4.65876 13 5.20876 13Z"
+                                    fill="#232323" />
+                            </svg>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="text">bắt đầu trải nghiệm </a>
+
+                        <p class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M5.20876 13H16.3788L11.4988 17.88C11.1088 18.27 11.1088 18.91 11.4988 19.3C11.8888 19.69 12.5188 19.69 12.9088 19.3L19.4988 12.71C19.8888 12.32 19.8888 11.69 19.4988 11.3L12.9188 4.69996C12.7319 4.5127 12.4783 4.40747 12.2138 4.40747C11.9492 4.40747 11.6956 4.5127 11.5088 4.69996C11.1188 5.08996 11.1188 5.71996 11.5088 6.10996L16.3788 11H5.20876C4.65876 11 4.20876 11.45 4.20876 12C4.20876 12.55 4.65876 13 5.20876 13Z"
+                                    fill="#232323" />
+                            </svg>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="text">bắt đầu trải nghiệm </a>
+
+                        <p class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M5.20876 13H16.3788L11.4988 17.88C11.1088 18.27 11.1088 18.91 11.4988 19.3C11.8888 19.69 12.5188 19.69 12.9088 19.3L19.4988 12.71C19.8888 12.32 19.8888 11.69 19.4988 11.3L12.9188 4.69996C12.7319 4.5127 12.4783 4.40747 12.2138 4.40747C11.9492 4.40747 11.6956 4.5127 11.5088 4.69996C11.1188 5.08996 11.1188 5.71996 11.5088 6.10996L16.3788 11H5.20876C4.65876 11 4.20876 11.45 4.20876 12C4.20876 12.55 4.65876 13 5.20876 13Z"
+                                    fill="#232323" />
+                            </svg>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="text">bắt đầu trải nghiệm </a>
+
+                        <p class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M5.20876 13H16.3788L11.4988 17.88C11.1088 18.27 11.1088 18.91 11.4988 19.3C11.8888 19.69 12.5188 19.69 12.9088 19.3L19.4988 12.71C19.8888 12.32 19.8888 11.69 19.4988 11.3L12.9188 4.69996C12.7319 4.5127 12.4783 4.40747 12.2138 4.40747C11.9492 4.40747 11.6956 4.5127 11.5088 4.69996C11.1188 5.08996 11.1188 5.71996 11.5088 6.10996L16.3788 11H5.20876C4.65876 11 4.20876 11.45 4.20876 12C4.20876 12.55 4.65876 13 5.20876 13Z"
+                                    fill="#232323" />
+                            </svg>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="text">bắt đầu trải nghiệm </a>
+
+                        <p class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M5.20876 13H16.3788L11.4988 17.88C11.1088 18.27 11.1088 18.91 11.4988 19.3C11.8888 19.69 12.5188 19.69 12.9088 19.3L19.4988 12.71C19.8888 12.32 19.8888 11.69 19.4988 11.3L12.9188 4.69996C12.7319 4.5127 12.4783 4.40747 12.2138 4.40747C11.9492 4.40747 11.6956 4.5127 11.5088 4.69996C11.1188 5.08996 11.1188 5.71996 11.5088 6.10996L16.3788 11H5.20876C4.65876 11 4.20876 11.45 4.20876 12C4.20876 12.55 4.65876 13 5.20876 13Z"
+                                    fill="#232323" />
+                            </svg>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="text">bắt đầu trải nghiệm </a>
+
+                        <p class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M5.20876 13H16.3788L11.4988 17.88C11.1088 18.27 11.1088 18.91 11.4988 19.3C11.8888 19.69 12.5188 19.69 12.9088 19.3L19.4988 12.71C19.8888 12.32 19.8888 11.69 19.4988 11.3L12.9188 4.69996C12.7319 4.5127 12.4783 4.40747 12.2138 4.40747C11.9492 4.40747 11.6956 4.5127 11.5088 4.69996C11.1188 5.08996 11.1188 5.71996 11.5088 6.10996L16.3788 11H5.20876C4.65876 11 4.20876 11.45 4.20876 12C4.20876 12.55 4.65876 13 5.20876 13Z"
+                                    fill="#232323" />
+                            </svg>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="text">bắt đầu trải nghiệm </a>
+
+                        <p class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M5.20876 13H16.3788L11.4988 17.88C11.1088 18.27 11.1088 18.91 11.4988 19.3C11.8888 19.69 12.5188 19.69 12.9088 19.3L19.4988 12.71C19.8888 12.32 19.8888 11.69 19.4988 11.3L12.9188 4.69996C12.7319 4.5127 12.4783 4.40747 12.2138 4.40747C11.9492 4.40747 11.6956 4.5127 11.5088 4.69996C11.1188 5.08996 11.1188 5.71996 11.5088 6.10996L16.3788 11H5.20876C4.65876 11 4.20876 11.45 4.20876 12C4.20876 12.55 4.65876 13 5.20876 13Z"
+                                    fill="#232323" />
+                            </svg>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="text">bắt đầu trải nghiệm </a>
+
+                        <p class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M5.20876 13H16.3788L11.4988 17.88C11.1088 18.27 11.1088 18.91 11.4988 19.3C11.8888 19.69 12.5188 19.69 12.9088 19.3L19.4988 12.71C19.8888 12.32 19.8888 11.69 19.4988 11.3L12.9188 4.69996C12.7319 4.5127 12.4783 4.40747 12.2138 4.40747C11.9492 4.40747 11.6956 4.5127 11.5088 4.69996C11.1188 5.08996 11.1188 5.71996 11.5088 6.10996L16.3788 11H5.20876C4.65876 11 4.20876 11.45 4.20876 12C4.20876 12.55 4.65876 13 5.20876 13Z"
+                                    fill="#232323" />
+                            </svg>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="text">bắt đầu trải nghiệm </a>
+
+                        <p class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M5.20876 13H16.3788L11.4988 17.88C11.1088 18.27 11.1088 18.91 11.4988 19.3C11.8888 19.69 12.5188 19.69 12.9088 19.3L19.4988 12.71C19.8888 12.32 19.8888 11.69 19.4988 11.3L12.9188 4.69996C12.7319 4.5127 12.4783 4.40747 12.2138 4.40747C11.9492 4.40747 11.6956 4.5127 11.5088 4.69996C11.1188 5.08996 11.1188 5.71996 11.5088 6.10996L16.3788 11H5.20876C4.65876 11 4.20876 11.45 4.20876 12C4.20876 12.55 4.65876 13 5.20876 13Z"
+                                    fill="#232323" />
+                            </svg>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="block">
+            <div class="container-xl block__content">
+                <div class="block__left" data-scrolly-down="blurInRight">
+                    <p class="block__left--sub-title">
+                        VNPT Invoice đồng hành cùng doanh nghiệp
+                    </p>
+                    <p class="block__left--title">
+                        Chúng tôi luôn đồng hành tin cậy
+                        và trao nhiều giá trị vượt trội
+                        đến Quý khách hàng
+                    </p>
+                    <p class="block__left--description">
+                        Dùng thử Nền tảng hóa đơn điện tử VNPT Invoice miễn phí.
+                        Khám phá tất cả các công cụ, tính năng cần cho sự vận hành
+                        và phát triển doanh nghiệp của bạn.
+                    </p>
+    
+                    <a href="#" class="block__left--button">
+                        ĐĂNG KÝ DÙNG THỬ MIỄN PHÍ <span class="arrow-button">→</span>
+                    </a>
+                </div>
+                <div class="block__right" data-scrolly-down="blurInRight">
+                    <div class="circle-line">
+                    </div>
+                    <div class="circle-line">
+                        <div class="circle-line__content">
+                            <div class="box-logo">
+                                <img src="assets/images/home/block-6-logo-2.png" alt=""
+                                    class="circle-line__content--item">
+                            </div>
+                            <div class="box-logo">
+                                <img src="assets/images/home/block-6-logo-3.png" alt=""
+                                    class="circle-line__content--item">
+                            </div>
+    
+                            <div class="box-logo">
+                                <img src="assets/images/home/block-6-logo-4.png" alt=""
+                                    class="circle-line__content--item">
+                            </div>
+    
+                            <div class="box-logo">
+                                <img src="assets/images/home/block-6-logo-5.png" alt=""
+                                    class="circle-line__content--item">
+                            </div>
+    
+                            <div class="box-logo">
+                                <div class="circle-line__content--item"></div>
+                            </div>
+                            <div class="box-logo">
+                                <img src="assets/images/home/block-6-logo-6.png" alt=""
+                                    class="circle-line__content--item">
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="circle-line">
+                        <div class="circle-line__content">
+                            <div class="box-logo">
+                                <div class="circle-line__content--item"></div>
+                            </div>
+    
+                            <div class="box-logo">
+                                <img src="assets/images/home/block-6-logo-7.png" alt=""
+                                    class="circle-line__content--item">
+                            </div>
+                            <div class="box-logo">
+                                <div class="circle-line__content--item"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle-line">
+                        <div class="circle-line__content">
+                            <div class="box-logo">
+                                <div class="circle-line__content--item"></div>
+                            </div>
+                            <div class="box-logo">
+                                <div class="circle-line__content--item"></div>
+                            </div>
+                            <div class="box-logo">
+                                <div class="circle-line__content--item"></div>
+                            </div>
+                            <div class="box-logo">
+                                <div class="circle-line__content--item"></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <img src="assets/images/home/block-6-logo-1.png" alt="" class="center-logo">
+                </div>
+    
+                <div class="block__btn-trial-box">
+                    <a href="#" class="btn-trial">
+                        ĐĂNG KÝ DÙNG THỬ MIỄN PHÍ <span class="arrow-button">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div id="questions" class="container-xl block__content">
+                <div class="block__left" data-scrolly-down="blurInRight">
+                    <p class="block__left--title">
+                        Câu hỏi thường gặp <br>
+                        <span>
+                            khi sử dụng VNPT Invoice
+                        </span>
+                    </p>
+                    <a href="#" class="block__left--link">
+                        Hướng dẫn sử dụng <span class="arrow-button">→</span>
+                    </a>
+                </div>
+                <div class="block__right" data-scrolly-down="blurInRight">
+                    <ul class="list">
+                        <li class="list__item">
+                            <a href="#">
+                                Tại sao doanh nghiệp cần sử dụng dịch vụ hoá đơn điện tử?
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#">
+                                Có những bước nào để sử dụng nhanh chóng dịch vụ của VNPT Invoice
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#">
+                                Tạo hoá đơn điện tử từ VNPT có an toàn và hiệu quả không?
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#">
+                                Làm thế nào để doanh nghiệp xuất hoá đơn điện tử trực tuyến?
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#">
+                                Tôi có thể nâng cao lên gói chuyên nghiệp không?
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#">
+                                Doanh nghiệp sử dụng VNPT Invoice có những lợi ích gì?
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <img src="assets/images/layout/tu-van.png" alt="image" class="tu-van d-none d-lg-block">
+    
+        <div class="messenger d-none d-lg-block">
+            <img src="assets/images/layout/robot.png" alt="" class="robot_mes">
+            <button class="messenger_icon">
+                <img src="assets/svg/layout/sms.svg" alt="">
+            </button>
+        </div>
+    </main>
+
+
+    <div class="tu-van-box">
+        <div class="tu-van-box__content">
+            <div class="tu-van-box__title-box">
+                <div class="title">
+                    <img src="assets/images/layout/tu-van-icon.png" alt="">
+                    <span>Tư vấn</span>
+                </div>
+
+                <img src="assets/images/layout/tu-van-close-icon.png" alt="image" class="icon-close">
+            </div>
+
+            <p class="tu-van-box__describe">
+                Qúy khách vui lòng cung cấp thông tin để VNPT có thể tư vấn thêm thông tin về dịch vụ VNPT Invoice
+            </p>
+
+            <div class="tu-van-box__form">
+                <input type="text" placeholder="Tỉnh/ Thành phố">
+                <input type="text" placeholder="Họ và tên">
+                <input type="text" placeholder="Số điện thoại">
+                <button type="submit">Nhận tư vấn <span class="arrow-button">→</span></button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="footer__top" data-scrolly-down="blurInTop">
+                <div class="footer__top--content container-xl">
+                    <ul class="menu-footer">
+                        <li class="menu-footer__item">
+                            <a href="./index.html">
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="./service.html">
+                                Sản phẩm dịch vụ
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="">
+                                Tra cứu
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="./news.html">
+                                Tin tức
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="./helper.html">
+                                Hỗ trợ
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="">
+                                Đăng ký
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="">
+                                Đăng nhập
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="footer__top--content-mb container-xl">
+                    <img src="assets/svg/layout/footer/logo-mb.svg" alt="image" class="logo-mb">
+                    <p class="slogan">
+                        TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM
+                    </p>
+                </div>
+            </div>
+            <div class="footer__body container-xl" data-scrolly-down="blurInTop">
+                <div class="footer__body--top">
+                    <a href="./index.html" class="logo-box">
+                        <img src="assets/svg/layout/footer/logo.svg" alt="image" class="logo-box__image">
+                    </a>
+                    <div class="services-box">
+                        <ul class="services-box__list">
+                            <li class="services-box__list--item">
+                                <a href="#">Hóa đơn điện tử</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Hóa đơn điện tử khởi tạo từ MTT</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Quản lý hóa đơn điện tử đầu vào</a>
+                            </li>
+                        </ul>
+                        <ul class="services-box__list">
+                            <li class="services-box__list--item">
+                                <a href="#">Chứng từ điện tử</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Biên lai điện tử</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Vé điện tử</a>
+                            </li>
+                        </ul>
+                        <ul class="services-box__list">
+                            <li class="services-box__list--item">
+                                <a href="#">Hỗ trợ ngay</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Chính sách & Điều khoản</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Chính sách thanh toán</a>
+                            </li>
+                            <li class="services-box__list--item">
+                                <a href="#">Câu hỏi thường gặp</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__body--bottom">
+                    <div class="box">
+                        <div class="box__image">
+                            <img src="assets/svg/icon/location.svg" alt="" class="box__image--image">
+                        </div>
+                        <div class="box__content">
+                            <p class="box__content--title">
+                                Địa chỉ:
+                            </p>
+                            <p class="box__content--description">
+                                Tòa nhà VNPT, số 57 Huỳnh Thúc Kháng, Phường Láng Hạ, Đống Đa, Hà Nội, Việt Nam
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box__image">
+                            <img src="assets/svg/icon/phone.svg" alt="" class="box__image--image">
+                        </div>
+                        <div class="box__content">
+                            <p class="box__content--title">
+                                Điện thoại:
+                            </p>
+                            <p class="box__content--description">
+                                1800 1260
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box__image">
+                            <img src="assets/svg/icon/email.svg" alt="" class="box__image--image">
+                        </div>
+                        <div class="box__content">
+                            <p class="box__content--title">
+                                Email:
+                            </p>
+                            <p class="box__content--description">
+                                cskh.invoice@vnpt.com.vn
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="assets/svg/layout/footer/dang-ky-bo-cong-thuong.svg" alt=""
+                            class="box__image-btt">
+                    </div>
+                </div>
+    
+                <div class="footer__body--bottom-mb">
+                    <div class="top">
+                        <div class="top__item">
+                            <p class="top__item--title">
+                                <img src="assets/svg/icon/location.svg" alt="image">
+                                địa chỉ
+                            </p>
+                            <p>
+                                Tòa nhà VNPT, số 57 Huỳnh Thúc Kháng, Phường Láng Hạ, Đống Đa, Hà Nội, Việt Nam
+                            </p>
+                        </div>
+                        <div class="top__item">
+                            <p class="top__item--title">
+                                <img src="assets/svg/icon/phone.svg" alt="image">
+                                điện thoại
+                            </p>
+                            <p>
+                                1800 1260
+                            </p>
+                        </div>
+                        <div class="top__item">
+                            <p class="top__item--title">
+                                <img src="assets/svg/icon/email.svg" alt="image">
+                                email
+                            </p>
+                            <p>
+                                cskh.invoice@vnpt.com.vn
+                            </p>
+                        </div>
+                    </div>
+                    <span class="break-line"></span>
+                    <div class="bottom">
+                        <ul class="list">
+                            <a href="./electronic-invoice.html">Hóa đơn điện tử</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="./electronic-invoice-pos.html">Hóa đơn điện tử khởi tạo từ MTT</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="./electronic-invoice-inbot.html">Quản lý hóa đơn điện tử đầu vào</a>
+                            </li>
+                        </ul>
+                        <ul class="list">
+                            <li class="list__item">
+                                <a href="./electronic-invoice-document.html">Chứng từ điện tử</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="./electronic-invoice-ereceip.html">Biên lai điện tử</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="./electronic-invoice-eticket.html">Vé điện tử</a>
+                            </li>
+                        </ul>
+                        <ul class="list">
+                            <li class="list__item">
+                                <a href="#">
+                                    Hỗ trợ ngay
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">
+                                    Chính sách & Điều khoản
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">
+                                    Chính sách thanh toán
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">
+                                    Câu hỏi thường gặp
+                                </a>
+                            </li>
+                        </ul>
+    
+                        <img src="assets/svg/layout/footer/dang-ky-bo-cong-thuong.svg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom" data-scrolly-down="blurInTop">
+                <div class="footer__bottom--content container-xl">
+                    <p class="copy-right">2024 © Bản quyền thuộc Tập đoàn Bưu chính Viễn thông Việt Nam
+                    </p>
+                    <div class="tpc">
+                        <a href="#" class="terms-of-use">
+                            Điều khoản sử dụng
+                        </a>
+    
+                        <a href="#" class="privacy-policy">
+                            Chính sách bảo mật
+                        </a>
+    
+                        <a href="#" class="contact-us">
+                            Liên hệ với chúng tôi
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

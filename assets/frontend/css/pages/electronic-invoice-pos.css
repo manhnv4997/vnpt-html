@@ -1,0 +1,901 @@
+.electronic-invoice-pos-page {
+  background-color: #f5fafd;
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page {
+    background-color: #fff;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(1) {
+  padding-top: 41px;
+  position: relative;
+}
+.electronic-invoice-pos-page .block:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 348px;
+  background: url("../../../images/electronic-invoice/block-1-bg.png") 0 9% no-repeat;
+  z-index: 0;
+  background-size: cover;
+}
+.electronic-invoice-pos-page .block:nth-child(1) .block__content {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.electronic-invoice-pos-page .block:nth-child(1) .block__content--title {
+  margin-top: 81px;
+  color: #000;
+  text-shadow: 8px 12px 24px rgba(0, 0, 0, 0.05);
+  font-family: "Ford Antenna";
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  max-width: 902px;
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(1) .block__content--title {
+    color: #3e4241;
+    text-align: center;
+    font-size: 34px;
+    margin-top: 60px;
+    max-width: 702px;
+  }
+}
+@media (max-width: 768px) {
+  .electronic-invoice-pos-page .block:nth-child(1) .block__content--title {
+    font-size: 24px;
+    margin-top: 37px;
+    max-width: 502px;
+  }
+}
+@media (max-width: 576px) {
+  .electronic-invoice-pos-page .block:nth-child(1) .block__content--title {
+    max-width: 302px;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(1) .block__content .description-box {
+  display: flex;
+  flex-flow: row;
+  gap: 0 41px;
+  max-width: 1122px;
+  width: 100%;
+  height: 214px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #fff;
+  margin-top: 40px;
+  /* GM */
+  box-shadow: 0px 10px 20px 0px rgba(210, 214, 229, 0.9);
+  background-image: url("../../../svg/service-detail/block-1-bg-image.svg");
+  background-size: 83.574px 136.301px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 18px) 0;
+  padding: 51px 61px 52px;
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(1) .block__content .description-box {
+    margin-top: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .electronic-invoice-pos-page .block:nth-child(1) .block__content .description-box {
+    padding: 28px;
+    flex-flow: column;
+    height: auto;
+    gap: 16px 0;
+    margin-top: 16px;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(1) .block__content .description-box__left {
+  background-image: url("../../../svg/helper/circle-bg-image.svg");
+  background-repeat: no-repeat;
+  background-size: 111px 111px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 111px;
+  height: 111px;
+  flex-shrink: 0;
+}
+@media (max-width: 768px) {
+  .electronic-invoice-pos-page .block:nth-child(1) .block__content .description-box__left {
+    width: 68px;
+    height: 68px;
+    flex-shrink: 0;
+    background-size: 68px 68px;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(1) .block__content .description-box__left span {
+  color: #fff;
+  text-align: center;
+  font-family: "Ford Antenna";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 125% */
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .electronic-invoice-pos-page .block:nth-child(1) .block__content .description-box__left span {
+    font-size: 9.802px;
+    line-height: 12.252px; /* 125% */
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(1) .block__content .description-box__right {
+  max-width: 696px;
+  width: 100%;
+  height: 91px;
+  flex-shrink: 0;
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(1) .block__content .description-box__right {
+    width: 59%;
+  }
+}
+@media (max-width: 768px) {
+  .electronic-invoice-pos-page .block:nth-child(1) .block__content .description-box__right {
+    height: auto;
+    width: 100%;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(2) {
+  margin-top: 58px;
+}
+.electronic-invoice-pos-page .block:nth-child(2) .block__content {
+  max-width: 1152px;
+}
+.electronic-invoice-pos-page .block:nth-child(2) .block__content--title {
+  color: #000;
+  font-family: "Ford Antenna";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0 10px;
+  text-transform: uppercase;
+}
+.electronic-invoice-pos-page .block:nth-child(2) .block__content .service-slides {
+  margin-top: 24px;
+}
+.electronic-invoice-pos-page .block:nth-child(2) .block__content .service-slides .slick-track {
+  padding-bottom: 15px;
+}
+.electronic-invoice-pos-page .block:nth-child(2) .block__content .service-slides .slick-dots {
+  bottom: -20px;
+}
+.electronic-invoice-pos-page .block:nth-child(2) .block__content .service-slides .slick-dots li {
+  width: 26.429px;
+  height: 5px;
+  transition: 0.5s width ease-in-out;
+}
+.electronic-invoice-pos-page .block:nth-child(2) .block__content .service-slides .slick-dots li button {
+  width: 100%;
+  height: 100%;
+}
+.electronic-invoice-pos-page .block:nth-child(2) .block__content .service-slides .slick-dots li button:before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  border-radius: 40px;
+  background: #d7e2f9;
+  border-radius: 40px;
+  opacity: 0.4;
+}
+.electronic-invoice-pos-page .block:nth-child(2) .block__content .service-slides .slick-dots li.slick-active {
+  width: 133.571px;
+  height: 5px;
+}
+.electronic-invoice-pos-page .block:nth-child(2) .block__content .service-slides .slick-dots li.slick-active button {
+  width: 100%;
+  height: 100%;
+}
+.electronic-invoice-pos-page .block:nth-child(2) .block__content .service-slides .slick-dots li.slick-active button:before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  border-radius: 40px;
+  background: #d7e2f9;
+  opacity: 1;
+}
+.electronic-invoice-pos-page .block:nth-child(2) .block__content .service-slides .slides-btn-custom {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: transparent;
+  border: unset;
+}
+@media (max-width: 1300px) {
+  .electronic-invoice-pos-page .block:nth-child(2) .block__content .service-slides .slides-btn-custom {
+    display: none;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(2) .block__content .service-slides .custom-prev {
+  left: -50px;
+}
+.electronic-invoice-pos-page .block:nth-child(2) .block__content .service-slides .custom-next {
+  right: -50px;
+}
+.electronic-invoice-pos-page .block:nth-child(2) .block__content .service-slides__item {
+  width: 100%;
+  height: 294px;
+  flex-shrink: 0;
+  background-image: linear-gradient(90deg, #345ce5 0%, #fff 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 8px;
+  border-radius: 12px;
+  /* drop shadow */
+  box-shadow: 0px 4px 15px 0px rgba(129, 129, 129, 0.25);
+  margin: 0 10px;
+}
+.electronic-invoice-pos-page .block:nth-child(2) .block__content .service-slides__item:hover .content-box {
+  background-color: rgba(219, 239, 253, 0.4705882353);
+}
+.electronic-invoice-pos-page .block:nth-child(2) .block__content .service-slides__item .content-box {
+  background: #fff;
+  padding: 28px 20px 30px;
+  margin-top: 9px;
+  border-bottom-right-radius: 12px;
+  transition: 0.2s background-color linear;
+  border-bottom-left-radius: 12px;
+}
+.electronic-invoice-pos-page .block:nth-child(2) .block__content .service-slides__item--title {
+  color: #000;
+  font-family: "Ford Antenna";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  display: flex;
+  flex-flow: column;
+  gap: 4px 0;
+}
+.electronic-invoice-pos-page .block:nth-child(2) .block__content .service-slides__item--title .special {
+  color: #4e4e4e;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 146.667% */
+}
+.electronic-invoice-pos-page .block:nth-child(2) .block__content .service-slides__item--price {
+  color: #4e4e4e;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 146.667% */
+  margin-top: 32px;
+  display: flex;
+  flex-flow: column;
+}
+.electronic-invoice-pos-page .block:nth-child(2) .block__content .service-slides__item--price .special {
+  color: #1f7bff;
+  font-feature-settings: "salt" on;
+  font-family: "Ford Antenna";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.electronic-invoice-pos-page .block:nth-child(2) .block__content .service-slides__item--btn-box {
+  display: flex;
+  justify-content: center;
+  gap: 0 8px;
+  margin-top: 44px;
+}
+.electronic-invoice-pos-page .block:nth-child(2) .block__content .service-slides__item--btn-box .btn {
+  color: #515151;
+  text-align: center;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 184.615% */
+  border-radius: 200px;
+  border: 0.8px solid #c8c8c8;
+  background: #fff;
+  width: 104px;
+  height: 34px;
+  flex-shrink: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.electronic-invoice-pos-page .block:nth-child(2) .block__content .service-slides__item--btn-box .btn:hover {
+  color: #fff;
+  background-color: #033ec4;
+  border: unset;
+}
+.electronic-invoice-pos-page .block:nth-child(3) {
+  margin-top: 74px;
+}
+@media (min-width: 1440px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content {
+    max-width: calc(1122px + 1.5rem);
+  }
+}
+@media (min-width: 1400px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content {
+    max-width: 1140px;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content .title {
+  color: #000;
+  font-family: "Ford Antenna";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content {
+  display: flex;
+  flex-flow: column;
+  gap: 48px 0;
+  margin-top: 25px;
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content {
+    gap: 30px 0;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 40px;
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box {
+    gap: 0 20px;
+  }
+}
+@media (max-width: 768px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box {
+    flex-flow: column;
+    gap: 16px 0;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box .box {
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 0px 30px 0px rgba(210, 214, 229, 0.3);
+  padding: 48px 28px 62px;
+  flex-shrink: 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  overflow: hidden;
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box .box:hover {
+  box-shadow: 0px 0px 30px 0px rgba(129, 132, 141, 0.3);
+  transition: 0.2s box-shadow linear;
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box .box {
+    box-shadow: 0px 0px 30px 0px rgba(210, 214, 229, 0.6);
+    height: 576px;
+    padding: 28px;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box .box__title {
+  color: #1f7bff;
+  font-family: "Ford Antenna";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box .box__title {
+    font-size: 29px;
+  }
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box .box__title {
+    font-size: 27px;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box .box__title {
+    font-size: 22px;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box .box__description {
+  color: #2e2e2e;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box .box .description-image {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box .box .description-image {
+    align-items: flex-start;
+    margin-top: 12px;
+    gap: 20px 0;
+  }
+}
+@media (max-width: 768px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box .box .description-image {
+    justify-content: space-between;
+    gap: 58px 0;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box .box .description-image img {
+  margin-left: auto;
+  margin-right: auto;
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(1) .box:nth-child(1) {
+  max-width: 736px;
+  width: calc(68% - 20px);
+  height: 679px;
+  padding: 48px 28px 39px;
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(1) .box:nth-child(1) {
+    width: calc(62% - 10px);
+    height: 576px;
+    padding: 28px;
+  }
+}
+@media (max-width: 768px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(1) .box:nth-child(1) {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(1) .box:nth-child(1) .box__image {
+  max-width: 507px;
+  width: 100%;
+  max-height: 416px;
+  height: auto;
+  flex-shrink: 0;
+  margin-top: 56px;
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(1) .box:nth-child(1) .box__image {
+    margin-top: 0;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(1) .box:nth-child(1) .box__description {
+  margin-top: 48px;
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(1) .box:nth-child(1) .box__description {
+    margin-top: 0;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(1) .box:nth-child(2) {
+  max-width: 346px;
+  width: calc(32% - 20px);
+  height: 679px;
+  padding: 48px 28px 39px;
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(1) .box:nth-child(2) {
+    height: 576px;
+    width: calc(38% - 10px);
+    padding: 28px;
+  }
+}
+@media (max-width: 768px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(1) .box:nth-child(2) {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(1) .box:nth-child(2) .box__title {
+  position: relative;
+  width: 100%;
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(1) .box:nth-child(2) .box__title--text {
+  width: 242px;
+}
+@media (max-width: 1024px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(1) .box:nth-child(2) .box__title--text {
+    width: 218px;
+  }
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(1) .box:nth-child(2) .box__title--text {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(1) .box:nth-child(2) .box__title--text {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(1) .box:nth-child(2) .box__title a {
+  position: absolute;
+  right: 0;
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(1) .box:nth-child(2) .box__image {
+  max-width: 229px;
+  width: 100%;
+  max-height: 392px;
+  height: auto;
+  flex-shrink: 0;
+  margin-top: 27px;
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(1) .box:nth-child(2) .box__image {
+    margin-top: 0;
+    max-width: 210px;
+  }
+}
+@media (max-width: 768px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(1) .box:nth-child(2) .box__image {
+    max-width: 200px;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(1) .box:nth-child(2) .box__description {
+  margin-top: 35px;
+  letter-spacing: -0.5px;
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(1) .box:nth-child(2) .box__description {
+    margin-top: 0;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(2) .box:nth-child(1), .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(2) .box:nth-child(2) {
+  max-width: 541px;
+  width: calc(50% - 20px);
+  height: 634px;
+  flex-shrink: 0;
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(2) .box:nth-child(1), .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(2) .box:nth-child(2) {
+    width: calc(50% - 10px);
+    height: 576px;
+  }
+}
+@media (max-width: 768px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(2) .box:nth-child(1), .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(2) .box:nth-child(2) {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(2) .box:nth-child(1) .box__image {
+  max-width: 424px;
+  width: 100%;
+  max-height: 332px;
+  height: auto;
+  flex-shrink: 0;
+  margin-top: 55px;
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(2) .box:nth-child(1) .box__image {
+    margin-top: 0;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(2) .box:nth-child(1) .box__description {
+  margin-top: 44px;
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(2) .box:nth-child(1) .box__description {
+    margin-top: 0;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(2) .box:nth-child(2) .description-image {
+  flex-flow: column-reverse;
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(2) .box:nth-child(2) .box__image {
+  max-width: 416px;
+  width: 100%;
+  max-height: 305px;
+  height: auto;
+  flex-shrink: 0;
+  margin-top: 62px;
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(2) .box:nth-child(2) .box__image {
+    margin-top: 0;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(2) .box:nth-child(2) .box__description {
+  margin-top: 44px;
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(2) .box:nth-child(2) .box__description {
+    margin-top: 0;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(3) .box:nth-child(1) {
+  max-width: 346px;
+  width: calc(32% - 20px);
+  height: 679px;
+  padding: 48px 28px 0;
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(3) .box:nth-child(1) {
+    height: 576px;
+    width: calc(38% - 10px);
+    padding: 28px 28px 0 28px;
+  }
+}
+@media (max-width: 768px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(3) .box:nth-child(1) {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(3) .box:nth-child(1) .description-image {
+    margin-top: 30px;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 768px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(3) .box:nth-child(1) .description-image {
+    margin-top: 12px;
+    justify-content: space-between;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(3) .box:nth-child(1) .box__title--text {
+  width: 149px;
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(3) .box:nth-child(1) .box__title--text {
+    width: 100%;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(3) .box:nth-child(1) .box__image {
+  max-width: 287px;
+  width: 100%;
+  max-height: 392px;
+  height: auto;
+  flex-shrink: 0;
+  margin-top: 74px;
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(3) .box:nth-child(1) .box__image {
+    margin-top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(3) .box:nth-child(1) .box__image {
+    margin-top: 0;
+    max-width: 200px;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(3) .box:nth-child(1) .box__description {
+  margin-top: 27px;
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(3) .box:nth-child(1) .box__description {
+    margin-top: 0;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(3) .box:nth-child(2) {
+  max-width: 736px;
+  width: calc(68% - 20px);
+  height: 679px;
+  flex-shrink: 0;
+  padding: 48px 28px 39px;
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(3) .box:nth-child(2) {
+    height: 576px;
+    width: calc(62% - 10px);
+    padding: 28px;
+  }
+}
+@media (max-width: 768px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(3) .box:nth-child(2) {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(3) .box:nth-child(2) .box__title {
+  position: relative;
+  width: 100%;
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(3) .box:nth-child(2) .box__title--text {
+  width: 248px;
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(3) .box:nth-child(2) .box__title--text {
+    width: 100%;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(3) .box:nth-child(2) .box__image {
+  max-width: 536px;
+  width: 100%;
+  max-height: 382px;
+  height: auto;
+  flex-shrink: 0;
+  margin-top: 27px;
+}
+@media (max-height: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(3) .box:nth-child(2) .box__image {
+    margin-top: 0;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(3) .box:nth-child(2) .box__description {
+  margin-top: 35px;
+  letter-spacing: -0.5px;
+}
+@media (max-height: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(3) .box:nth-child(2) .box__description {
+    margin-top: 0;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(4) .box {
+  width: 100%;
+  padding: 47px 57px 49px;
+  align-items: flex-start;
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(4) .box {
+    padding: 32px 26px 32px;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(4) .box {
+    height: auto;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(4) .box__title {
+  color: #000;
+  font-family: "Ford Antenna";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(4) .box__title:nth-child(1) {
+  margin-top: 0;
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(4) .box__title--text {
+  display: flex;
+  gap: 0 14px;
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(4) .box__image {
+  width: 287px;
+  height: 392px;
+  flex-shrink: 0;
+  margin-top: 74px;
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(4) .box__description {
+  margin-top: 15px;
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(4) .box__description:nth-child(2), .electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(4) .box__description:nth-child(4) {
+  margin-top: 0;
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(4) .box__description p {
+  display: flex;
+  gap: 0 10px;
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--button-box {
+  display: flex;
+  gap: 28px;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--button-box {
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+}
+@media (max-width: 768px) {
+  .electronic-invoice-pos-page .block:nth-child(3) .block__content--button-box {
+    flex-flow: column-reverse;
+    gap: 24px 0;
+    align-items: center;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--button-box .btn {
+  max-width: 313px;
+  width: 100%;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--button-box .btn:nth-child(1) {
+  border: 1px solid #535353;
+  background-color: #fff;
+  transition: 0.2s background-color linear, 0.2s color linear;
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--button-box .btn:nth-child(1):hover {
+  background-color: #033ec4;
+  color: #fff;
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--button-box .btn:nth-child(2) {
+  background-color: #0c5adb;
+  transition: 0.2s background-color linear;
+  color: #fff;
+}
+.electronic-invoice-pos-page .block:nth-child(3) .block__content--button-box .btn:nth-child(2):hover {
+  background-color: #033ec4;
+}
+.electronic-invoice-pos-page .block:nth-child(4) {
+  padding-bottom: 54px;
+  margin-top: 77px;
+  padding-top: 103px;
+  background-color: #fff;
+}
+@media (max-width: 1400px) {
+  .electronic-invoice-pos-page .block:nth-child(4) {
+    padding-bottom: 70px;
+  }
+}
+.electronic-invoice-pos-page .block:nth-child(4) .block__content--main-content {
+  max-width: 1280px;
+  width: 100%;
+  height: 295px;
+  background-image: url("../../../svg/service-detail/img-bg-layer.svg"), linear-gradient(#175ac7, #175ac7);
+  background-repeat: no-repeat;
+  background-size: 97px 159px, 100%;
+  background-position: 100% 8px, center;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  justify-content: center;
+}
+.electronic-invoice-pos-page .block:nth-child(4) .block__content--main-content .title {
+  color: #fff;
+  font-family: "Ford Antenna";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.electronic-invoice-pos-page .block:nth-child(4) .block__content--main-content .describe {
+  color: #fff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 146.667% */
+  margin-right: 15px;
+}
+.electronic-invoice-pos-page .block:nth-child(4) .block__content--main-content .btn-register-trial {
+  border-radius: 200px;
+  border: 1px solid #fff;
+  width: 324px;
+  height: 44px;
+  flex-shrink: 0;
+  margin-top: 25px;
+  background-color: transparent;
+  padding: 10px 26px;
+  color: #fff;
+}
+.electronic-invoice-pos-page .block:nth-child(4) .block__content--main-content .btn-register-trial:hover {
+  background-color: #fff;
+  color: #1f7bff;
+}
