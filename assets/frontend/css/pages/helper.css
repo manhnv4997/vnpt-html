@@ -250,7 +250,7 @@
   line-height: 24px; /* 133.333% */
 }
 .helper-page .block:nth-child(2) .block__right .list__item a:hover {
-  color: #1f7bff;
+  color: #033ec4;
 }
 @media (max-width: 768px) {
   .helper-page .block:nth-child(2) .block__right .list__item:last-child {

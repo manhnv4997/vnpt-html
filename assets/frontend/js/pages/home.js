@@ -6,8 +6,8 @@ $(document).ready(function () {
 });
 
 function showMessenger() {
-    $('.messenger').addClass('--show');
-    $('.tu-van').addClass('--show');
+    $('.contact-widget').addClass('--show');
+    // $('.tu-van').addClass('--show');
 }
 
 function handleSuccessProject() {

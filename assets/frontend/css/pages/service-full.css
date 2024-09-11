@@ -412,6 +412,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .service-full-page .block:nth-child(1) .block__content .list-package__content--main-content .paginate__list--item.--active, .service-full-page .block:nth-child(1) .block__content .list-package__content--main-content .paginate__list--item:hover {
   border-radius: 100%;

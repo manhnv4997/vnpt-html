@@ -418,14 +418,15 @@
   flex-shrink: 0;
   margin: 29px auto 54px auto;
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
   color: #476eba;
   text-align: center;
   font-size: 13px;
   font-style: normal;
   font-weight: 700;
   line-height: 24px; /* 184.615% */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 768px) {
   .service-page .block:nth-child(2) .block__content .btn-see-more {
