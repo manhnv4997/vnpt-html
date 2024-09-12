@@ -1,3 +1,20 @@
+window.onload = function () {
+    scrolly();
+};
+if (jQuery(window).width() > 992) {
+    if (jQuery(".is-animated").length) {
+        jQuery(".is-animated").each(function (index) {
+            let nameAnimate = jQuery(this).data("animation"),
+                delayAnimate = jQuery(this).data("delay") ?? "0s";
+
+            jQuery(this).attr({
+                "data-scrolly-down": nameAnimate + ",delay: " + delayAnimate,
+            });
+        });
+        jQuery(".is-animated").removeClass("is-animated");
+    }
+}
+
 $(document).ready(function () {
     handleShowMenuMobile();
     handleShowChildMenuMb();
@@ -6,8 +23,6 @@ $(document).ready(function () {
     $('.header__btn-trial').on('click', function () {
         $('.tu-van-box').toggleClass('--show');
     });
-
-    scrolly();
 
     $('.tu-van').on('click', function () {
         $('.tu-van-box').toggleClass('--show');

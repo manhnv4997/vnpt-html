@@ -280,11 +280,6 @@
     height: auto;
   }
 }
-@media (max-width: 410px) {
-  .service-page .block:nth-child(2) .block__content--main-content .item .content-box {
-    height: 380px;
-  }
-}
 .service-page .block:nth-child(2) .block__content--main-content .item .content-box .title-box {
   display: flex;
   flex-flow: row;
@@ -421,7 +416,7 @@
   position: relative;
   color: #476eba;
   text-align: center;
-  font-size: 13px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 700;
   line-height: 24px; /* 184.615% */
