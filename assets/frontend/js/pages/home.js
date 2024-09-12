@@ -5,9 +5,8 @@ $(document).ready(function () {
     showMessenger();
 });
 
-function showMessenger() {
+function showContactWidget() {
     $('.contact-widget').addClass('--show');
-    // $('.tu-van').addClass('--show');
 }
 
 function handleSuccessProject() {
@@ -105,8 +104,8 @@ function platformSlides() {
         dots: false,
         arrow: true,
         draggable: true,
-        prevArrow: "<button class='custom-prev slides-btn-custom d-none'><img src='/assets/svg/icon/prev-icon.svg'></button>",
-        nextArrow: "<button class='custom-next slides-btn-custom'><img src='/assets/svg/icon/next-icon.svg'></button>",
+        prevArrow: "<button class='custom-prev slides-btn-custom d-none'><img src='assets/svg/icon/prev-icon.svg'></button>",
+        nextArrow: "<button class='custom-next slides-btn-custom'><img src='assets/svg/icon/next-icon.svg'></button>",
         responsive: [
 
             {

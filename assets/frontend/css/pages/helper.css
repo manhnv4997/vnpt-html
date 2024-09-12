@@ -18,6 +18,7 @@
   .helper-page .block:nth-child(1) .block__content .circle-list {
     justify-content: unset;
     overflow-x: scroll;
+    height: 111px;
   }
 }
 .helper-page .block:nth-child(1) .block__content .circle-list__item {

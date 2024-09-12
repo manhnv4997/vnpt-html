@@ -1,11 +1,10 @@
 $(document).ready(function () {
     handleServiceSlides();
-    showMessenger();
+    showContactWidget();
 });
 
-function showMessenger() {
-    $('.tu-van').addClass('--show');
-    $('.messenger').addClass('--show');
+function showContactWidget() {
+    $('.contact-widget').addClass('--show');
 }
 
 function handleServiceSlides() {
