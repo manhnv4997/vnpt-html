@@ -2,12 +2,12 @@
 let intervalId;
 
 $(document).ready(function () {
-    handleClickTabTitle();
     handleSlides();
     handleSlidesBottom()
-    checkParamUrlAndActiveTab();
-    handleActiveTabWhenChangeParamUrl();
-    handleClickTitleCategory();
+    // handleClickTabTitle();
+    // checkParamUrlAndActiveTab();
+    // handleActiveTabWhenChangeParamUrl();
+    // handleClickTitleCategory();
 });
 
 function handleClickTitleCategory() {

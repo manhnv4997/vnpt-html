@@ -336,11 +336,17 @@
   line-height: normal;
   text-transform: uppercase;
 }
+@media (max-width: 768px) {
+  .electronic-invoice-eticket-page .block:nth-child(3) .block__content .title {
+    text-align: center;
+  }
+}
 .electronic-invoice-eticket-page .block:nth-child(3) .block__content--main-content {
   display: flex;
   flex-flow: column;
   gap: 48px 0;
   margin-top: 25px;
+  overflow: hidden;
 }
 @media (max-width: 992px) {
   .electronic-invoice-eticket-page .block:nth-child(3) .block__content--main-content {

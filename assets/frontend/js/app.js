@@ -19,6 +19,8 @@ $(document).ready(function () {
     handleShowMenuMobile();
     handleShowChildMenuMb();
     handleShowChildMenuPc();
+    handleScroll();
+    handleResizeScreen();
 
     $('.header__btn-trial').on('click', function () {
         $('.tu-van-box').toggleClass('--show');
@@ -34,6 +36,35 @@ $(document).ready(function () {
         }
     });
 });
+
+function handleScroll() {
+    toggleSubMenu();
+    $(window).on('scroll', function () {
+        toggleSubMenu();
+    });
+}
+
+function handleResizeScreen() {
+    $(window).resize(function () {
+        toggleSubMenu();
+    });
+}
+
+function toggleSubMenu() {
+    const currentPosition = window.pageYOffset;
+    const screenWidth = window.innerWidth;
+    const heightMenuPC = 79;
+
+    if (screenWidth >= 992) {
+        if (currentPosition >= heightMenuPC) {
+            $('header').addClass('--fixed');
+        } else {
+            $('header').removeClass('--fixed');
+        }
+    } else {
+        $('header').removeClass('--fixed');
+    }
+}
 
 function handleShowChildMenuPc() {
     $('.header__menu--item').on('click', function () {

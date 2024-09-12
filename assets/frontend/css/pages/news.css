@@ -453,6 +453,7 @@
   .news-page .block__content--main-content .tabs__content--main-content .slides-box .list-item-slides__item .title-box .category {
     font-size: 12px;
     font-weight: 700;
+    padding-bottom: 10px;
   }
 }
 @media (max-width: 768px) {
@@ -604,6 +605,7 @@
   .news-page .block__content--main-content .tabs__content--main-content .list__item .title-box .category {
     font-size: 12px;
     font-weight: 700;
+    padding-bottom: 10px;
   }
 }
 @media (max-width: 768px) {

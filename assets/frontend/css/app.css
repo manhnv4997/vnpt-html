@@ -608,6 +608,7 @@ h6 {
 
 .page-content {
   min-height: 500px;
+  margin-top: 79px;
   background-color: #fff;
 }
 @media (max-width: 992px) {
@@ -1333,8 +1334,19 @@ header {
   height: 79px;
   width: 100%;
   z-index: 999;
-  transition: 0.1s height linear;
+  position: fixed;
+  top: 0;
+  transition: top 0.5s ease, height 0.5s ease;
+  background-color: #fff;
 }
+
+header.--fixed{
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  height: 50px;
+}
+
 @media (max-width: 992px) {
   header {
     height: 64px;
@@ -1346,13 +1358,15 @@ header.--hidden {
   height: 0;
   top: -50px;
 }
-header .header {
+header .header,
+header .header-mb {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100%;
   position: relative;
 }
+
 @media (max-width: 1100px) {
   header .header {
     gap: 0 30px;
@@ -1369,6 +1383,13 @@ header .header__logo-box {
   cursor: pointer;
   width: 118px;
   height: 62px;
+
+  transition: .2s all linear;
+}
+
+header.--fixed .header__logo-box {
+  width: 70px;
+  height: auto;
 }
 @media (max-width: 992px) {
   header .header__logo-box {
@@ -1414,11 +1435,11 @@ header .header__menu--item {
   position: relative;
   padding: 14px 0;
 }
-@media (max-width: 1400px) {
-  header .header__menu--item {
-    padding: 14px 0;
-  }
+
+header.--fixed .header__menu--item{
+  padding: 9px 0;
 }
+
 @media (max-width: 1100px) {
   header .header__menu--item {
     text-align: center;
@@ -1701,7 +1722,7 @@ header .header__icon-box-mb img.--show {
   color: #fff;
 }
 .menu-mb-box__top .menu-mb {
-  margin-top: 8px;
+  margin-top: 15px;
   display: flex;
   flex-flow: column;
   height: calc(100vh - 100px - 48px - 24px - 49px - 41px - 196px);
@@ -1753,6 +1774,7 @@ header .header__icon-box-mb img.--show {
 .menu-mb-box__bottom--logo-mb {
   width: 112px;
   height: 25.901px;
+  margin-bottom: 15px;
   flex-shrink: 0;
 }
 .menu-mb-box__bottom--item {
