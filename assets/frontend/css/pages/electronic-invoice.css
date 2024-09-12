@@ -558,7 +558,7 @@
   }
 }
 .electronic-invoice-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(2) .box:nth-child(2) .description-image {
-  flex-flow: column-reverse;
+  /* flex-flow: column-reverse; */
 }
 .electronic-invoice-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(2) .box:nth-child(2) .box__title {
   position: relative;
@@ -769,6 +769,7 @@
 .electronic-invoice-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(4) .box__title--text {
   display: flex;
   gap: 0 14px;
+  align-items: center;
 }
 .electronic-invoice-page .block:nth-child(3) .block__content--main-content .group-box:nth-child(4) .box__image {
   width: 287px;

@@ -624,7 +624,7 @@
   }
 }
 .service-page .block:nth-child(4) .block__left--link:hover {
-  color: #186fb0;
+  color: #033ec4;
 }
 .service-page .block:nth-child(4) .block__right {
   max-width: 696px;
@@ -652,4 +652,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 120% */
+}
+.service-page .block:nth-child(4) .block__right .list__item a:hover {
+  color: #033ec4;
 }

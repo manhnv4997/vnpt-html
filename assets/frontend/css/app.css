@@ -481,7 +481,7 @@ h6 {
 
 .tu-van {
   width: 40px;
-  height: 55px;
+  height: auto;
   flex-shrink: 0;
   z-index: 13;
   bottom: 200px;
@@ -534,6 +534,7 @@ h6 {
 @media (max-width: 992px) {
   .tu-van-box__content {
     left: 50%;
+    top:50%;
     right: unset;
     transform: translate(-50%, -50%);
   }
@@ -651,6 +652,7 @@ h6 {
 .arrow-button {
   position: relative;
   animation: arrowButton 1s infinite;
+  margin-left: 5px;
 }
 
 .breadcrumb {
