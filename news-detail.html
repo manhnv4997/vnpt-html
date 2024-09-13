@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="assets/library/bootstrap-5.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/frontend/css/app.css?v=11">
+    <link rel="stylesheet" href="assets/frontend/css/app.css?v=13">
     <link rel="stylesheet" href="assets/library/slick/slick.css">
     <link rel="stylesheet" href="assets/library/slick/slick-theme.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
@@ -21,13 +21,14 @@
     <script  src="assets/library/jquery/jquery-3.7.1.min.js"></script>
     <script  src="assets/library/slick/slick.min.js"></script>
     <script defer src="assets/library/cssanimation/scrolly.js"></script>
+    <script src="assets/library/bootstrap-5.1/js/bootstrap.min.js"></script>
 
     <!-- Common JS -->
     <script defer src="assets/frontend/js/app.js?v=2"></script>
 
 
-    <link rel="stylesheet" href="assets/frontend/css/pages/news-detail.css">
-    <script defer src="assets/frontend/js/pages/news-detail.js"></script>
+    <link rel="stylesheet" href="assets/frontend/css/pages/news-detail.css?v=1">
+    <script defer src="assets/frontend/js/pages/news-detail.js?v=2"></script>
 </head>
 
 <body>
@@ -149,13 +150,27 @@
     </header>
     
     <div class="sub-menu-news-detail">
-        <img src="assets/svg/icon/sub-menu-save.svg" alt="image">
-        <img src="assets/svg/icon/sub-menu-print.svg" alt="image">
-        <img src="assets/svg/icon/sub-menu-copy.svg" alt="image">
-        <img src="assets/svg/icon/sub-menu-comment.svg" alt="image">
-        <img src="assets/svg/icon/sub-menu-copy-link.svg" alt="image">
-        <img src="assets/svg/icon/sub-menu-share.svg" alt="image">
-        <img src="assets/svg/icon/sub-menu-font-size.svg" alt="image">
+        <a href="">
+            <img src="assets/svg/icon/sub-menu-save.svg" alt="image">
+        </a>
+        <a href="javascript:print()">
+            <img src="assets/svg/icon/sub-menu-print.svg" alt="image">
+        </a>
+        <a href="javascript:void(0)" class="btn_copy">
+            <img src="assets/svg/icon/sub-menu-copy.svg" alt="image">
+        </a>
+        <!-- <a href="">
+            <img src="assets/svg/icon/sub-menu-comment.svg" alt="image">
+        </a> -->
+        <a href="javascript:void(0)" class="copy__url__post">
+            <img src="assets/svg/icon/sub-menu-copy-link.svg" alt="image">
+        </a>
+        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#share">
+            <img src="assets/svg/icon/sub-menu-share.svg" alt="image">
+        </a>
+        <a href="javascript:void(0)" class="change-font-size">
+            <img src="assets/svg/icon/sub-menu-font-size.svg" alt="image">
+        </a>
     </div>
     
     <div class="menu-mb-box">
@@ -434,18 +449,18 @@
                         <span class="break-line"></span>
     
                         <div class="widget">
-                            <a class="widget__item">
+                            <a href="javascript:void(0)" class="widget__item">
                                 <img src="assets/svg/icon/save.svg" alt="image" class="widget__item--image">
                                 lưu
                             </a>
-                            <a class="widget__item">
+                            <a href="javascript:void(0)" class="widget__item" data-bs-toggle="modal" data-bs-target="#share">
                                 <img src="assets/svg/icon/share.svg" alt="image" class="widget__item--image">
                                 chia sẻ
                             </a>
-                            <a class="widget__item">
+                            <a href="javascript:print()" class="widget__item">
                                 <img src="assets/svg/icon/print.svg" alt="image" class="widget__item--image">
                             </a>
-                            <a class="widget__item">
+                            <a href="javascript:void(0)" class="widget__item btn_copy">
                                 <img src="assets/svg/icon/copy.svg" alt="image" class="widget__item--image">
                             </a>
                         </div>
@@ -672,26 +687,26 @@
     
         <div class="widget-box">
             <div class="text-size-box">
-                <button class="text-size-box__btn text-size-box__btn-bigger">+</button>
+                <button class="text-size-box__btn text-size-box__btn-bigger btn-bigger">+</button>
                 <span class="text-size-box__text">a <span class="bigger">a</span></span>
-                <button class="text-size-box__btn text-size-box__btn-smaller">-</button>
+                <button class="text-size-box__btn text-size-box__btn-smaller btn-smaller">-</button>
             </div>
     
-            <a href="#" class="widget-box__item">
+            <a href="#" class="widget-box__item copy__url__post">
                 <img src="assets/svg/icon/link-icon.svg" alt="">
             </a>
     
-            <a href="#" class="widget-box__item">
+            <a href="https://www.facebook.com/sharer.php?u=https://invoice.giaminhmedia.vn/news-detail.html" target="__blank" class="widget-box__item">
                 <img src="assets/svg/icon/fb-icon.svg" alt="">
             </a>
     
             <span class="break-line"></span>
     
-            <a href="#" class="widget-box__item">
+            <a href="javascript:void(0)" class="widget-box__item">
                 <img src="assets/svg/icon/save-widget-box.svg" alt="">
             </a>
     
-            <a href="#" class="widget-box__item">
+            <a href="javascript:print()" class="widget-box__item">
                 <img src="assets/svg/icon/print-widget-box.svg" alt="">
             </a>
     
@@ -879,7 +894,7 @@
                                 <img src="assets/svg/icon/phone.svg" alt="image">
                                 điện thoại
                             </p>
-                            <p>
+                            <p class="phone-number-mb">
                                 1800 1260
                             </p>
                         </div>
@@ -965,6 +980,55 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal fade" id="share" tabindex="-1" role="dialog" aria-labelledby="share" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="col-12 m-auto position-relative">
+                        <div class="input-group position-relative">
+                            <input type="text" value="https://www.google.com.vn" name="email"
+                                class="form-control form-control-sm url__post" placeholder="Link Copy">
+                            <a href="javascript:void(0)" class="btn form-control-sm copy__url__post">Copy link</a>
+                        </div>
+                        <p class="mt-3 mb-3" style="font-weight: 600">Chia sẻ thông tin</p>
+                        <ul class="d-flex" style="justify-content: space-around">
+                            <li>
+                                <a href="https://www.facebook.com/sharer.php?u=https://www.google.com.vn"
+                                    onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=380,width=660');return false;">
+                                    <i class="fab fa-facebook" style="color: #3B5998;font-size: 40px;"></i>
+                                </a>
+                            </li>
+    
+                            <li>
+                                <div style="cursor: pointer;background: #0180c7;border-radius: 50%;width: 40px;height: 40px; display: flex; align-items: center; padding-top: 5px"
+                                    class="zalo-share-button" data-customize="true" data-href="#"
+                                    data-oaid="4533472993395587209" data-layout="2" data-color="blue" data-customize=true>
+                                    <img src="assets/svg/news-detail/zalo.svg" alt="" class="img-fluid"
+                                        style="width: 35px; height: 35px;">
+                                </div>
+                            </li>
+    
+                            <li>
+                                <a href="https://t.me/share/url?url=https://www.google.com.vn"
+                                    onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=380,width=660');return false;">
+                                    <i class="fab fa-telegram" style="color: #039BE5;font-size: 40px;"></i>
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="https://twitter.com/intent/tweet?&url=https://www.google.com.vn"
+                                    onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=380,width=660');return false;">
+                                    <i class="fab fa-twitter" style="color: #039BE5;font-size: 40px;"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </body>
 
 </html>

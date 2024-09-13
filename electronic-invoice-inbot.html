@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="assets/library/bootstrap-5.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/frontend/css/app.css?v=11">
+    <link rel="stylesheet" href="assets/frontend/css/app.css?v=13">
     <link rel="stylesheet" href="assets/library/slick/slick.css">
     <link rel="stylesheet" href="assets/library/slick/slick-theme.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
@@ -149,13 +149,27 @@
     </header>
     
     <div class="sub-menu-news-detail">
-        <img src="assets/svg/icon/sub-menu-save.svg" alt="image">
-        <img src="assets/svg/icon/sub-menu-print.svg" alt="image">
-        <img src="assets/svg/icon/sub-menu-copy.svg" alt="image">
-        <img src="assets/svg/icon/sub-menu-comment.svg" alt="image">
-        <img src="assets/svg/icon/sub-menu-copy-link.svg" alt="image">
-        <img src="assets/svg/icon/sub-menu-share.svg" alt="image">
-        <img src="assets/svg/icon/sub-menu-font-size.svg" alt="image">
+        <a href="">
+            <img src="assets/svg/icon/sub-menu-save.svg" alt="image">
+        </a>
+        <a href="javascript:print()">
+            <img src="assets/svg/icon/sub-menu-print.svg" alt="image">
+        </a>
+        <a href="javascript:void(0)" class="btn_copy">
+            <img src="assets/svg/icon/sub-menu-copy.svg" alt="image">
+        </a>
+        <!-- <a href="">
+            <img src="assets/svg/icon/sub-menu-comment.svg" alt="image">
+        </a> -->
+        <a href="javascript:void(0)" class="copy__url__post">
+            <img src="assets/svg/icon/sub-menu-copy-link.svg" alt="image">
+        </a>
+        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#share">
+            <img src="assets/svg/icon/sub-menu-share.svg" alt="image">
+        </a>
+        <a href="javascript:void(0)" class="change-font-size">
+            <img src="assets/svg/icon/sub-menu-font-size.svg" alt="image">
+        </a>
     </div>
     
     <div class="menu-mb-box">
@@ -915,7 +929,7 @@
                                 <img src="assets/svg/icon/phone.svg" alt="image">
                                 điện thoại
                             </p>
-                            <p>
+                            <p class="phone-number-mb">
                                 1800 1260
                             </p>
                         </div>

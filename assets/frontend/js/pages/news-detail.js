@@ -1,3 +1,9 @@
+let currentSize = 0;
+const coefficientSize = 4;
+const minFontSizeText = 18;
+const minFontSizeTitlePC = 40;
+const minFontSizeTitleMB = 32;
+
 $(document).ready(function () {
 
     $('.widget-box').addClass('--show');
@@ -5,7 +11,82 @@ $(document).ready(function () {
     handleMainContent();
     handleScroll();
     handleResize();
+    copyUrl();
+    handleChangeSize();
+    handleCopyContent();
 });
+
+function handleCopyContent() {
+    $(".btn_copy").click(function () {
+        const inputTag = $("<input id='input-copy-content' >");
+
+        const titleText = $('.content .title').text();
+        const contentText = $('.main p').text().replace(/\s+/g, ' ').trim();
+
+        const content = `${titleText} \n ${contentText}`;
+
+
+        $("body").append(inputTag);
+        $('#input-copy-content').val(content);
+        $('#input-copy-content').select();
+        document.execCommand("copy");
+        alert("Đã sao chép nội dung");
+        inputTag.remove();
+    });
+}
+
+function handleChangeSize() {
+    $('.btn-bigger').on('click', function () {
+        if (currentSize < 3) {
+            currentSize = currentSize + 1;
+        }
+
+        handleChangeSizeContent();
+    })
+    $('.btn-smaller').on('click', function () {
+        if (currentSize > 0) {
+            currentSize = currentSize - 1;
+        }
+
+        handleChangeSizeContent();
+    })
+
+    $('.change-font-size').on('click', function () {
+        currentSize = currentSize == 0 ? 1 : 0;
+        handleChangeSizeContent();
+    });
+}
+
+function handleChangeSizeContent() {
+    const minFontSizeTitle = window.innerWidth > 992 ? minFontSizeTitlePC : minFontSizeTitleMB;
+
+    $('.main p').css('font-size', `${minFontSizeText + currentSize * coefficientSize}px`)
+    $('.content h1').css('font-size', `${minFontSizeTitle + currentSize * coefficientSize}px`)
+}
+
+function copyUrl() {
+    $('.copy__url__post').click(function () {
+        var currentUrl = window.location.href;
+
+        // Create a temporary input element
+        var $tempInput = $('<input>');
+
+        // Append the input element to the body
+        $('body').append($tempInput);
+
+        // Set the value of the input element to the current URL
+        $tempInput.val(currentUrl).select();
+
+        // Copy the value to the clipboard
+        document.execCommand('copy');
+
+        // Remove the temporary input element
+        $tempInput.remove();
+
+        // Notify the user
+        alert('Đã sao chép đường dẫn!');
+    });
+}
 
 function handleMainContent() {
 

@@ -1,6 +1,14 @@
 .news-detail-page .block {
   padding-top: 41px;
 }
+
+@media print {
+  /* All your print styles go here */
+  header {
+    display: none !important;
+  }
+}
+
 @media (max-width: 992px) {
   .news-detail-page .block {
     padding-top: 25px;
