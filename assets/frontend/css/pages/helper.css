@@ -119,6 +119,7 @@
     width: fit-content;
     height: 44px;
     flex-shrink: 0;
+    padding: 0 14px;
   }
 }
 .helper-page .block:nth-child(1) .block__content .input-box__button-search:hover {
@@ -161,6 +162,11 @@
   justify-content: center;
   gap: 10px 8px;
   margin-top: 33px;
+}
+@media(max-width:576px){
+  .helper-page .block:nth-child(1) .block__content .suggest-question__content {
+    justify-content: flex-start;
+  }
 }
 .helper-page .block:nth-child(1) .block__content .suggest-question__content--item {
   width: -moz-max-content;
@@ -328,7 +334,7 @@
     grid-template-columns: 1fr;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 576px) {k
   .helper-page .block:nth-child(3) .block__content--main-content .list__item {
     height: 220px;
   }
@@ -351,6 +357,10 @@
 }
 .helper-page .block:nth-child(3) .block__content--main-content .list__item:nth-child(5) {
   background-image: linear-gradient(180deg, rgba(12, 90, 219, 0) 0%, #001944 100%), url("../../../images/helper/image-5.jpg");
+  background-repeat: no-repeat;
+}
+.helper-page .block:nth-child(3) .block__content--main-content .list__item:nth-child(6) {
+  background-image: linear-gradient(180deg, rgba(12, 90, 219, 0) 0%, #001944 100%), url("../../../images/helper/image-4.png");
   background-repeat: no-repeat;
 }
 .helper-page .block:nth-child(3) .block__content--main-content .list__item:hover {
