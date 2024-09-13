@@ -307,6 +307,7 @@
 }
 .electronic-invoice-page .block:nth-child(3) {
   margin-top: 74px;
+  overflow: hidden;
 }
 @media (min-width: 1440px) {
   .electronic-invoice-page .block:nth-child(3) .block__content {
