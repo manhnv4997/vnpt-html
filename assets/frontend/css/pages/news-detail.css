@@ -392,10 +392,19 @@
     gap: 24px 12px;
   }
 }
+@media(max-width:768px){
+  .news-detail-page .block:nth-child(1) .block__content--main-content .related__list{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
 @media (max-width: 576px) {
   .news-detail-page .block:nth-child(1) .block__content--main-content .related__list {
     grid-template-columns: 1fr;
     gap: 33px 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 .news-detail-page .block:nth-child(1) .block__content--main-content .related__list--item {

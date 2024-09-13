@@ -1504,7 +1504,8 @@ header .header__menu--item.--active .child-menu span {
 header .header__menu--item .child-menu {
   border-radius: 10px;
   border: 1px solid transparent;
-  background-color: transparent;
+  background-color: #fff;
+
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
   position: absolute;
   display: flex;
@@ -1517,13 +1518,12 @@ header .header__menu--item .child-menu {
   transform: translateX(-50%);
   padding: 0;
   opacity: 0;
-  transition: 0.2s background-color linear, 0.2s height linear, 0.2s padding linear, 0.2s border linear;
+  padding: 20px 12px;
+  transition: 0.2s height linear, 0.2s padding linear, 0.2s border linear, 0.2s opacity linear;
 }
 header .header__menu--item .child-menu.--active {
-  padding: 20px 12px;
   height: auto;
   opacity: 1;
-  background-color: #fff;
   border: 1px solid #1f7bff;
 }
 header .header__menu--item .child-menu__item a {
