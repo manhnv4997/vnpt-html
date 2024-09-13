@@ -1,17 +1,17 @@
 window.onload = function () {
     scrolly();
 };
-if (jQuery(window).width() > 992) {
-    if (jQuery(".is-animated").length) {
-        jQuery(".is-animated").each(function (index) {
-            let nameAnimate = jQuery(this).data("animation"),
-                delayAnimate = jQuery(this).data("delay") ?? "0s";
+if ($(window).width() > 992) {
+    if ($(".is-animated").length) {
+        $(".is-animated").each(function (index) {
+            let nameAnimate = $(this).data("animation"),
+                delayAnimate = $(this).data("delay") ?? "0s";
 
-            jQuery(this).attr({
+            $(this).attr({
                 "data-scrolly-down": nameAnimate + ",delay: " + delayAnimate,
             });
         });
-        jQuery(".is-animated").removeClass("is-animated");
+        $(".is-animated").removeClass("is-animated");
     }
 }
 
@@ -19,7 +19,7 @@ $(document).ready(function () {
     handleShowMenuMobile();
     handleShowChildMenuMb();
     handleShowChildMenuPc();
-    handleScroll();
+    handleScrollNewsDetail();
     handleResizeScreen();
 
     $('.header__btn-trial').on('click', function () {
@@ -37,7 +37,7 @@ $(document).ready(function () {
     });
 });
 
-function handleScroll() {
+function handleScrollNewsDetail() {
     toggleSubMenu();
     $(window).on('scroll', function () {
         toggleSubMenu();

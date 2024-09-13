@@ -1343,6 +1343,13 @@ header {
   padding-bottom: 10px;
 }
 
+@media(max-width:992px){
+  header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
 header.--fixed{
   position: fixed;
   top: 0;
@@ -1633,6 +1640,19 @@ header .header__icon-box-mb img.--show {
   z-index: 10;
   transition: 0.5s top ease;
 }
+
+@media(max-width:992px){
+  .sub-menu-news-detail {
+    gap: 0 20px;
+  }
+}
+
+@media(max-width:768px){
+  .sub-menu-news-detail {
+    gap: 0 15px;
+  }
+}
+
 .sub-menu-news-detail.--show {
   top: 0;
 }
