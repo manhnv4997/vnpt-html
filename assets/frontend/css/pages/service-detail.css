@@ -17,6 +17,13 @@
   background: url("../../../images/service-detail/service-detai-bg.png") 100% 9% no-repeat;
   z-index: 0;
 }
+@media(max-width:992px){
+  .service-detail-page .block:nth-child(1)::before {
+    background: url("../../../images/service-detail/service-detai-bg-mb.jpg") 100% 9% no-repeat;
+    background-position: calc(100% + 40px) -50px;
+
+  }
+}
 .service-detail-page .block:nth-child(1) .container-xl {
   position: relative;
 }
@@ -298,6 +305,7 @@
 }
 .service-detail-page .block:nth-child(1) .block__content .service-detail-box {
   max-width: 1122px;
+  width: 100%;
   height: 631px;
   border-radius: 12px;
   background: #fff;
@@ -477,13 +485,18 @@
   line-height: normal;
   margin: 0 10px;
 }
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .service-detail-page .block:nth-child(2) .block__content--title {
-    margin: 0 10px;
+    margin: 0;
   }
 }
 .service-detail-page .block:nth-child(2) .block__content .service-slides {
   margin-top: 24px;
+}
+@media(max-width:1200px){
+  .service-detail-page .block:nth-child(2) .block__content .service-slides {
+    margin-left: -0.5rem;
+  }
 }
 .service-detail-page .block:nth-child(2) .block__content .service-slides .slick-track {
   padding-bottom: 30px;

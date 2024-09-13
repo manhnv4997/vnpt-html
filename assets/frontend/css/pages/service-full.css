@@ -8,6 +8,10 @@
   }
 }
 
+.breadcrumb{
+  padding: 0 20px;
+}
+
 .service-full-page .block:nth-child(1) .block__content{
   margin-top: 33px;
 }

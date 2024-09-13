@@ -19,6 +19,12 @@
   display: flex;
   flex-flow: row;
   gap: 0 20px;
+  padding: 0 20px;
+}
+@media(max-width:992px){
+  .news-page .block__content .breadcrumb-box .breadcrumb {
+    padding: 0;
+  }
 }
 .news-page .block__content .breadcrumb-box .breadcrumb__item a {
   color: #2e2e2e;
@@ -72,7 +78,7 @@
 }
 @media (max-width: 992px) {
   .news-page .block__content--main-content .tabs .break-line {
-    width: calc(100% - 20px);
+    width: 100%;
   }
 }
 .news-page .block__content--main-content .tabs .title-tabs-box {
