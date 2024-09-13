@@ -1513,16 +1513,16 @@ header .header__menu--item .child-menu {
   z-index: 3;
   top: 100%;
   left: 50%;
+  height: auto;
   transform: translateX(-50%);
-  height: 0;
   padding: 0;
-  overflow: hidden;
+  opacity: 0;
   transition: 0.2s background-color linear, 0.2s height linear, 0.2s padding linear, 0.2s border linear;
 }
 header .header__menu--item .child-menu.--active {
   padding: 20px 12px;
-  height: 273px;
   height: auto;
+  opacity: 1;
   background-color: #fff;
   border: 1px solid #1f7bff;
 }
