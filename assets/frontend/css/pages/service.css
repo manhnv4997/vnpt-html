@@ -339,10 +339,10 @@
 .service-page .block:nth-child(2) .block__content--main-content .item .content-box .explore-link {
   color: #fff;
   margin-left: auto;
-  margin-right: auto;
   bottom: 32px;
   right: 30px;
 }
+
 .service-page .block:nth-child(2) .block__content--main-content .item .content-box .explore-link:hover {
   color: #1f99ff;
 }
@@ -350,6 +350,7 @@
   .service-page .block:nth-child(2) .block__content--main-content .item .content-box .explore-link {
     width: 100%;
     text-align: center;
+    margin-right: auto;
   }
 }
 .service-page .block:nth-child(2) .block__content--main-content .item:nth-child(1) .content-box {

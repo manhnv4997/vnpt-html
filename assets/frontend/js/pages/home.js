@@ -2,7 +2,7 @@ $(document).ready(function () {
     bannerSlides();
     platformSlides();
     handleSuccessProject();
-    showMessenger();
+    showContactWidget();
 });
 
 function showContactWidget() {
@@ -169,7 +169,7 @@ function platformSlides() {
     });
 
     $('.platform-slides').on('afterChange', function (event, slick, currentSlide) {
-        if ($(window).width() <= 1500 && $(window).width() >= 1300) {
+        if ($(window).width() <= 1500 && $(window).width() >= 992) {
             var $slider = $('.platform-slides');
             var slickObj = $slider.slick('getSlick');
 
@@ -191,7 +191,6 @@ function platformSlides() {
 
             if (currentSlide > 0) {
                 $('.custom-prev').removeClass('d-none');
-                // $('.custom-next').addClass('d-none');
             } else if (currentSlide == 0) {
                 $('.custom-prev').addClass('d-none');
                 $('.custom-next').removeClass('d-none');

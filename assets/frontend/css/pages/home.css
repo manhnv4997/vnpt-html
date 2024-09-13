@@ -362,7 +362,7 @@
   background: transparent;
   border: unset;
 }
-@media (max-width: 1300px) {
+@media (max-width: 992px) {
   .home-page .block:nth-child(2) .platform-slides-box .platform-slides .slides-btn-custom {
     display: none !important;
   }
