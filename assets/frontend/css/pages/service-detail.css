@@ -460,7 +460,7 @@
 }
 .service-detail-page .block:nth-child(2) .block__content {
   max-width: 1152px;
-  margin-top: 84px;
+  margin: 84px auto 0 auto;
 }
 @media (max-width: 992px) {
   .service-detail-page .block:nth-child(2) .block__content {
@@ -488,14 +488,21 @@
 @media (max-width: 1200px) {
   .service-detail-page .block:nth-child(2) .block__content--title {
     margin: 0;
+    height: auto;
   }
 }
 .service-detail-page .block:nth-child(2) .block__content .service-slides {
   margin-top: 24px;
+  padding: 0 0.5rem;
 }
 @media(max-width:1200px){
   .service-detail-page .block:nth-child(2) .block__content .service-slides {
-    margin-left: -0.5rem;
+    padding: 0 1.5rem 0 0;
+  }
+}
+@media(max-width:1200px){
+  .service-detail-page .block:nth-child(2) .block__content .service-slides {
+    padding: 0;
   }
 }
 .service-detail-page .block:nth-child(2) .block__content .service-slides .slick-track {
@@ -507,7 +514,12 @@
   }
 }
 .service-detail-page .block:nth-child(2) .block__content .service-slides .slick-dots {
-  bottom: -25px;
+  bottom: -10px;
+}
+@media(max-width:992px){
+  .service-detail-page .block:nth-child(2) .block__content .service-slides .slick-dots {
+    bottom: 34px;
+  }
 }
 .service-detail-page .block:nth-child(2) .block__content .service-slides .slick-dots li {
   width: 26.429px;
@@ -574,6 +586,22 @@
   /* drop shadow */
   box-shadow: 0px 4px 15px 0px rgba(129, 129, 129, 0.25);
   margin: 0 10px;
+}
+@media(max-width:1200px){
+  .service-detail-page .block:nth-child(2) .block__content .service-slides__item:first-child{
+    margin-left: 1.2rem
+  }
+}
+@media(max-width:992px){
+  .service-detail-page .block:nth-child(2) .block__content .service-slides__item {
+    margin: 0 11.5px;
+  }
+  .service-detail-page .block:nth-child(2) .block__content .service-slides__item:first-child{
+    margin-left: 1rem
+  }
+  .service-detail-page .block:nth-child(2) .block__content .service-slides__item:last-child{
+    margin-right: 0;
+  }
 }
 .service-detail-page .block:nth-child(2) .block__content .service-slides__item:hover {
   background-color: rgba(219, 239, 253, 0.4705882353);

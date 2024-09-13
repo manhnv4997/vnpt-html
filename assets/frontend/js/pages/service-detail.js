@@ -18,8 +18,8 @@ function handleServiceSlides() {
         infinite: false,
         dots: true,
         arrows: true,
-        prevArrow: "<button class='custom-prev slides-btn-custom d-none'><img src='/assets/svg/icon/prev-icon.svg'></button>",
-        nextArrow: "<button class='custom-next slides-btn-custom'><img src='/assets/svg/icon/next-icon.svg'></button>",
+        prevArrow: "<button class='custom-prev slides-btn-custom d-none'><img src='assets/svg/icon/prev-icon.svg'></button>",
+        nextArrow: "<button class='custom-next slides-btn-custom'><img src='assets/svg/icon/next-icon.svg'></button>",
         responsive: [
             {
                 breakpoint: 1400,

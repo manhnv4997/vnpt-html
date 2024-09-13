@@ -74,7 +74,7 @@
   border-radius: 200px;
   background: #fff;
   position: absolute;
-  left: 20px;
+  left: 30px;
   top: 50%;
   transform: translateY(-50%);
   z-index: 2;
@@ -108,11 +108,16 @@
   font-weight: 500;
   line-height: 22px; /* 129.412% */
   text-transform: uppercase;
-  right: 5px;
+  right: 18px;
   top: 50%;
   transform: translateY(-50%);
   z-index: 2;
   padding: 0 20px;
+}
+@media (max-width: 1200px) {
+  .helper-page .block:nth-child(1) .block__content .input-box__button-search {
+    right: 22px;
+  }
 }
 @media (max-width: 768px) {
   .helper-page .block:nth-child(1) .block__content .input-box__button-search {
@@ -207,6 +212,7 @@
   flex-flow: row;
   justify-content: space-between;
   gap: 0 70px;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .helper-page .block:nth-child(2) .block__content {
