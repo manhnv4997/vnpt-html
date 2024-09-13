@@ -1324,7 +1324,7 @@
   .home-page .block:nth-child(6) .block__left--title {
     color: #212121;
     font-size: 34px;
-    text-align: justify;
+    text-align: center;
   }
 }
 .home-page .block:nth-child(6) .block__left--description {
