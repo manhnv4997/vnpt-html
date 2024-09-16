@@ -767,8 +767,7 @@
 }
 @media (max-width: 480px) {
   .home-page .block:nth-child(3) .block__content--item:nth-child(2) .item__image-box {
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     background-size: 100%;
     background-position: right;
     margin-right: 10px;
@@ -778,7 +777,7 @@
   .home-page .block:nth-child(3) .block__content--item:nth-child(2) .item__image-box {
     max-width: 100%;
     width: auto;
-    height: 194.933px;
+    height: 216px;
     flex-shrink: 0;
     margin-right: 0;
   }

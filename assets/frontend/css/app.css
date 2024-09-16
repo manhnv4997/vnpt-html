@@ -506,14 +506,12 @@ h6 {
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    transition: filter 0.2s ease-in-out, visibility 0s 0.2s;
   }
 }
 .tu-van-box.--show, .tu-van-box.--show .tu-van-box__content {
   visibility: visible;
   filter: blur(0);
   z-index: 13;
-  transition: filter 0.2s ease-in-out, visibility 0s;
 }
 .tu-van-box__content {
   position: fixed;
@@ -529,7 +527,6 @@ h6 {
   border-top: 7px solid #345ce5;
   padding: 30px 24px 40px;
   filter: blur(50px);
-  transition: filter 0.2s ease-in-out, visibility 0s 0.2s;
 }
 @media (max-width: 992px) {
   .tu-van-box__content {
