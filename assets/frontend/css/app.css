@@ -631,7 +631,7 @@ h6 {
 
 @media (min-width: 1400px) {
   .container-xl {
-    max-width: 1140px;
+    /* max-width: 1140px; */
   }
 }
 
@@ -1516,7 +1516,6 @@ header .header__menu--item .child-menu {
   border-radius: 10px;
   border: 1px solid transparent;
   background-color: #fff;
-
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
   position: absolute;
   display: flex;
@@ -1530,11 +1529,15 @@ header .header__menu--item .child-menu {
   padding: 0;
   opacity: 0;
   padding: 20px 12px;
-  transition: 0.2s height linear, 0.2s padding linear, 0.2s border linear, 0.2s opacity linear;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  transition:  0.2s opacity linear;
 }
 header .header__menu--item .child-menu.--active {
   height: auto;
   opacity: 1;
+  padding: 20px 12px;
   border: 1px solid #1f7bff;
 }
 header .header__menu--item .child-menu__item a {

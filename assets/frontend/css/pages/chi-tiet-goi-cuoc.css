@@ -1,33 +1,33 @@
-.service-detail-page .block:nth-child(1) {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) {
   padding-top: 41px;
   position: relative;
 }
 @media (max-width: 992px) {
-  .service-detail-page .block:nth-child(1) {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) {
     padding-top: 16px;
   }
 }
-.service-detail-page .block:nth-child(1)::before {
+.chi-tiet-goi-cuoc-page .block:nth-child(1)::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 307px;
-  background: url("../../../images/service-detail/service-detai-bg.png") 100% 9% no-repeat;
+  background: url("../../../images/chi-tiet-goi-cuoc/service-detai-bg.png") 100% 9% no-repeat;
   z-index: 0;
 }
 @media(max-width:992px){
-  .service-detail-page .block:nth-child(1)::before {
-    background: url("../../../images/service-detail/service-detai-bg-mb.jpg") 100% 9% no-repeat;
+  .chi-tiet-goi-cuoc-page .block:nth-child(1)::before {
+    background: url("../../../images/chi-tiet-goi-cuoc/service-detai-bg-mb.jpg") 100% 9% no-repeat;
     background-position: calc(100% + 40px) -50px;
 
   }
 }
-.service-detail-page .block:nth-child(1) .container-xl {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .container-xl {
   position: relative;
 }
-.service-detail-page .block:nth-child(1) .container-xl .breadcrumb {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .container-xl .breadcrumb {
   display: flex;
   flex-flow: row;
   gap: 0 20px;
@@ -35,16 +35,16 @@
   align-items: center;
 }
 @media (max-width: 992px) {
-  .service-detail-page .block:nth-child(1) .container-xl .breadcrumb {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) .container-xl .breadcrumb {
     gap: 0 4px;
   }
 }
 @media (max-width: 768px) {
-  .service-detail-page .block:nth-child(1) .container-xl .breadcrumb {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) .container-xl .breadcrumb {
     margin-bottom: 0;
   }
 }
-.service-detail-page .block:nth-child(1) .container-xl .breadcrumb__item a {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .container-xl .breadcrumb__item a {
   color: #2e2e2e;
   font-weight: 400;
   font-size: 17px;
@@ -52,25 +52,25 @@
   line-height: 22px; /* 129.412% */
 }
 @media (max-width: 992px) {
-  .service-detail-page .block:nth-child(1) .container-xl .breadcrumb__item a {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) .container-xl .breadcrumb__item a {
     font-size: 14px;
   }
 }
-.service-detail-page .block:nth-child(1) .container-xl .breadcrumb__item a:hover {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .container-xl .breadcrumb__item a:hover {
   color: #033ec4;
 }
-.service-detail-page .block:nth-child(1) .container-xl .breadcrumb__item:last-child a {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .container-xl .breadcrumb__item:last-child a {
   color: #1f7bff;
   font-style: normal;
   font-weight: 700;
 }
-.service-detail-page .block:nth-child(1) .block__content {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content {
   position: relative;
   display: flex;
   flex-flow: column;
   align-items: center;
 }
-.service-detail-page .block:nth-child(1) .block__content--title {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content--title {
   margin-top: 81px;
   color: #000;
   text-shadow: 8px 12px 24px rgba(0, 0, 0, 0.05);
@@ -82,18 +82,18 @@
   text-align: center;
 }
 @media (max-width: 992px) {
-  .service-detail-page .block:nth-child(1) .block__content--title {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content--title {
     margin-top: 62px;
     color: #3e4241;
     font-size: 34px;
   }
 }
 @media (max-width: 768px) {
-  .service-detail-page .block:nth-child(1) .block__content--title {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content--title {
     font-size: 24px;
   }
 }
-.service-detail-page .block:nth-child(1) .block__content .service-price-box {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   max-width: 1122px;
@@ -107,17 +107,17 @@
   position: relative;
 }
 @media (max-width: 992px) {
-  .service-detail-page .block:nth-child(1) .block__content .service-price-box {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box {
     margin-top: 28px;
   }
 }
 @media (max-width: 768px) {
-  .service-detail-page .block:nth-child(1) .block__content .service-price-box {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box {
     grid-template-columns: 1fr;
     height: auto;
   }
 }
-.service-detail-page .block:nth-child(1) .block__content .service-price-box .layer {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box .layer {
   width: 64.687px;
   height: 105.5px;
   flex-shrink: 0;
@@ -126,7 +126,7 @@
   right: 11px;
 }
 @media (max-width: 768px) {
-  .service-detail-page .block:nth-child(1) .block__content .service-price-box .layer {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box .layer {
     width: 49.053px;
     height: 80px;
     flex-shrink: 0;
@@ -134,7 +134,7 @@
     right: 10px;
   }
 }
-.service-detail-page .block:nth-child(1) .block__content .service-price-box .vnpt {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box .vnpt {
   width: 79.53px;
   height: 18.392px;
   flex-shrink: 0;
@@ -143,7 +143,7 @@
   right: 25px;
 }
 @media (max-width: 768px) {
-  .service-detail-page .block:nth-child(1) .block__content .service-price-box .vnpt {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box .vnpt {
     width: 79.53px;
     height: 18.392px;
     flex-shrink: 0;
@@ -151,36 +151,36 @@
     right: 20px;
   }
 }
-.service-detail-page .block:nth-child(1) .block__content .service-price-box__item {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box__item {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 @media (max-width: 768px) {
-  .service-detail-page .block:nth-child(1) .block__content .service-price-box__item {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box__item {
     height: 136px;
     padding: 28px 32px;
   }
 }
 @media (max-width: 768px) {
-  .service-detail-page .block:nth-child(1) .block__content .service-price-box__item p {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box__item p {
     width: 100%;
   }
 }
-.service-detail-page .block:nth-child(1) .block__content .service-price-box__item p span {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box__item p span {
   text-align: center;
 }
 @media (max-width: 480px) {
-  .service-detail-page .block:nth-child(1) .block__content .service-price-box__item p span {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box__item p span {
     text-align: left;
   }
 }
-.service-detail-page .block:nth-child(1) .block__content .service-price-box__name {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box__name {
   display: flex;
   flex-flow: row;
   gap: 0 16px;
 }
-.service-detail-page .block:nth-child(1) .block__content .service-price-box__name .code {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box__name .code {
   width: 54px;
   height: 54px;
   color: #fff;
@@ -191,7 +191,7 @@
   font-weight: 400;
   line-height: 20px; /* 142.857% */
   text-transform: uppercase;
-  background-image: url("../../../svg/service-detail/block-1-invoice-price-circle-bg.svg");
+  background-image: url("../../../svg/chi-tiet-goi-cuoc/block-1-invoice-price-circle-bg.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   display: flex;
@@ -199,7 +199,7 @@
   align-items: center;
   justify-content: center;
 }
-.service-detail-page .block:nth-child(1) .block__content .service-price-box__name .name {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box__name .name {
   color: #000;
   font-size: 13px;
   font-style: normal;
@@ -209,13 +209,13 @@
   flex-flow: column;
 }
 @media (max-width: 768px) {
-  .service-detail-page .block:nth-child(1) .block__content .service-price-box__name .name {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box__name .name {
     color: #4e4e4e;
     font-size: 15px;
     line-height: 22px; /* 146.667% */
   }
 }
-.service-detail-page .block:nth-child(1) .block__content .service-price-box__name .name .special {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box__name .name .special {
   font-family: "Ford Antenna";
   font-size: 32px;
   font-style: normal;
@@ -224,30 +224,30 @@
   text-transform: uppercase;
 }
 @media (max-width: 992px) {
-  .service-detail-page .block:nth-child(1) .block__content .service-price-box__name .name .special {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box__name .name .special {
     color: #000;
     font-family: "Ford Antenna";
     font-size: 28px;
   }
 }
 @media (max-width: 768px) {
-  .service-detail-page .block:nth-child(1) .block__content .service-price-box__name .name .special {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box__name .name .special {
     font-size: 24px;
   }
 }
-.service-detail-page .block:nth-child(1) .block__content .service-price-box__price {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box__price {
   border-left: dashed 1px #bbb;
   border-right: dashed 1px #bbb;
 }
 @media (max-width: 768px) {
-  .service-detail-page .block:nth-child(1) .block__content .service-price-box__price {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box__price {
     border-left: unset;
     border-right: unset;
     border-top: dashed 1px #bbb;
     border-bottom: dashed 1px #bbb;
   }
 }
-.service-detail-page .block:nth-child(1) .block__content .service-price-box__price .price {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box__price .price {
   display: flex;
   flex-flow: column;
   color: #000;
@@ -256,7 +256,7 @@
   font-weight: 400;
   line-height: 20px; /* 153.846% */
 }
-.service-detail-page .block:nth-child(1) .block__content .service-price-box__price .price .special {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box__price .price .special {
   color: #1f7bff;
   font-feature-settings: "salt" on;
   font-family: "Ford Antenna";
@@ -267,16 +267,16 @@
   text-transform: uppercase;
 }
 @media (max-width: 992px) {
-  .service-detail-page .block:nth-child(1) .block__content .service-price-box__price .price .special {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box__price .price .special {
     font-size: 31px;
   }
 }
 @media (max-width: 768px) {
-  .service-detail-page .block:nth-child(1) .block__content .service-price-box__price .price .special {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box__price .price .special {
     font-size: 24px;
   }
 }
-.service-detail-page .block:nth-child(1) .block__content .service-price-box__invoice-number .invoice-number {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box__invoice-number .invoice-number {
   color: #000;
   font-size: 13px;
   font-style: normal;
@@ -285,7 +285,7 @@
   display: flex;
   flex-flow: column;
 }
-.service-detail-page .block:nth-child(1) .block__content .service-price-box__invoice-number .invoice-number .special {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box__invoice-number .invoice-number .special {
   font-family: "Ford Antenna";
   font-size: 32px;
   font-style: normal;
@@ -294,16 +294,16 @@
   text-transform: uppercase;
 }
 @media (max-width: 992px) {
-  .service-detail-page .block:nth-child(1) .block__content .service-price-box__invoice-number .invoice-number .special {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box__invoice-number .invoice-number .special {
     font-size: 28px;
   }
 }
 @media (max-width: 768px) {
-  .service-detail-page .block:nth-child(1) .block__content .service-price-box__invoice-number .invoice-number .special {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box__invoice-number .invoice-number .special {
     font-size: 24px;
   }
 }
-.service-detail-page .block:nth-child(1) .block__content .service-detail-box {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .chi-tiet-goi-cuoc-box {
   max-width: 1122px;
   width: 100%;
   height: 631px;
@@ -314,7 +314,7 @@
   box-shadow: 0px 4px 15px 0px rgba(129, 129, 129, 0.25);
 }
 @media (max-width: 992px) {
-  .service-detail-page .block:nth-child(1) .block__content .service-detail-box {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .chi-tiet-goi-cuoc-box {
     width: 100%;
     height: auto;
     margin-top: 48px;
@@ -322,36 +322,36 @@
     padding: 0;
   }
 }
-.service-detail-page .block:nth-child(1) .block__content .service-detail-box__content {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .chi-tiet-goi-cuoc-box__content {
   display: flex;
   flex-flow: row;
   gap: 0 61px;
 }
 @media (max-width: 992px) {
-  .service-detail-page .block:nth-child(1) .block__content .service-detail-box__content {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .chi-tiet-goi-cuoc-box__content {
     gap: 0 40px;
   }
 }
 @media (max-width: 768px) {
-  .service-detail-page .block:nth-child(1) .block__content .service-detail-box__content {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .chi-tiet-goi-cuoc-box__content {
     flex-flow: column-reverse;
     gap: 40px 0;
   }
 }
-.service-detail-page .block:nth-child(1) .block__content .service-detail-box__content--left {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .chi-tiet-goi-cuoc-box__content--left {
   max-width: 313px;
   width: 100%;
 }
 @media (max-width: 768px) {
-  .service-detail-page .block:nth-child(1) .block__content .service-detail-box__content--left {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .chi-tiet-goi-cuoc-box__content--left {
     max-width: 100%;
   }
 }
-.service-detail-page .block:nth-child(1) .block__content .service-detail-box__content--left .name {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .chi-tiet-goi-cuoc-box__content--left .name {
   width: 100%;
   height: 194px;
   flex-shrink: 0;
-  background-image: url("../../../svg/service-detail/block-1-invoice-detail-name-bg.svg");
+  background-image: url("../../../svg/chi-tiet-goi-cuoc/block-1-invoice-detail-name-bg.svg");
   background-repeat: no-repeat;
   color: #fff;
   text-shadow: 4.348px 6.522px 13.044px rgba(0, 0, 0, 0.05);
@@ -365,15 +365,15 @@
   padding-left: 70px;
   text-transform: uppercase;
 }
-.service-detail-page .block:nth-child(1) .block__content .service-detail-box__content--left .cycles {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .chi-tiet-goi-cuoc-box__content--left .cycles {
   margin-top: 25px;
 }
 @media (max-width: 992px) {
-  .service-detail-page .block:nth-child(1) .block__content .service-detail-box__content--left .cycles {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .chi-tiet-goi-cuoc-box__content--left .cycles {
     margin-top: 0;
   }
 }
-.service-detail-page .block:nth-child(1) .block__content .service-detail-box__content--left .cycles__title {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .chi-tiet-goi-cuoc-box__content--left .cycles__title {
   width: 100%;
   height: 32px;
   background-color: #ceeaff;
@@ -387,7 +387,7 @@
   display: flex;
   align-items: center;
 }
-.service-detail-page .block:nth-child(1) .block__content .service-detail-box__content--left .cycles__option {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .chi-tiet-goi-cuoc-box__content--left .cycles__option {
   border-bottom: solid 1px #ceeaff;
   width: 100%;
   padding: 8px 14px;
@@ -397,21 +397,21 @@
   font-weight: 500;
   line-height: 24px; /* 150% */
 }
-.service-detail-page .block:nth-child(1) .block__content .service-detail-box__content--left .cycles__option input {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .chi-tiet-goi-cuoc-box__content--left .cycles__option input {
   margin-right: 12px;
 }
-.service-detail-page .block:nth-child(1) .block__content .service-detail-box__content--right .info {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .chi-tiet-goi-cuoc-box__content--right .info {
   margin-bottom: 45px;
 }
 @media (max-width: 768px) {
-  .service-detail-page .block:nth-child(1) .block__content .service-detail-box__content--right .info {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .chi-tiet-goi-cuoc-box__content--right .info {
     margin-bottom: 29px;
   }
 }
-.service-detail-page .block:nth-child(1) .block__content .service-detail-box__content--right .info:last-child {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .chi-tiet-goi-cuoc-box__content--right .info:last-child {
   margin-bottom: unset;
 }
-.service-detail-page .block:nth-child(1) .block__content .service-detail-box__content--right .info__title {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .chi-tiet-goi-cuoc-box__content--right .info__title {
   color: #000;
   font-family: "Ford Antenna";
   font-size: 22px;
@@ -419,19 +419,19 @@
   font-weight: 500;
   line-height: normal;
 }
-.service-detail-page .block:nth-child(1) .block__content .service-detail-box__content--right .info__item {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .chi-tiet-goi-cuoc-box__content--right .info__item {
   color: #000;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px; /* 146.667% */
 }
-.service-detail-page .block:nth-child(1) .block__content .service-detail-box .btn-box {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .chi-tiet-goi-cuoc-box .btn-box {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.service-detail-page .block:nth-child(1) .block__content .service-detail-box .btn-box .btn-register {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .chi-tiet-goi-cuoc-box .btn-box .btn-register {
   color: #fff;
   text-align: center;
   font-size: 17px;
@@ -446,24 +446,24 @@
   margin-top: 61px;
 }
 @media (max-width: 992px) {
-  .service-detail-page .block:nth-child(1) .block__content .service-detail-box .btn-box .btn-register {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .chi-tiet-goi-cuoc-box .btn-box .btn-register {
     margin-top: 44px;
   }
 }
 @media (max-width: 768px) {
-  .service-detail-page .block:nth-child(1) .block__content .service-detail-box .btn-box .btn-register {
+  .chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .chi-tiet-goi-cuoc-box .btn-box .btn-register {
     margin-top: 34px;
   }
 }
-.service-detail-page .block:nth-child(1) .block__content .service-detail-box .btn-box .btn-register:hover {
+.chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .chi-tiet-goi-cuoc-box .btn-box .btn-register:hover {
   background-color: #033ec4;
 }
-.service-detail-page .block:nth-child(2) .block__content {
+.chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content {
   max-width: 1152px;
   margin: 84px auto 0 auto;
 }
 @media (max-width: 992px) {
-  .service-detail-page .block:nth-child(2) .block__content {
+  .chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content {
     margin-top: 75px;
     background-color: #eff3fd;
     height: 427px;
@@ -472,11 +472,11 @@
   }
 }
 @media (max-width: 768px) {
-  .service-detail-page .block:nth-child(2) .block__content {
+  .chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content {
     margin-top: 65px;
   }
 }
-.service-detail-page .block:nth-child(2) .block__content--title {
+.chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content--title {
   color: #000;
   font-family: "Ford Antenna";
   font-size: 22px;
@@ -486,51 +486,51 @@
   margin: 0 10px;
 }
 @media (max-width: 1200px) {
-  .service-detail-page .block:nth-child(2) .block__content--title {
+  .chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content--title {
     margin: 0;
     height: auto;
   }
 }
-.service-detail-page .block:nth-child(2) .block__content .service-slides {
+.chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides {
   margin-top: 24px;
   padding: 0 0.5rem;
 }
 @media(max-width:1200px){
-  .service-detail-page .block:nth-child(2) .block__content .service-slides {
+  .chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides {
     padding: 0 1.5rem 0 0;
   }
 }
 @media(max-width:1200px){
-  .service-detail-page .block:nth-child(2) .block__content .service-slides {
+  .chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides {
     padding: 0;
   }
 }
-.service-detail-page .block:nth-child(2) .block__content .service-slides .slick-track {
+.chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides .slick-track {
   padding-bottom: 30px;
 }
 @media (max-width: 992px) {
-  .service-detail-page .block:nth-child(2) .block__content .service-slides .slick-track {
+  .chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides .slick-track {
     padding-bottom: 50px;
   }
 }
-.service-detail-page .block:nth-child(2) .block__content .service-slides .slick-dots {
+.chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides .slick-dots {
   bottom: -10px;
 }
 @media(max-width:992px){
-  .service-detail-page .block:nth-child(2) .block__content .service-slides .slick-dots {
+  .chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides .slick-dots {
     bottom: 34px;
   }
 }
-.service-detail-page .block:nth-child(2) .block__content .service-slides .slick-dots li {
+.chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides .slick-dots li {
   width: 26.429px;
   height: 5px;
   transition: 0.5s width ease-in-out;
 }
-.service-detail-page .block:nth-child(2) .block__content .service-slides .slick-dots li button {
+.chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides .slick-dots li button {
   width: 100%;
   height: 100%;
 }
-.service-detail-page .block:nth-child(2) .block__content .service-slides .slick-dots li button:before {
+.chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides .slick-dots li button:before {
   width: 100%;
   height: 100%;
   content: "";
@@ -539,15 +539,15 @@
   border-radius: 40px;
   opacity: 0.4;
 }
-.service-detail-page .block:nth-child(2) .block__content .service-slides .slick-dots li.slick-active {
+.chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides .slick-dots li.slick-active {
   width: 133.571px;
   height: 5px;
 }
-.service-detail-page .block:nth-child(2) .block__content .service-slides .slick-dots li.slick-active button {
+.chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides .slick-dots li.slick-active button {
   width: 100%;
   height: 100%;
 }
-.service-detail-page .block:nth-child(2) .block__content .service-slides .slick-dots li.slick-active button:before {
+.chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides .slick-dots li.slick-active button:before {
   width: 100%;
   height: 100%;
   content: "";
@@ -555,7 +555,7 @@
   background: #d7e2f9;
   opacity: 1;
 }
-.service-detail-page .block:nth-child(2) .block__content .service-slides .slides-btn-custom {
+.chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides .slides-btn-custom {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -564,17 +564,17 @@
   border: unset;
 }
 @media (max-width: 1300px) {
-  .service-detail-page .block:nth-child(2) .block__content .service-slides .slides-btn-custom {
+  .chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides .slides-btn-custom {
     display: none;
   }
 }
-.service-detail-page .block:nth-child(2) .block__content .service-slides .custom-prev {
+.chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides .custom-prev {
   left: -50px;
 }
-.service-detail-page .block:nth-child(2) .block__content .service-slides .custom-next {
+.chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides .custom-next {
   right: -50px;
 }
-.service-detail-page .block:nth-child(2) .block__content .service-slides__item {
+.chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides__item {
   width: 100%;
   height: 294px;
   flex-shrink: 0;
@@ -588,25 +588,25 @@
   margin: 0 10px;
 }
 @media(max-width:1200px){
-  .service-detail-page .block:nth-child(2) .block__content .service-slides__item:first-child{
+  .chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides__item:first-child{
     margin-left: 1.2rem
   }
 }
 @media(max-width:992px){
-  .service-detail-page .block:nth-child(2) .block__content .service-slides__item {
+  .chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides__item {
     margin: 0 11.5px;
   }
-  .service-detail-page .block:nth-child(2) .block__content .service-slides__item:first-child{
+  .chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides__item:first-child{
     margin-left: 1rem
   }
-  .service-detail-page .block:nth-child(2) .block__content .service-slides__item:last-child{
+  .chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides__item:last-child{
     margin-right: 0;
   }
 }
-.service-detail-page .block:nth-child(2) .block__content .service-slides__item:hover {
+.chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides__item:hover {
   background-color: rgba(219, 239, 253, 0.4705882353);
 }
-.service-detail-page .block:nth-child(2) .block__content .service-slides__item--title {
+.chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides__item--title {
   color: #000;
   font-family: "Ford Antenna";
   font-size: 24px;
@@ -618,14 +618,14 @@
   flex-flow: column;
   gap: 4px 0;
 }
-.service-detail-page .block:nth-child(2) .block__content .service-slides__item--title .special {
+.chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides__item--title .special {
   color: #4e4e4e;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px; /* 146.667% */
 }
-.service-detail-page .block:nth-child(2) .block__content .service-slides__item--price {
+.chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides__item--price {
   color: #4e4e4e;
   font-size: 15px;
   font-style: normal;
@@ -635,7 +635,7 @@
   display: flex;
   flex-flow: column;
 }
-.service-detail-page .block:nth-child(2) .block__content .service-slides__item--price .special {
+.chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides__item--price .special {
   color: #1f7bff;
   font-feature-settings: "salt" on;
   font-family: "Ford Antenna";
@@ -644,13 +644,13 @@
   font-weight: 500;
   line-height: normal;
 }
-.service-detail-page .block:nth-child(2) .block__content .service-slides__item--btn-box {
+.chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides__item--btn-box {
   display: flex;
   justify-content: center;
   gap: 0 8px;
   margin-top: 44px;
 }
-.service-detail-page .block:nth-child(2) .block__content .service-slides__item--btn-box .btn {
+.chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides__item--btn-box .btn {
   color: #515151;
   text-align: center;
   font-size: 13px;
@@ -669,31 +669,31 @@
   justify-content: center;
   align-items: center;
 }
-.service-detail-page .block:nth-child(2) .block__content .service-slides__item--btn-box .btn:hover {
+.chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides__item--btn-box .btn:hover {
   color: #fff;
   background-color: #033ec4;
   border: unset;
 }
-.service-detail-page .block:nth-child(3) {
+.chi-tiet-goi-cuoc-page .block:nth-child(3) {
   padding-bottom: 100px;
   padding-top: 98px;
 }
 @media (max-width: 1400px) {
-  .service-detail-page .block:nth-child(3) {
+  .chi-tiet-goi-cuoc-page .block:nth-child(3) {
     padding-bottom: 70px;
   }
 }
 @media (max-width: 992px) {
-  .service-detail-page .block:nth-child(3) {
+  .chi-tiet-goi-cuoc-page .block:nth-child(3) {
     padding-top: 83px;
     padding-bottom: 0;
   }
 }
-.service-detail-page .block:nth-child(3) .block__content--main-content {
+.chi-tiet-goi-cuoc-page .block:nth-child(3) .block__content--main-content {
   max-width: 1280px;
   width: 100%;
   height: 295px;
-  background-image: url("../../../svg/service-detail/img-bg-layer.svg"), linear-gradient(#175ac7, #175ac7);
+  background-image: url("../../../svg/chi-tiet-goi-cuoc/img-bg-layer.svg"), linear-gradient(#175ac7, #175ac7);
   background-repeat: no-repeat;
   background-size: 97px 159px, 100%;
   background-position: 100% 8px, center;
@@ -705,18 +705,18 @@
   padding: 0 90px;
 }
 @media (max-width: 992px) {
-  .service-detail-page .block:nth-child(3) .block__content--main-content {
+  .chi-tiet-goi-cuoc-page .block:nth-child(3) .block__content--main-content {
     padding: 0 27px;
   }
 }
 @media (max-width: 768px) {
-  .service-detail-page .block:nth-child(3) .block__content--main-content {
+  .chi-tiet-goi-cuoc-page .block:nth-child(3) .block__content--main-content {
     height: 507px;
     background-size: 68.794px 112.199px, 100%;
     flex-shrink: 0;
   }
 }
-.service-detail-page .block:nth-child(3) .block__content--main-content .title {
+.chi-tiet-goi-cuoc-page .block:nth-child(3) .block__content--main-content .title {
   color: #fff;
   font-family: "Ford Antenna";
   font-size: 32px;
@@ -726,7 +726,7 @@
   text-transform: uppercase;
   text-align: center;
 }
-.service-detail-page .block:nth-child(3) .block__content--main-content .describe {
+.chi-tiet-goi-cuoc-page .block:nth-child(3) .block__content--main-content .describe {
   color: #fff;
   font-size: 15px;
   font-style: normal;
@@ -736,11 +736,11 @@
   text-align: center;
 }
 @media (max-width: 768px) {
-  .service-detail-page .block:nth-child(3) .block__content--main-content .describe {
+  .chi-tiet-goi-cuoc-page .block:nth-child(3) .block__content--main-content .describe {
     margin-top: 24px;
   }
 }
-.service-detail-page .block:nth-child(3) .block__content--main-content .btn-register-trial {
+.chi-tiet-goi-cuoc-page .block:nth-child(3) .block__content--main-content .btn-register-trial {
   border-radius: 200px;
   border: 1px solid #fff;
   width: 324px;
@@ -755,11 +755,11 @@
   justify-content: center;
 }
 @media (max-width: 768px) {
-  .service-detail-page .block:nth-child(3) .block__content--main-content .btn-register-trial {
+  .chi-tiet-goi-cuoc-page .block:nth-child(3) .block__content--main-content .btn-register-trial {
     margin-top: 24px;
   }
 }
-.service-detail-page .block:nth-child(3) .block__content--main-content .btn-register-trial:hover {
+.chi-tiet-goi-cuoc-page .block:nth-child(3) .block__content--main-content .btn-register-trial:hover {
   background-color: #fff;
   color: #1f7bff;
 }
