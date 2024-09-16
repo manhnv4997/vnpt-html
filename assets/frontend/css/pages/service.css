@@ -140,8 +140,7 @@
 @media (max-width: 768px) {
   .service-page .block:nth-child(1) .block__content--description {
     top: 518px;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    width: calc(100% - 40px);
   }
 }
 .service-page .block:nth-child(1) .block__content .mouse {

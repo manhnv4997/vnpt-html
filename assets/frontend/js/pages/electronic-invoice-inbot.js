@@ -29,6 +29,7 @@ function handleServiceSlides() {
             {
                 breakpoint: 992,
                 settings: {
+                    dots: false,
                     slidesToScroll: 3,
                     slidesToShow: 3,
                 }
@@ -36,6 +37,7 @@ function handleServiceSlides() {
             {
                 breakpoint: 768,
                 settings: {
+                    dots: false,
                     slidesToScroll: 2,
                     slidesToShow: 2,
                 }
@@ -43,6 +45,7 @@ function handleServiceSlides() {
             {
                 breakpoint: 567,
                 settings: {
+                    dots: false,
                     slidesToScroll: 1,
                     slidesToShow: 1.2,
                 }
