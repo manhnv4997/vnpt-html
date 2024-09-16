@@ -712,7 +712,7 @@
   display: flex;
   flex-flow: row;
   background-position: calc(100% + 100px) 100%;
-  background-image: url("../../../images/service/block-2-image-6.jpg");
+  background-image: url("../../../images/san-pham-dich-vu/block-2-image-6.jpg");
   background-repeat: no-repeat;
 }
 @media (max-width: 1400px) {
@@ -731,16 +731,16 @@
   }
 }
 .news-page .block__content--main-content .slides-box-bottom .slides .slides-tab:nth-child(1) {
-  background-image: url("../../../images/service/block-2-image-6.jpg");
+  background-image: url("../../../images/san-pham-dich-vu/block-2-image-6.jpg");
 }
 .news-page .block__content--main-content .slides-box-bottom .slides .slides-tab:nth-child(2) {
-  background-image: url("../../../images/service/block-2-image-6.jpg");
+  background-image: url("../../../images/san-pham-dich-vu/block-2-image-6.jpg");
 }
 .news-page .block__content--main-content .slides-box-bottom .slides .slides-tab:nth-child(3) {
-  background-image: url("../../../images/service/block-2-image-6.jpg");
+  background-image: url("../../../images/san-pham-dich-vu/block-2-image-6.jpg");
 }
 .news-page .block__content--main-content .slides-box-bottom .slides .slides-tab:nth-child(4) {
-  background-image: url("../../../images/service/block-2-image-6.jpg");
+  background-image: url("../../../images/san-pham-dich-vu/block-2-image-6.jpg");
 }
 .news-page .block__content--main-content .slides-box-bottom .slides .slides-tab__item--left {
   background: linear-gradient(270deg, rgba(31, 153, 255, 0) 0%, #004bb8 27%);

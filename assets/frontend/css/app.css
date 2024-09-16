@@ -510,7 +510,7 @@ h6 {
 }
 .tu-van-box.--show, .tu-van-box.--show .tu-van-box__content {
   visibility: visible;
-  filter: blur(0);
+  filter: unset;
   z-index: 13;
 }
 .tu-van-box__content {
