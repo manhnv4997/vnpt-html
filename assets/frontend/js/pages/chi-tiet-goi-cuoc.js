@@ -63,9 +63,6 @@ function handleServiceSlides() {
             // Number of slides currently displayed
             var totalItemDisplay = slickObj.options.slidesToShow;
 
-            console.log(currentSlide, totalItemDisplay, totalSlides);
-
-
             if (currentSlide + totalItemDisplay >= totalSlides) {
                 $('.custom-prev').removeClass('d-none');
                 $('.custom-next').addClass('d-none');

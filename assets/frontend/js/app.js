@@ -52,15 +52,12 @@ function handleScroll() {
 
     $(window).on('scroll', function () {
         toggleSubMenu();
-        console.log('ting ting');
-
         handlePushUpPage();
     });
 }
 
 function handlePushUpPage() {
     const currentPosition = window.pageYOffset;
-    console.log('currentPosition', currentPosition);
 
     if (currentPosition > 500) {
         $('.push-up-page').addClass('--show');
