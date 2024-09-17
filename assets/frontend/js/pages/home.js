@@ -2,12 +2,7 @@ $(document).ready(function () {
     bannerSlides();
     platformSlides();
     handleSuccessProject();
-    showContactWidget();
 });
-
-function showContactWidget() {
-    $('.contact-widget').addClass('--show');
-}
 
 function handleSuccessProject() {
     const counter = document.getElementById('number-1');

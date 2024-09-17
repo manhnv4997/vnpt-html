@@ -1,11 +1,6 @@
 $(document).ready(function () {
     handleServiceSlides();
-    showContactWidget();
 });
-
-function showContactWidget() {
-    $('.contact-widget').addClass('--show');
-}
 
 function handleServiceSlides() {
     $('.service-slides').slick({

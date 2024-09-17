@@ -19,8 +19,9 @@ $(document).ready(function () {
     handleShowMenuMobile();
     handleShowChildMenuMb();
     handleShowChildMenuPc();
-    handleScrollNewsDetail();
+    handleScroll();
     handleResizeScreen();
+    showContactWidget();
 
     $('.header__btn-trial').on('click', function () {
         $('.tu-van-box').toggleClass('--show');
@@ -35,13 +36,37 @@ $(document).ready(function () {
             $('.tu-van-box').removeClass('--show');
         }
     });
+
+    $('.push-up-page').on('click', function () {
+        $('html, body').animate({ scrollTop: 0 });
+    })
 });
 
-function handleScrollNewsDetail() {
+function showContactWidget() {
+    $('.contact-widget').addClass('--show');
+}
+
+function handleScroll() {
     toggleSubMenu();
+    handlePushUpPage();
+
     $(window).on('scroll', function () {
         toggleSubMenu();
+        console.log('ting ting');
+
+        handlePushUpPage();
     });
+}
+
+function handlePushUpPage() {
+    const currentPosition = window.pageYOffset;
+    console.log('currentPosition', currentPosition);
+
+    if (currentPosition > 500) {
+        $('.push-up-page').addClass('--show');
+    } else {
+        $('.push-up-page').removeClass('--show');
+    }
 }
 
 function handleResizeScreen() {

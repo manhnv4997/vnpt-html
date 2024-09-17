@@ -9,7 +9,7 @@ $(document).ready(function () {
     $('.widget-box').addClass('--show');
 
     handleMainContent();
-    handleScroll();
+    handleScrollNewsDetail();
     handleResize();
     copyUrl();
     handleChangeSize();
@@ -102,12 +102,12 @@ function handleResize() {
     let screenWidth = $(window).width();
     $(window).on('resize', function () {
         screenWidth = $(window).width();
-        handleScroll(screenWidth);
+        handleScrollNewsDetail(screenWidth);
     })
-    handleScroll(screenWidth);
+    handleScrollNewsDetail(screenWidth);
 }
 
-function handleScroll(screenWidth) {
+function handleScrollNewsDetail(screenWidth) {
     const headerHeight = $('.header').height();
     handleShowSubMenu(headerHeight, screenWidth);
     $(window).on('scroll', function () {

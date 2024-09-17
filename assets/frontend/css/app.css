@@ -1843,3 +1843,22 @@ header .header__icon-box-mb img.--show {
 .menu-mb-box__bottom--item:nth-child(4), .menu-mb-box__bottom--item:nth-child(5) {
   align-items: center;
 }
+
+.push-up-page{
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  background-color: #8FD3FF;
+  border-radius: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  right: 120px;
+  opacity: 0;
+  transition: 0.2s opacity linear;
+  cursor: pointer;
+}
+.push-up-page.--show{
+  opacity: 1;
+}
