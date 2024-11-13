@@ -81,10 +81,11 @@
 }
 .home-page .block:nth-child(1) .banner-slides__item .button {
   max-width: 324px;
+  display: flex;
   width: 100%;
   height: 44px;
   border-radius: 200px;
-  background-color: #e14faf;
+  background-color: transparent;
   color: #fff;
   text-align: center;
   font-size: 17px;
@@ -96,6 +97,7 @@
   left: 50%;
   transform: translateX(calc(-50% - 300px));
   bottom: 145px;
+  border: 1px solid #fff;
 }
 @media (max-width: 1300px) {
   .home-page .block:nth-child(1) .banner-slides__item .button {
@@ -122,7 +124,8 @@
   }
 }
 .home-page .block:nth-child(1) .banner-slides__item .button:hover {
-  background-color: #cf148f;
+  background-color: #fff;
+  color: #033ec4;
 }
 .home-page .block:nth-child(1) .banner-slides li {
   width: 26.429px;
@@ -241,7 +244,7 @@
 }
 .home-page .block:nth-child(1) .block__invoice-list--item .left {
   background-repeat: no-repeat;
-  background-image: url("../../svg/home/invoice-list-icon-bg.svg");
+  /* background-image: url("../../svg/home/invoice-list-icon-bg.svg"); */
   color: #fff;
   text-align: center;
   font-size: 14px;
@@ -250,7 +253,7 @@
   line-height: 22px; /* 157.143% */
   position: relative;
 }
-.home-page .block:nth-child(1) .block__invoice-list--item .left span {
+.home-page .block:nth-child(1) .block__invoice-list--item .left {
   width: 32px;
   height: 32px;
   display: flex;
@@ -259,7 +262,7 @@
   position: relative;
   z-index: 3;
 }
-.home-page .block:nth-child(1) .block__invoice-list--item .left span:after {
+.home-page .block:nth-child(1) .block__invoice-list--item .left:after {
   content: "";
   width: 32px;
   height: 32px;
@@ -918,7 +921,7 @@
   width: 324px;
   height: 44px;
   border-radius: 200px;
-  background: #e14faf;
+  background: #1F7BFF;
   color: #fff;
   font-size: 17px;
   font-style: normal;
@@ -1119,7 +1122,7 @@
 .home-page .block:nth-child(5) .block__content--right .title {
   color: #212121;
   font-family: "Ford Antenna";
-  font-size: 40px;
+  font-size: 38px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -1195,7 +1198,7 @@
 .home-page .block:nth-child(5) .block__slides {
   overflow: hidden;
   padding: 27px 17px;
-  background: linear-gradient(90deg, #77dcff 0%, #8fd4ff 51%, #ef75c6 100%);
+  background: linear-gradient(90deg, #1F7BFF 48%, #77DCFF 98.5%);
 }
 @media (max-width: 992px) {
   .home-page .block:nth-child(5) .block__slides {
@@ -1226,7 +1229,7 @@
 .home-page .block:nth-child(5) .block__slides--content .item .text {
   width: -moz-max-content;
   width: max-content;
-  color: #000;
+  color: #fff;
   font-family: "Ford Antenna";
   font-size: 26px;
   font-style: normal;

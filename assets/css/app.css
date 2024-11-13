@@ -1519,29 +1519,22 @@ header .header__menu--item .child-menu__item a span {
   font-weight: 500;
   line-height: 18px; /* 128.571% */
 }
-header .header__menu--item .child-menu__item:nth-child(1) a, header .header__menu--item .child-menu__item:nth-child(5) a {
+header .header__menu--item .child-menu__item:nth-child(1) a,
+header .header__menu--item .child-menu__item:nth-child(2) a,
+header .header__menu--item .child-menu__item:nth-child(3) a,
+header .header__menu--item .child-menu__item:nth-child(4) a,
+header .header__menu--item .child-menu__item:nth-child(5) a,
+header .header__menu--item .child-menu__item:nth-child(6) a {
   transition: 0.2s background-color linear;
 }
-header .header__menu--item .child-menu__item:nth-child(1) a:hover, header .header__menu--item .child-menu__item:nth-child(5) a:hover {
+header .header__menu--item .child-menu__item:nth-child(1) a:hover,
+header .header__menu--item .child-menu__item:nth-child(2) a:hover,
+header .header__menu--item .child-menu__item:nth-child(3) a:hover,
+header .header__menu--item .child-menu__item:nth-child(4) a:hover,
+header .header__menu--item .child-menu__item:nth-child(5) a:hover,
+header .header__menu--item .child-menu__item:nth-child(6) a:hover
+{
   background-color: #ceeaff;
-}
-header .header__menu--item .child-menu__item:nth-child(2) a {
-  transition: 0.2s background-color linear;
-}
-header .header__menu--item .child-menu__item:nth-child(2) a:hover {
-  background-color: rgba(229, 132, 215, 0.4705882353);
-}
-header .header__menu--item .child-menu__item:nth-child(3) a, header .header__menu--item .child-menu__item:nth-child(6) a {
-  transition: 0.2s background-color linear;
-}
-header .header__menu--item .child-menu__item:nth-child(3) a:hover, header .header__menu--item .child-menu__item:nth-child(6) a:hover {
-  background-color: rgba(237, 153, 205, 0.4588235294);
-}
-header .header__menu--item .child-menu__item:nth-child(4) a {
-  transition: 0.2s background-color linear;
-}
-header .header__menu--item .child-menu__item:nth-child(4) a:hover {
-  background-color: rgba(49, 225, 158, 0.3803921569);
 }
 header .header__button {
   width: 234px;
