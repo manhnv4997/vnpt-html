@@ -213,6 +213,12 @@
   top: 50%;
   transform: translateY(-50%);
   text-transform: none;
+  display: flex;
+  gap: 0 9px;
+}
+.vnpt-pos-page .block:nth-child(3) .block__content--title .see-all img{
+  width: 20px;
+  height: auto;
 }
 .vnpt-pos-page .block:nth-child(3) .block__content .service-slides {
   margin-top: 24px;

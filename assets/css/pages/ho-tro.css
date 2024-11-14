@@ -9,6 +9,25 @@
   gap: 0 40px;
   justify-content: center;
 }
+
+/* Tùy chỉnh thanh cuộn */
+.ho-tro-page .block:nth-child(1) .block__content .circle-list::-webkit-scrollbar {
+  width: 8px; /* Độ rộng của thanh cuộn */
+  height: 3px;
+}
+
+/* Đổi màu của thanh cuộn */
+.ho-tro-page .block:nth-child(1) .block__content .circle-list::-webkit-scrollbar-thumb {
+  background-color: #81939f; /* Màu thanh cuộn */
+  border-radius: 4px; /* Bo tròn các cạnh */
+}
+
+/* Tùy chỉnh nền thanh cuộn */
+.ho-tro-page .block:nth-child(1) .block__content .circle-list::-webkit-scrollbar-track {
+  background-color: #ecf0f1; /* Màu nền thanh cuộn */
+}
+
+
 @media (max-width: 992px) {
   .ho-tro-page .block:nth-child(1) .block__content .circle-list {
     gap: 0 25px;
@@ -17,8 +36,12 @@
 @media (max-width: 830px) {
   .ho-tro-page .block:nth-child(1) .block__content .circle-list {
     justify-content: unset;
-    overflow-x: scroll;
+    overflow-x: hidden;
     height: 130px;
+  }
+
+  .ho-tro-page .block:nth-child(1) .block__content .circle-list:hover {
+    overflow-x: scroll;
   }
 }
 .ho-tro-page .block:nth-child(1) .block__content .circle-list__item {

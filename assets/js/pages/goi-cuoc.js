@@ -1,17 +1,19 @@
 $(document).ready(function () {
-    // handleTab1();
+    handleTab();
 });
 
 
-function handleTab1() {
-    $('.tabs__title--item').on('click', function () {
-        const tabParent = $(this).closest('.tabs');
+function handleTab() {
+    $('.services__item').on('click', function () {
+        const dataTarget = $(this).attr('target-data');
 
-        tabParent.find('.tabs__title--item').removeClass('--active')
+        $('.services__item').removeClass('--active');
         $(this).addClass('--active');
-        const targetTab = $(this).attr('target-tab');
 
-        tabParent.find('.tabs__content--main-content').removeClass('--active');
-        tabParent.find(`#${targetTab}`).addClass('--active');
+        console.log(dataTarget, 'dataTarget');
+
+        $('.list-package__content--main-content').removeClass('--active');
+
+        $(`#${dataTarget}`).addClass('--active');
     })
 }
