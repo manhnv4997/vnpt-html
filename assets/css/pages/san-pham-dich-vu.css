@@ -156,6 +156,7 @@
   .san-pham-dich-vu-page .block:nth-child(1) .block__content--description {
     top: 575px;
     width: calc(100% - 40px);
+    text-align: unset;
   }
 }
 .san-pham-dich-vu-page .block:nth-child(1) .block__content .mouse {
@@ -254,7 +255,7 @@
   }
 }
 .san-pham-dich-vu-page .block:nth-child(2) .block__content--main-content .item {
-  height: 632px;
+  height: 665px;
   border-radius: 20px;
   overflow: hidden;
   /* transition: box-shadow 0.2s linear; */
@@ -286,7 +287,7 @@
   padding: 36px 20px 32px;
   color: #fff;
   position: relative;
-  height: 337px;
+  height: 370px;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -295,6 +296,7 @@
   .san-pham-dich-vu-page .block:nth-child(2) .block__content--main-content .item .content-box {
     padding: 24px 16px 28px;
     gap: 40px 0;
+    height: 420px;
   }
 }
 @media (max-width: 768px) {
@@ -448,6 +450,11 @@
 @media (max-width: 768px) {
   .san-pham-dich-vu-page .block:nth-child(2) .block__content .btn-see-more {
     margin: 26px auto 62px auto;
+  }
+}
+@media (max-width: 576px) {
+  .san-pham-dich-vu-page .block:nth-child(2) .block__content .btn-see-more {
+    max-width: 100%;
   }
 }
 .san-pham-dich-vu-page .block:nth-child(2) .block__content .btn-see-more img {
