@@ -117,7 +117,7 @@
 .tin-tuc-page .block__content--main-content .tabs__title {
   display: flex;
   flex-flow: row;
-  gap: 0 30px;
+  gap: 0;
   margin-top: 40px;
   width: 100%;
   justify-content: center;
@@ -151,6 +151,8 @@
   align-items: center;
   gap: 10px;
   white-space: nowrap;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 @media (max-width: 768px) {
   .tin-tuc-page .block__content--main-content .tabs__title--item {
@@ -620,7 +622,7 @@
 }
 .tin-tuc-page .block__content--main-content .tabs__content--main-content .list__item .title-box__category,
 .tin-tuc-page .block__content--main-content .tabs__content--main-content .list__item .title-box .category {
-  color: #cf148f;
+  color: #1F99FF;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -699,7 +701,7 @@
   width: 185px;
   height: 44px;
   border-radius: 200px;
-  background-color: #e14faf;
+  background-color: #1F99FF;
   color: #fff;
   font-size: 17px;
   font-style: normal;
@@ -713,7 +715,7 @@
   transition: 0.2s background-color linear;
 }
 .tin-tuc-page .block__content--main-content .tabs__content--main-content .btn-box .btn-see-more:hover {
-  background-color: #cf148f;
+  background-color: #345ce5;
 }
 @media (max-width: 768px) {
   .tin-tuc-page .block__content--main-content .tabs__content--main-content .btn-box .btn-see-more {
@@ -810,6 +812,7 @@
   text-transform: uppercase;
   max-width: 522px;
   width: 100%;
+  margin-bottom: 15px;
 }
 .tin-tuc-page .block__content--main-content .slides-box-bottom .slides .slides-tab__item--left .content__description {
   color: #fff;
