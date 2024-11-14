@@ -150,6 +150,9 @@
     padding: 0 16px;
   }
 }
+.chi-tiet-tin-tuc-page .block:nth-child(1) .block__content--main-content .content .info .dot-text.--always{
+margin-left: 0;
+}
 .chi-tiet-tin-tuc-page .block:nth-child(1) .block__content--main-content .content .info {
   width: 100%;
   display: flex;
