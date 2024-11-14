@@ -153,25 +153,25 @@
   }
 }
 
-.vnpt-invoice-page .block:nth-child(4) {
+.vnpt-invoice-page .block:nth-child(3) {
   margin-top: 58px;
 }
 @media(max-width:992px){
-  .vnpt-invoice-page .block:nth-child(4) {
+  .vnpt-invoice-page .block:nth-child(3) {
     margin-top: 40px;
   }
 }
-.vnpt-invoice-page .block:nth-child(4) .block__content {
+.vnpt-invoice-page .block:nth-child(3) .block__content {
   max-width: 1152px;
   margin: auto;
 }
 @media(max-width:992px){
-  .vnpt-invoice-page .block:nth-child(4) .block__content {
+  .vnpt-invoice-page .block:nth-child(3) .block__content {
     max-width: 1152px;
     margin: auto;
   }
 }
-.vnpt-invoice-page .block:nth-child(4) .block__content--title {
+.vnpt-invoice-page .block:nth-child(3) .block__content--title {
   color: #000;
   font-family: "Ford Antenna";
   font-size: 22px;
@@ -183,11 +183,11 @@
   position: relative;
 }
 @media(max-width:1150px){
-  .vnpt-invoice-page .block:nth-child(4) .block__content--title {
+  .vnpt-invoice-page .block:nth-child(3) .block__content--title {
     margin: 0;
   }
 }
-.vnpt-invoice-page .block:nth-child(4) .block__content--title .see-all{
+.vnpt-invoice-page .block:nth-child(3) .block__content--title .see-all{
   position: absolute;
   color: #3975EA;
   text-align: center;
@@ -201,36 +201,36 @@
   transform: translateY(-50%);
   text-transform: none;
 }
-.vnpt-invoice-page .block:nth-child(4) .block__content .service-slides {
+.vnpt-invoice-page .block:nth-child(3) .block__content .service-slides {
   margin-top: 24px;
   padding: 0 0.5rem;
 }
 @media(max-width:1200px){
-  .vnpt-invoice-page .block:nth-child(4) .block__content .service-slides {
+  .vnpt-invoice-page .block:nth-child(3) .block__content .service-slides {
     padding: 0 1.5rem 0 0;
   }
 }
 @media(max-width:1150px){
-  .vnpt-invoice-page .block:nth-child(4) .block__content .service-slides {
+  .vnpt-invoice-page .block:nth-child(3) .block__content .service-slides {
     padding: 0;
   }
 }
-.vnpt-invoice-page .block:nth-child(4) .block__content .service-slides .slick-track {
+.vnpt-invoice-page .block:nth-child(3) .block__content .service-slides .slick-track {
   padding-bottom: 15px;
 }
-.vnpt-invoice-page .block:nth-child(4) .block__content .service-slides .slick-dots {
+.vnpt-invoice-page .block:nth-child(3) .block__content .service-slides .slick-dots {
   bottom: -20px;
 }
-.vnpt-invoice-page .block:nth-child(4) .block__content .service-slides .slick-dots li {
+.vnpt-invoice-page .block:nth-child(3) .block__content .service-slides .slick-dots li {
   width: 26.429px;
   height: 5px;
   transition: 0.5s width ease-in-out;
 }
-.vnpt-invoice-page .block:nth-child(4) .block__content .service-slides .slick-dots li button {
+.vnpt-invoice-page .block:nth-child(3) .block__content .service-slides .slick-dots li button {
   width: 100%;
   height: 100%;
 }
-.vnpt-invoice-page .block:nth-child(4) .block__content .service-slides .slick-dots li button:before {
+.vnpt-invoice-page .block:nth-child(3) .block__content .service-slides .slick-dots li button:before {
   width: 100%;
   height: 100%;
   content: "";
@@ -239,15 +239,15 @@
   border-radius: 40px;
   opacity: 0.4;
 }
-.vnpt-invoice-page .block:nth-child(4) .block__content .service-slides .slick-dots li.slick-active {
+.vnpt-invoice-page .block:nth-child(3) .block__content .service-slides .slick-dots li.slick-active {
   width: 133.571px;
   height: 5px;
 }
-.vnpt-invoice-page .block:nth-child(4) .block__content .service-slides .slick-dots li.slick-active button {
+.vnpt-invoice-page .block:nth-child(3) .block__content .service-slides .slick-dots li.slick-active button {
   width: 100%;
   height: 100%;
 }
-.vnpt-invoice-page .block:nth-child(4) .block__content .service-slides .slick-dots li.slick-active button:before {
+.vnpt-invoice-page .block:nth-child(3) .block__content .service-slides .slick-dots li.slick-active button:before {
   width: 100%;
   height: 100%;
   content: "";
@@ -255,7 +255,7 @@
   background: #d7e2f9;
   opacity: 1;
 }
-.vnpt-invoice-page .block:nth-child(4) .block__content .service-slides .slides-btn-custom {
+.vnpt-invoice-page .block:nth-child(3) .block__content .service-slides .slides-btn-custom {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -264,17 +264,17 @@
   border: unset;
 }
 @media (max-width: 1300px) {
-  .vnpt-invoice-page .block:nth-child(4) .block__content .service-slides .slides-btn-custom {
+  .vnpt-invoice-page .block:nth-child(3) .block__content .service-slides .slides-btn-custom {
     display: none;
   }
 }
-.vnpt-invoice-page .block:nth-child(4) .block__content .service-slides .custom-prev {
+.vnpt-invoice-page .block:nth-child(3) .block__content .service-slides .custom-prev {
   left: -50px;
 }
-.vnpt-invoice-page .block:nth-child(4) .block__content .service-slides .custom-next {
+.vnpt-invoice-page .block:nth-child(3) .block__content .service-slides .custom-next {
   right: -50px;
 }
-.vnpt-invoice-page .block:nth-child(4) .block__content .service-slides__item {
+.vnpt-invoice-page .block:nth-child(3) .block__content .service-slides__item {
   width: 100%;
   height: 294px;
   flex-shrink: 0;
@@ -287,25 +287,25 @@
   margin: 0 10px;
 }
 @media(max-width:1200px){
-  .vnpt-invoice-page .block:nth-child(4) .block__content .service-slides__item:first-child{
+  .vnpt-invoice-page .block:nth-child(3) .block__content .service-slides__item:first-child{
     margin-left: 1.2rem
   }
 }
 @media(max-width:992px){
-  .vnpt-invoice-page .block:nth-child(4) .block__content .service-slides__item {
+  .vnpt-invoice-page .block:nth-child(3) .block__content .service-slides__item {
     margin: 0 11.5px;
   }
-  .vnpt-invoice-page .block:nth-child(4) .block__content .service-slides__item:first-child{
+  .vnpt-invoice-page .block:nth-child(3) .block__content .service-slides__item:first-child{
     margin-left: 1rem
   }
-  .vnpt-invoice-page .block:nth-child(4) .block__content .service-slides__item:last-child{
+  .vnpt-invoice-page .block:nth-child(3) .block__content .service-slides__item:last-child{
     margin-right: 0;
   }
 }
-.vnpt-invoice-page .block:nth-child(4) .block__content .service-slides__item:hover .content-box {
+.vnpt-invoice-page .block:nth-child(3) .block__content .service-slides__item:hover .content-box {
   background-color: rgba(219, 239, 253, 0.4705882353);
 }
-.vnpt-invoice-page .block:nth-child(4) .block__content .service-slides__item .content-box {
+.vnpt-invoice-page .block:nth-child(3) .block__content .service-slides__item .content-box {
   background: #fff;
   padding: 28px 20px 30px;
   margin-top: 9px;
@@ -313,7 +313,7 @@
   border-bottom-left-radius: 12px;
   transition: 0.2s background-color linear;
 }
-.vnpt-invoice-page .block:nth-child(4) .block__content .service-slides__item--title {
+.vnpt-invoice-page .block:nth-child(3) .block__content .service-slides__item--title {
   color: #000;
   font-family: "Ford Antenna";
   font-size: 24px;
@@ -325,14 +325,14 @@
   flex-flow: column;
   gap: 4px 0;
 }
-.vnpt-invoice-page .block:nth-child(4) .block__content .service-slides__item--title .special {
+.vnpt-invoice-page .block:nth-child(3) .block__content .service-slides__item--title .special {
   color: #4e4e4e;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px; /* 146.667% */
 }
-.vnpt-invoice-page .block:nth-child(4) .block__content .service-slides__item--price {
+.vnpt-invoice-page .block:nth-child(3) .block__content .service-slides__item--price {
   color: #4e4e4e;
   font-size: 15px;
   font-style: normal;
@@ -342,7 +342,7 @@
   display: flex;
   flex-flow: column;
 }
-.vnpt-invoice-page .block:nth-child(4) .block__content .service-slides__item--price .special {
+.vnpt-invoice-page .block:nth-child(3) .block__content .service-slides__item--price .special {
   color: #1f7bff;
   font-feature-settings: "salt" on;
   font-family: "Ford Antenna";
@@ -351,13 +351,13 @@
   font-weight: 500;
   line-height: normal;
 }
-.vnpt-invoice-page .block:nth-child(4) .block__content .service-slides__item--btn-box {
+.vnpt-invoice-page .block:nth-child(3) .block__content .service-slides__item--btn-box {
   display: flex;
   justify-content: center;
   gap: 0 8px;
   margin-top: 44px;
 }
-.vnpt-invoice-page .block:nth-child(4) .block__content .service-slides__item--btn-box .btn {
+.vnpt-invoice-page .block:nth-child(3) .block__content .service-slides__item--btn-box .btn {
   color: #515151;
   text-align: center;
   font-size: 13px;
@@ -375,7 +375,7 @@
   align-items: center;
   justify-content: center;
 }
-.vnpt-invoice-page .block:nth-child(4) .block__content .service-slides__item--btn-box .btn:hover {
+.vnpt-invoice-page .block:nth-child(3) .block__content .service-slides__item--btn-box .btn:hover {
   color: #fff;
   background-color: #033ec4;
   border: unset;
@@ -928,18 +928,18 @@
 .vnpt-invoice-page .block:nth-child(2) .block__content--button-box .btn:nth-child(2):hover {
   background-color: #033ec4;
 }
-.vnpt-invoice-page .block:nth-child(3) {
+.vnpt-invoice-page .block:nth-child(4) {
   padding-bottom: 54px;
   margin-top: 77px;
   padding-top: 103px;
   background-color: #fff;
 }
 @media (max-width: 1400px) {
-  .vnpt-invoice-page .block:nth-child(3) {
+  .vnpt-invoice-page .block:nth-child(4) {
     padding-bottom: 70px;
   }
 }
-.vnpt-invoice-page .block:nth-child(3) .block__content--main-content {
+.vnpt-invoice-page .block:nth-child(4) .block__content--main-content {
   max-width: 1280px;
   width: 100%;
   height: 295px;
@@ -953,7 +953,7 @@
   flex-flow: column;
   justify-content: center;
 }
-.vnpt-invoice-page .block:nth-child(3) .block__content--main-content .title {
+.vnpt-invoice-page .block:nth-child(4) .block__content--main-content .title {
   color: #fff;
   font-family: "Ford Antenna";
   font-size: 32px;
@@ -962,7 +962,7 @@
   line-height: normal;
   text-transform: uppercase;
 }
-.vnpt-invoice-page .block:nth-child(3) .block__content--main-content .describe {
+.vnpt-invoice-page .block:nth-child(4) .block__content--main-content .describe {
   color: #fff;
   font-size: 15px;
   font-style: normal;
@@ -970,7 +970,7 @@
   line-height: 22px; /* 146.667% */
   margin-right: 15px;
 }
-.vnpt-invoice-page .block:nth-child(3) .block__content--main-content .btn-register-trial {
+.vnpt-invoice-page .block:nth-child(4) .block__content--main-content .btn-register-trial {
   border-radius: 200px;
   border: 1px solid #fff;
   width: 324px;
@@ -981,7 +981,7 @@
   padding: 10px 26px;
   color: #fff;
 }
-.vnpt-invoice-page .block:nth-child(3) .block__content--main-content .btn-register-trial:hover {
+.vnpt-invoice-page .block:nth-child(4) .block__content--main-content .btn-register-trial:hover {
   background-color: #fff;
   color: #1f7bff;
 }
