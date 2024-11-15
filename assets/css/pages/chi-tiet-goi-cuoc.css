@@ -519,7 +519,7 @@
 }
 @media(max-width:992px){
   .chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides .slick-dots {
-    bottom: 34px;
+    bottom: 30px;
   }
 }
 .chi-tiet-goi-cuoc-page .block:nth-child(2) .block__content .service-slides .slick-dots li {

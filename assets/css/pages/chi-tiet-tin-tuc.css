@@ -7,6 +7,10 @@
   header {
     display: none !important;
   }
+
+  .sub-menu-news-detail{
+    display: none !important;
+  }
 }
 
 @media (max-width: 992px) {
