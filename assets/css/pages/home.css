@@ -1753,12 +1753,17 @@
 @media (max-width: 992px) {
   .home-page .block:nth-child(7) .block__left--title {
     color: #212121;
-    font-size: 34x;
+    font-size: 34px;
   }
 }
 @media (max-width: 768px) {
   .home-page .block:nth-child(7) .block__left--title {
     font-size: 32px;
+  }
+}
+@media (max-width: 374px) {
+  .home-page .block:nth-child(7) .block__left--title {
+    font-size: 28px;
   }
 }
 @media (max-width: 768px) {

@@ -619,12 +619,17 @@
 @media (max-width: 992px) {
   .san-pham-dich-vu-page .block:nth-child(4) .block__left--title {
     color: #212121;
-    font-size: 34x;
+    font-size: 34px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .san-pham-dich-vu-page .block:nth-child(4) .block__left--title {
     font-size: 32px;
+  }
+}
+@media (max-width: 374px) {
+  .san-pham-dich-vu-page .block:nth-child(4) .block__left--title {
+    font-size: 28px;
   }
 }
 @media (max-width: 768px) {
