@@ -106,6 +106,8 @@
     height: auto;
     gap: 16px 0;
     margin-top: 16px;
+    align-items: unset;
+    background-size: 50px 136.301px;
   }
 }
 .vnpt-eticket-page .block:nth-child(1) .block__content .description-box__left {
