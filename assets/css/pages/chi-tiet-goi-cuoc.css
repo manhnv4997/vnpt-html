@@ -173,6 +173,7 @@
 @media (max-width: 480px) {
   .chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box__item p span {
     text-align: left;
+    text-align: unset;
   }
 }
 .chi-tiet-goi-cuoc-page .block:nth-child(1) .block__content .service-price-box__name {
@@ -186,7 +187,7 @@
   color: #fff;
   text-align: center;
   font-family: "Ford Antenna";
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px; /* 142.857% */
