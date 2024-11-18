@@ -300,6 +300,7 @@
 @media (max-width: 992px) {
   .goi-cuoc-page .block:nth-child(1) .block__content .list-package__content--main-content .list-invoice {
     grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, calc(50% - 6px)); */
     gap: 45px 30px;
     margin-top: 28px;
   }
@@ -307,6 +308,7 @@
 @media (max-width: 768px) {
   .goi-cuoc-page .block:nth-child(1) .block__content .list-package__content--main-content .list-invoice {
     /* grid-template-columns: 1fr; */
+    grid-template-columns: repeat(2, calc(50% - 6px));
     gap: 24px 12px;
   }
 }
