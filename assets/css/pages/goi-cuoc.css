@@ -457,6 +457,10 @@
   line-height: 22px; /* 129.412% */
   text-transform: uppercase;
   margin-top: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 .goi-cuoc-page .block:nth-child(1) .block__content .list-package__content--main-content .list-invoice__item .btn-register-now:hover {
   background-color: #033ec4;
