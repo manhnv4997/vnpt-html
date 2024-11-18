@@ -93,8 +93,7 @@
   } 
   
 }
-
-@media(max-width:1200px){
+@media(max-width:1400px){
   .services{    
     justify-content: unset;
   } 
@@ -102,6 +101,13 @@
   .services:hover{    
     overflow-x: scroll;
   }
+  
+}
+
+@media(max-width:1200px){
+  .services{    
+    justify-content: unset;
+  } 
 }
 
 @media(max-width:992px){
@@ -110,6 +116,11 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
     margin-top: 0;
+  }
+}
+@media(max-width:374px){
+  .services{
+        gap: 5px;
   }
 }
 
@@ -131,6 +142,12 @@
 @media(max-width:576px){
   .services__item{
     font-size: 14px;
+    padding: 10px 6px;
+  }
+}
+@media(max-width:374px){
+  .services__item{
+    font-size: 12px;
   }
 }
 .services__item.--active,

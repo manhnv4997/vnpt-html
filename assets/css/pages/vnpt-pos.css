@@ -842,7 +842,6 @@
   }
 }
 .vnpt-pos-page .block:nth-child(2) .block__content--main-content .group-box:nth-child(3) .box:nth-child(2) .box__description {
-  margin-top: 35px;
   letter-spacing: -0.5px;
 }
 @media (max-height: 992px) {

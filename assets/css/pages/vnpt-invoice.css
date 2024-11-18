@@ -749,7 +749,8 @@
   }
 }
 .vnpt-invoice-page .block:nth-child(2) .block__content--main-content .group-box:nth-child(3) .box:nth-child(1) .box__title--text {
-  width: 149px;
+  width: 100%;
+  max-width: 220px;
 }
 @media (max-width: 992px) {
   .vnpt-invoice-page .block:nth-child(2) .block__content--main-content .group-box:nth-child(3) .box:nth-child(1) .box__title--text {
@@ -809,7 +810,8 @@
   width: 100%;
 }
 .vnpt-invoice-page .block:nth-child(2) .block__content--main-content .group-box:nth-child(3) .box:nth-child(2) .box__title--text {
-  width: 248px;
+  max-width: 410px;
+  width: 100%;
 }
 @media (max-width: 992px) {
   .vnpt-invoice-page .block:nth-child(2) .block__content--main-content .group-box:nth-child(3) .box:nth-child(2) .box__title--text {

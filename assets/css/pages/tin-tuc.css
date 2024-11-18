@@ -126,11 +126,12 @@
   .tin-tuc-page .block__content--main-content .tabs__title {
     margin-top: 0;
     gap: 0 24px;
+    justify-content: unset;
   }
 }
 @media (max-width: 576px) {
   .tin-tuc-page .block__content--main-content .tabs__title {
-    justify-content: unset;
+    /* justify-content: unset; */
   }
 }
 .tin-tuc-page .block__content--main-content .tabs__title--item {
@@ -262,7 +263,7 @@
   gap: 18px 0;
 }
 .tin-tuc-page .block__content--main-content .tabs__content--main-content .slides-box .slides__item--left .title-box__category {
-  color: #cf148f;
+  color: #1F99FF;
   font-family: "SF Pro Display";
   font-size: 14px;
   font-style: normal;
@@ -470,7 +471,7 @@
 }
 .tin-tuc-page .block__content--main-content .tabs__content--main-content .slides-box .list-item-slides__item .title-box__category,
 .tin-tuc-page .block__content--main-content .tabs__content--main-content .slides-box .list-item-slides__item .title-box .category {
-  color: #cf148f;
+  color: #1F99FF;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
