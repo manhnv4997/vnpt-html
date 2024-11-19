@@ -17,17 +17,12 @@ function checkParam() {
     }
 }
 
-
 function handleTab() {
-
     $('.services__item').on('click', function () {
         const dataTarget = $(this).attr('target-data');
-
         $('.services__item').removeClass('--active');
         $(this).addClass('--active');
-
         $('.list-package__content--main-content').removeClass('--active');
-
         $(`#${dataTarget}`).addClass('--active');
     })
 }
