@@ -1608,6 +1608,7 @@ header .header__icon-box-mb img.--show {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 .menu-mb-box__top .search-box__input {
   width: 100%;
