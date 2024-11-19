@@ -1024,14 +1024,22 @@
 .home-page .block:nth-child(3) .block__content--item .item__content--explore:hover {
   color: #175ac7;
 }
-.home-page .block:nth-child(3) .block__content--item:nth-child(2), .home-page .block:nth-child(3) .block__content--item:nth-child(4) {
+.home-page .block:nth-child(3) .block__content--item:nth-child(2){
   margin-top: 30px;
+}
+.home-page .block:nth-child(3) .block__content--item:nth-child(4) {
+  margin-top: 90px;
+}
+@media(max-width:992px){
+.home-page .block:nth-child(3) .block__content--item:nth-child(4) {
+  margin-top: 70px;
+}
 }
 @media(max-width:768px){
   .home-page .block:nth-child(3) .block__content--item:nth-child(2),
   .home-page .block:nth-child(3) .block__content--item:nth-child(3),
   .home-page .block:nth-child(3) .block__content--item:nth-child(4) {
-    margin-top: 30px;
+    margin-top: 60px;
   }
 }
 .home-page .block:nth-child(3) .block__content--item:nth-child(1) .item__image-box {

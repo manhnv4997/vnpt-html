@@ -456,12 +456,17 @@ h6 {
   padding: 30px 24px 40px;
   filter: blur(50px);
 }
-@media (max-width: 992px) {
+@media(max-width:992px) {
   .tu-van-box__content {
     left: 50%;
     top:50%;
     right: unset;
     transform: translate(-50%, -50%);
+  }
+}
+@media(max-width:992px) and (min-height:745px) {
+  .tu-van-box__content {
+    height: 600px;
   }
 }
 .tu-van-box__title-box {
@@ -504,6 +509,12 @@ h6 {
   gap: 20px 0;
   margin-top: 24px;
 }
+@media(max-width:992px) and (min-height:745px){
+  .tu-van-box__form {
+    margin-top: 36px;
+    gap: 34px 0;
+  }
+}
 .tu-van-box__form input {
   max-width: 306px;
   width: 100%;
@@ -529,6 +540,11 @@ h6 {
   text-transform: uppercase;
   border-radius: 200px;
   background: #0c5adb;
+}
+@media(max-width:992px) and (min-height:745px){
+.tu-van-box__form button {
+  margin-top: 22px;
+}
 }
 
 .page-content {
