@@ -347,6 +347,10 @@ margin-left: 0;
     padding: 0 16px;
   }
 }
+.chi-tiet-tin-tuc-page .block:nth-child(1) .block__content--main-content .content .tag__list{
+  display: flex;
+  flex-wrap: wrap;
+}
 .chi-tiet-tin-tuc-page .block:nth-child(1) .block__content--main-content .content .tag__list--item {
   color: #5887ff;
   cursor: pointer;

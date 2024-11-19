@@ -297,7 +297,6 @@
 }
 .vnpt-inbot-page .block:nth-child(3) .block__content .service-slides__item {
   width: 100%;
-  height: 294px;
   flex-shrink: 0;
   background-image: linear-gradient(90deg, #345ce5 0%, #fff 100%);
   background-repeat: no-repeat;

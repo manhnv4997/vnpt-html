@@ -13,7 +13,7 @@ function checkParam() {
         $(`#${slug}`).addClass('--active');
     } else {
         $($('.services__item')[0]).addClass('--active');
-        $($('.list-package__content--main-content')).addClass('--active');
+        $($('.list-package__content--main-content')[0]).addClass('--active');
     }
 }
 

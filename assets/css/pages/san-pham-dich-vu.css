@@ -312,7 +312,7 @@
   flex-flow: row;
   align-items: flex-start;
   gap: 0 23px;
-  height: 70px;
+  height: 90px;
 }
 @media (max-width: 992px) {
   .san-pham-dich-vu-page .block:nth-child(2) .block__content--main-content .item .content-box .title-box {
