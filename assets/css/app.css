@@ -1,145 +1,145 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Google Sans";
-  src: url("../fonts/google-sans/GoogleSans-Light.woff") format("truetype");
+  src: url("../fonts/google-sans/GoogleSans-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Google Sans";
-  src: url("../fonts/google-sans/GoogleSans-Light.woff") format("truetype");
+  src: url("../fonts/google-sans/GoogleSans-Light.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Google Sans";
-  src: url("../fonts/google-sans/GoogleSans-Medium.woff") format("truetype");
+  src: url("../fonts/google-sans/GoogleSans-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Google Sans";
-  src: url("../fonts/google-sans/GoogleSans-Bold.woff") format("truetype");
+  src: url("../fonts/google-sans/GoogleSans-Bold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Google Sans";
-  src: url("../fonts/google-sans/GoogleSans-Bold.woff") format("truetype");
+  src: url("../fonts/google-sans/GoogleSans-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Google Sans";
-  src: url("../fonts/google-sans/GoogleSans-Bold.woff") format("truetype");
+  src: url("../fonts/google-sans/GoogleSans-Bold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: "Ford Antenna";
-  src: url("../fonts/ford-antenna-09082024/FordAntenna-Light.woff") format("truetype");
+  src: url("../fonts/ford-antenna-09082024/FordAntenna-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Ford Antenna";
-  src: url("../fonts/ford-antenna-09082024/FordAntenna-Light.woff") format("truetype");
+  src: url("../fonts/ford-antenna-09082024/FordAntenna-Light.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Ford Antenna";
-  src: url("../fonts/ford-antenna-09082024/FordAntenna-Regular.woff") format("truetype");
+  src: url("../fonts/ford-antenna-09082024/FordAntenna-Regular.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Ford Antenna";
-  src: url("../fonts/ford-antenna-09082024/FordAntenna-Bold.woff") format("truetype");
+  src: url("../fonts/ford-antenna-09082024/FordAntenna-Bold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Ford Antenna";
-  src: url("../fonts/ford-antenna-09082024/FordAntenna-Bold.woff") format("truetype");
+  src: url("../fonts/ford-antenna-09082024/FordAntenna-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Ford Antenna";
-  src: url("../fonts/ford-antenna-09082024/FordAntenna-Bold.woff") format("truetype");
+  src: url("../fonts/ford-antenna-09082024/FordAntenna-Bold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: "SF Pro Display";
-  src: url("../fonts/sf-pro-display-cufonfonts/SFPRODISPLAYSFProDisplay-RegularREGULAR.woff") format("truetype");
+  src: url("../fonts/sf-pro-display-cufonfonts/SFPRODISPLAYSFProDisplay-RegularREGULAR.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "SF Pro Display";
-  src: url("../fonts/sf-pro-display-cufonfonts/SFProDisplay-Regular.woff") format("truetype");
+  src: url("../fonts/sf-pro-display-cufonfonts/SFProDisplay-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "SF Pro Display";
-  src: url("../fonts/sf-pro-display-cufonfonts/SFProDisplay-Regular.woff") format("truetype");
+  src: url("../fonts/sf-pro-display-cufonfonts/SFProDisplay-Regular.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "SF Pro Display";
-  src: url("../fonts/sf-pro-display-cufonfonts/SFProDisplay-Bold.woff") format("truetype");
+  src: url("../fonts/sf-pro-display-cufonfonts/SFProDisplay-Bold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "SF Pro Display";
-  src: url("../fonts/sf-pro-display-cufonfonts/SFProDisplay-Bold.woff") format("truetype");
+  src: url("../fonts/sf-pro-display-cufonfonts/SFProDisplay-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "SF Pro Display";
-  src: url("../fonts/sf-pro-display-cufonfonts/SFProDisplay-Bold.woff") format("truetype");
+  src: url("../fonts/sf-pro-display-cufonfonts/SFProDisplay-Bold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: "SF UI Display";
-  src: url("../fonts/SFUIDisplay/SFUIDisplay-Light.woff") format("truetype");
+  src: url("../fonts/SFUIDisplay/SFUIDisplay-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "SF UI Display";
-  src: url("../fonts/SFUIDisplay/SFUIDisplay-Light.woff") format("truetype");
+  src: url("../fonts/SFUIDisplay/SFUIDisplay-Light.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "SF UI Display";
-  src: url("../fonts/SFUIDisplay/SFUIDisplay-Medium.woff") format("truetype");
+  src: url("../fonts/SFUIDisplay/SFUIDisplay-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "SF UI Display";
-  src: url("../fonts/SFUIDisplay/SFUIDisplay-Medium.woff") format("truetype");
+  src: url("../fonts/SFUIDisplay/SFUIDisplay-Medium.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "SF UI Display";
-  src: url("../fonts/SFUIDisplay/SFUIDisplay-Medium.woff") format("truetype");
+  src: url("../fonts/SFUIDisplay/SFUIDisplay-Medium.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "SF UI Display";
-  src: url("../fonts/SFUIDisplay/SFUIDisplay-Medium.woff") format("truetype");
+  src: url("../fonts/SFUIDisplay/SFUIDisplay-Medium.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
@@ -151,37 +151,37 @@
 }
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/Inter/Inter_28pt-Light.woff") format("truetype");
+  src: url("../fonts/Inter/Inter_28pt-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/Inter/Inter_28pt-Light.woff") format("truetype");
+  src: url("../fonts/Inter/Inter_28pt-Light.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/Inter/Inter_28pt-Medium.woff") format("truetype");
+  src: url("../fonts/Inter/Inter_28pt-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/Inter/Inter_28pt-Medium.woff") format("truetype");
+  src: url("../fonts/Inter/Inter_28pt-Medium.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/Inter/Inter_28pt-Medium.woff") format("truetype");
+  src: url("../fonts/Inter/Inter_28pt-Medium.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/Inter/Inter_28pt-Medium.woff") format("truetype");
+  src: url("../fonts/Inter/Inter_28pt-Medium.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
