@@ -17,7 +17,7 @@
   left: 0;
   width: 100%;
   height: 348px;
-  background: url("../../images/vnpt-invoice/block-1-bg.png") 0 9% no-repeat;
+  background: url("../../images/vnpt-invoice/block-1-bg.jpg") 0 9% no-repeat;
   z-index: 0;
   background-size: cover;
 }
@@ -29,7 +29,7 @@
     left: -63px;
     width: 100%;
     height: 348px;
-    background: url(../../../images/vnpt-invoice/block-1-bg.png) 0 9% no-repeat;
+    background: url(../../../images/vnpt-invoice/block-1-bg.jpg) 0 9% no-repeat;
     z-index: 0;
     background-size: 100% 100%;
   }
