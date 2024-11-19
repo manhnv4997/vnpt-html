@@ -575,33 +575,33 @@
 .home-page .block:nth-child(2) {
   background-image: url("../../images/home/block-2-image-bg.jpg");
   background-repeat: no-repeat;
-  background-position: 100% calc(100% - 300px);
+  background-position: 100% calc(100% - 470px);
   overflow: hidden;
-  background-size: auto 80%;
+  background-size: auto 70%;
 }
-@media (max-width: 2100px) {
+/* @media (max-width: 2100px) {
   .home-page .block:nth-child(2) {
     background-position: 100% calc(100% - 300px);
   }
-}
-@media (max-width: 1900px) {
+} */
+/* @media (max-width: 1900px) {
   .home-page .block:nth-child(2) {
     background-position: calc(100% + 200px) calc(100% - 300px);
   }
-}
+} */
 @media (max-width: 1600px) {
   .home-page .block:nth-child(2) {
-    background-position: calc(100% + 13vw) calc(100% - 300px);
+    background-position: calc(100% + 13vw) calc(100% - 470px);
   }
 }
 @media (max-width: 1400px) {
   .home-page .block:nth-child(2) {
-    background-position: calc(100% + 19vw) calc(100% - 300px);
+    background-position: calc(100% + 19vw) calc(100% - 470px);
   }
 }
 @media (max-width: 1200px) {
   .home-page .block:nth-child(2) {
-    background-position: calc(100% + 24vw) calc(100% - 300px);
+    background-position: calc(100% + 24vw) calc(100% - 470px);
   }
 }
 @media (max-width: 992px) {
