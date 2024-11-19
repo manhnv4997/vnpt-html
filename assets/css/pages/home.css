@@ -497,6 +497,11 @@
     display: block;
   }
 }
+@media (max-width: 992px) {
+  .home-page .block:nth-child(1) .block__invoice-list .break {
+    display: none;
+  }
+}
 .home-page .block:nth-child(1) .block__invoice-list--item {
   display: flex;
   align-items: center;
